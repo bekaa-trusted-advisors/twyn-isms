@@ -1,6 +1,6 @@
 # Registro de Evidências Auditáveis — TWYN
 
-> Este arquivo cataloga todas as evidências físicas geradas e coletadas para comprovar o atendimento às 41 fases do roadmap de conformidade do SGSI/SGPI da Twyn.
+> Este arquivo cataloga todas as evidências físicas geradas e coletadas para comprovar o atendimento às 41 fases do roadmap de conformidade do SGSI/SGPI da Twyn, além das diligências de provedores críticos.
 
 | Arquivo | Data de Coleta | Status IA | Checksum SHA-256 |
 |---|---|---|---|
@@ -30,6 +30,8 @@
 | [Diretrizes_Anonimizacao_Privacidade_Fase23.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Diretrizes_Anonimizacao_Privacidade_Fase23.txt) | 2026-07-27 | `CONFORME` | `b53c26529c9372134e3c90a14f49ccc63d62146bd5afcf44c827ddb5d79280fb` |
 | [Matriz_Transferencia_Internacional_Fase24.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Matriz_Transferencia_Internacional_Fase24.txt) | 2026-07-27 | `CONFORME` | `ec677d3b2a1356e9ecf2fa462097a8409b683c19336467dcba45c2eeab38cf41` |
 | [Governanca_DPO_Canal_Atendimento_Fase25.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Governanca_DPO_Canal_Atendimento_Fase25.txt) | 2026-07-27 | `CONFORME` | `c00d261af8eb61355343f75bf5840df0e1ad2a769f2da2e4c049f59e62e7d8e2` |
+| [Ata_Revisao_Direcao_Fase35.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Ata_Revisao_Direcao_Fase35.txt) | 2026-07-27 | `CONFORME` | `0662626d03dff7731d804e696b2efd0f475093a037c36c00faa9bcdcabb41920` |
+| [Homologacao_Fornecedor_AWS_Tier1.md](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Homologacao_Fornecedor_AWS_Tier1.md) | 2026-07-27 | `CONFORME` | `b54b0c521eb736fe98c8d0ee3105e385af35caab1acd23ee1e6acd94cceb3bdb` |
 | [Registro_Treinamento_Awareness_Privacidade_Fase26.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Registro_Treinamento_Awareness_Privacidade_Fase26.txt) | 2026-07-27 | `CONFORME` | `e2da703e2a0efa0f694f1f2b4f6ef440cd0b25711efef220cf72598b20bb0f6f` |
 | [Relatorio_Consolidado_Programa_Privacidade_Fase27.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Relatorio_Consolidado_Programa_Privacidade_Fase27.txt) | 2026-07-27 | `CONFORME` | `a63fc276d7320fb179346654b97e3509e174ec702f343afa88e1073ae939a29a` |
 | [Plano_Auditoria_Interna_Fase28.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Plano_Auditoria_Interna_Fase28.txt) | 2026-07-27 | `CONFORME` | `0b9b8cad942013db75869bb5b7ca599821c28fa97459dc3d5be97d6904d0543f` |
@@ -39,7 +41,6 @@
 | [Relatorio_Pentest_Fase32.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Relatorio_Pentest_Fase32.txt) | 2026-07-27 | `CONFORME` | `264f2e0902b1ac59c0ec06476ef033d2dc29984ec2e43935745d575085d4f46b` |
 | [Validacao_Eficacia_Controles_Fase33.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Validacao_Eficacia_Controles_Fase33.txt) | 2026-07-27 | `CONFORME` | `65d20ca5fb609077c5aa1d73b9b759bfc8e07bcbcecede4618a8a208a083952a` |
 | [Relatorio_Consolidado_Auditoria_Fase34.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Relatorio_Consolidado_Auditoria_Fase34.txt) | 2026-07-27 | `CONFORME` | `5d6e2eddc3a1cf1fe2fcd7e3141b25b6b19d54c88e4ca31add166b4b43ae4dac` |
-| [Ata_Revisao_Direcao_Fase35.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Ata_Revisao_Direcao_Fase35.txt) | 2026-07-27 | `CONFORME` | `0662626d03dff7731d804e696b2efd0f475093a037c36c00faa9bcdcabb41920` |
 | [Relatorio_Acoes_Corretivas_CAPA_Fase36.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Relatorio_Acoes_Corretivas_CAPA_Fase36.txt) | 2026-07-27 | `CONFORME` | `fb814c248048a33cb67099fd28b9195236139a6ed68c2d379564f95fc7f4a843` |
 | [Relatorio_Melhoria_Continua_Fase37.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Relatorio_Melhoria_Continua_Fase37.txt) | 2026-07-27 | `CONFORME` | `7fcd58eef2b312857f4effb911d7f8e132b9a385168da195bfe5a35b654174ed` |
 | [Pacote_Prontidao_Auditoria_Fase38.txt](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/Pacote_Prontidao_Auditoria_Fase38.txt) | 2026-07-27 | `CONFORME` | `a85292fbd9fb7ad572d4e384082f1df802dac79c54cf7edc836b005bd0827683` |
