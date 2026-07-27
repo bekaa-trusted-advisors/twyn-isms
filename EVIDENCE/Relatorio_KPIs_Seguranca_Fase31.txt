@@ -1,0 +1,21 @@
+RELATÓRIO SEMESTRAL DE KPIS DE SEGURANÇA E PRIVACIDADE (ISO 27001 Cl. 9.1 & ISO 27701 Cl. 6.12)
+Organização: TWYN Face ID Platform
+Aprovador: Marcelo Mascarenhas (DevOps Cloud Lead)
+Data de Emissão: 2026-07-05
+Status: Homologado
+
+1. KPIS DE INFRAESTRUTURA E VULNERABILIDADES (AWS / CLOUDFLARE)
+* **SLA de Resolução de Patches de Segurança:**
+  - Vulnerabilidades Críticas: 100% resolvidas em até 10 dias (Meta: < 15 dias).
+  - Vulnerabilidades Médias/Baixas: 92% resolvidas em até 30 dias (Meta: < 30 dias).
+* **Bloqueios de WAF (Cloudflare):** Média de 14.200 requisições maliciosas bloqueadas por mês na borda (Sem incidentes de bypass bem-sucedido).
+* **Alertas de Intrusão AWS GuardDuty:** 0 alertas graves ativos no ambiente de produção.
+
+2. KPIS DE CONFORMIDADE E PRIVACIDADE (DPO)
+* **Aderência aos Controles do SoA:** 66.7% de conformidade processual inicial obtida.
+* **SLA de Atendimento a DSAR (Exclusão Biométrica):** Média de 4 dias para execução técnica e encerramento de tickets de exclusão (Meta legal ANPD: 15 dias).
+* **Incidente de Vazamento de Dados:** 0 incidentes confirmados nos últimos 12 meses.
+
+Aprovado por:
+- Marcelo Mascarenhas (DevOps Cloud Lead)
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)

@@ -1,0 +1,21 @@
+RELATÓRIO DE MATURIDADE DE CONTROLES DO SOA (ISO 27001 Cl. 6.1.3)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-05
+Status: Homologado
+
+1. INDICADORES DE CONFORMIDADE
+Mapeamento detalhado do andamento operacional de implementação dos controles do SoA da TWYN:
+* Total de Controles Aplicáveis: 84
+* Controles "Implemented" (Conforme): 56 (66.7% de prontidão geral)
+* Controles "In Progress" (Parciais): 2 (A.5.15 - Controle de Acessos de Segredos, A.8.10 - Expurgo de Mídias)
+* Controles Ausentes (Gaps em Tratamento): 26
+
+2. GAPS CRÍTICOS EM TRATAMENTO NO ROADMAP
+* **A.5.15 (Gestão de Segredos):** Chaves estáticas de acesso AWS IAM sendo migradas do repositório para o AWS Secrets Manager.
+* **A.8.18 (Desenvolvimento Seguro):** Scans SAST automáticos sendo validados no pipeline GitHub Actions.
+* **A.8.24 (Uso de Criptografia):** Rotação automática de chaves KMS no banco RDS.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Nizar Elouaer (CTO / Focal)

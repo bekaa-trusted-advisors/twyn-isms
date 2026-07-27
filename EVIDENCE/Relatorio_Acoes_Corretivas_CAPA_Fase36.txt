@@ -1,0 +1,23 @@
+RELATÓRIO DE AÇÕES CORRETIVAS E CAPA (ISO 27001 Cl. 10.1 & ISO 27701 Cl. 6.15)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-08
+Status: Concluída / Encerrada
+
+1. IDENTIFICAÇÃO E ANÁLISE DE CAUSA-RAIZ
+* **Não Conformidade:** NC-001 (Matriz RACI e atribuições DevOps técnico de TI desatualizados nas políticas).
+* **Análise de Causa-Raiz (5 Porquês):**
+  1. Por que o DevOps antigo (Augusto) constava no repositório? Porque os arquivos markdown originais não foram editados na transição.
+  2. Por que os arquivos não foram editados? Porque a checagem manual de auditoria documental de controle de mudanças de pessoal falhou.
+  3. Por que a checagem documental falhou? Porque não havia check-gate obrigatório ligando onboarding/offboarding com revisão documental do repositório.
+
+2. AÇÕES DE CORREÇÃO IMPLEMENTADAS
+* **Ação 1 (Sincronização):** Atualização de todos os 24 arquivos de políticas lógicas e matrizes RACI no repositório `https://github.com/bekaa-trusted-advisors/twyn-isms` contendo o nome técnico do DevOps Marcelo Mascarenhas.
+* **Ação 2 (Seed de Banco):** Execução de scripts SQL seeding de D1 no nISO contendo a substituição dos dados para Marcelo.
+* **Ação 3 (SLA de Mudança de Pessoal):** Inclusão no workflow Jira de desligamento do checklist de "revisão de documentos e repositórios de SI" associado.
+
+Conclusão: A não conformidade NC-001 foi formalmente sanada e está declarada ENCERRADA.
+
+Aprovado por:
+- Ricardo Esper (Auditor / DPO)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

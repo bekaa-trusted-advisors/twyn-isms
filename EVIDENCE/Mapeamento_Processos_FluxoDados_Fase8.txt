@@ -1,0 +1,26 @@
+REGISTRO DE OPERAÇÕES DE TRATAMENTO DE DADOS PESSOAIS - RoPA (LGPD Art. 37 & ISO 27701 Cl. 6.3)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-01
+Status: Vigente / Homologado
+
+1. MAPEAMENTO DO PROCESSO DE PRIVACIDADE CRÍTICO
+* Nome do Processo: Processamento de Autenticação Biométrica Facial
+* Setor/Departamento Responsável: TI & Engenharia de Software
+* Tipo de Operação: Coleta, processamento lógico de landmarks, comparação de score de correspondência (matching), armazenamento de templates.
+* Papel da TWYN no Tratamento: Operadora (trata dados em nome dos clientes corporativos - Controladores) e Controladora (para autenticação de seus próprios usuários no painel).
+
+2. DETALHES DE FLUXO E SEGURANÇA
+* Categoria de Dados Pessoais: Biometria Facial (Classificado como Dado Pessoal Sensível conforme LGPD Art. 5, II).
+* Base Legal Adotada: Prevenção à Fraude e Segurança do Titular (LGPD Art. 11, II, 'g').
+* Período de Retenção:
+  - Fotos brutas de entrada: Expurgo imediato na memória RAM após a conversão para vetor matemático de landmarks (tempo de retenção física = 0s).
+  - Templates matemáticos de embeddings: Retenção máxima de 15 dias sem uso ativo no banco RDS antes da exclusão automática por inatividade.
+* Medidas de Segurança Aplicadas:
+  - Criptografia em repouso da base de dados RDS PostgreSQL (AES-256 via AWS KMS).
+  - Criptografia em trânsito de todas as requisições de API via TLS 1.3 obrigatório.
+  - Hashing e vetorização unidirecional irreversível (impossível reconstruir a imagem facial original a partir do embedding matemático).
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Nizar Elouaer (CTO / Focal)

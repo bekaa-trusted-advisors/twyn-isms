@@ -1,0 +1,18 @@
+REGISTRO E TRATAMENTO DE NÃO CONFORMIDADES (ISO 27001 Cl. 10.1 & ISO 27701 Cl. 6.15)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-05
+Status: Registrada / Aberta
+
+1. DETALHAMENTO DA NÃO CONFORMIDADE (NC-001)
+* **Classificação:** Não Conformidade Menor.
+* **Requisito Afetado:** ISO 27001 Cláusula 5.3 (Papéis, Responsabilidades e Autoridades Organizacionais) & Controle Documental 7.5.
+* **Descrição do Desvio:** Durante a análise das políticas de segurança da informação (como POL-SUP-001 de Fornecedores e Matrizes RACI herdadas no repositório), identificamos a permanência do nome de Augusto Ferronato cadastrado como responsável DevOps técnico, embora a liderança técnica do time DevOps tenha sido formalmente assumida por Marcelo Mascarenhas (marcelo.mascarenhas@t4isb.com) no engajamento ativo da Twyn.
+
+2. IMPACTO E REMEDIAÇÃO PROPOSTA
+* **Impacto:** Divergência de registro em políticas lógicas oficiais, configurando falha de controle documental e atribuição incorreta de responsabilidade operacional.
+* **Plano de Ação Corretiva:** Revisão sistemática de todo o corpo de políticas sob `isms/02-politicas/` e seed remota da tabela `phase_responses` no D1 atualizando para Marcelo Mascarenhas.
+
+Registrado por:
+- Ricardo Esper (Auditor)
+- Rosa Correia (COO / Gestão de Contratos)

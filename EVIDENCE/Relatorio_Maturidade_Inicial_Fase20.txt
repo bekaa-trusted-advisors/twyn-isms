@@ -1,0 +1,23 @@
+PARECER CONSOLIDADO DE MATURIDADE DA PRIMEIRA RODADA (ISO 27001 Cl. 9.1 & 9.3)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-05
+Status: Homologado
+
+1. PARECER TÉCNICO DE PRONTIDÃO
+Após a conclusão das fases operacionais da Jornada 4, o comitê de segurança e o DPO validaram a implementação eficaz dos mitigadores propostos no RTP:
+* Imposição obrigatória de MFA em todas as consoles lógicas da AWS e repositórios.
+* Exclusão total de credenciais estáticas IAM em código-fonte, substituindo-as por IAM Roles federadas.
+* Implantação de checagens estáticas (SAST) e revisões de código obrigatórias por peer review.
+* Estruturação formal do fluxo de incidentes CSIRT e notificação à ANPD.
+
+2. MÉTRICAS E SCORE CONSOLIDADO
+* Controles Aderentes (Conforme): 56 (66.7% de conformidade técnica e operacional inicial).
+* Controles em Ajuste Técnico: 2.
+* Riscos Prioritários Mitigados: R-002 (Credenciais IAM no Git) e R-004 (MFA).
+
+A organização demonstra maturidade processual e técnica robusta em seus ambientes de desenvolvimento e infraestrutura em nuvem, estando qualificada para avançar ao ciclo de auditoria interna e homologações finais.
+
+Homologado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Kacio Lopes (CEO / Sponsor)

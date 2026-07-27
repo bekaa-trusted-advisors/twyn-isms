@@ -1,0 +1,27 @@
+RELATÓRIO CONSOLIDADO DE MATURIDADE POR TRILHAS (ISO 27001 Cl. 7.4)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-05-20
+Status: Homologado
+
+1. INTRODUÇÃO E METODOLOGIA
+Este relatório documenta a avaliação inicial de maturidade do SGSI/SGPI da TWYN em 8 trilhas operacionais de conformidade (Mobilização, Ativos e Processos, Riscos e SoA, Políticas Organizacionais, Privacidade, Operação e Auditoria, Simulados e Vigilância). A conformidade foi medida com base nos 93 controles do Anexo A da ISO 27001:2022 e nos controles de Privacidade da ISO 27701:2019.
+
+2. SCORE GERAL E CONSTATADA DE PRONTIDÃO
+* Controles Totais do Escopo: 84 aplicáveis (9 controles físicos de escritório excluídos como N/A).
+* Controles Aderentes (Conforme): 56 (66.7% de conformidade técnica e operacional inicial).
+* Controles Parciais: 2.
+* Controles Ausentes (Gaps): 26.
+
+3. RESUMO DE CONFORMIDADE DAS TRILHAS
+* Trilha 1 (Governança): Carta de Mandato formalizada e Comitê ativo. RACI estruturado segregando auditoria.
+* Trilha 2 (Segurança Lógica): MFA forçado na AWS, criptografia RDS/S3 ativa. Chaves estáticas migrando para o Secrets Manager.
+* Trilha 3 (RH e Fornecedores): NDAs assinados. Necessidade de formalizar background check e questionário KYV para fornecedores secundários.
+* Trilha 4 (Desenvolvimento Seguro): Pull requests com peer reviews no GitHub. Scans SAST automáticos no pipeline em homologação.
+* Trilha 5 (Proteção de Dados): Motor biométrico opera Privacy by Design (landmark irreversível com tempo de expurgo de foto bruta na RAM = 0s). DSAR e DPA contratuais precisam de formalização jurídica.
+
+Este diagnóstico estabelece o plano de ação de 90 dias estruturado no Plano de Tratamento de Riscos (RTP).
+
+Homologado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Kacio Lopes (CEO / Sponsor)

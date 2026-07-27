@@ -1,0 +1,23 @@
+AVALIAÇÃO DE IMPACTO À PROTEÇÃO DE DADOS PESSOAIS - DPIA (LGPD Art. 38 & ISO 27701 Cl. 6.3)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-01
+Status: Vigente / Homologado
+
+1. FLUXO DE DADOS SOB ANÁLISE
+O processamento de biometria facial para autenticação e prevenção a fraudes envolve a transmissão de selfies em trânsito TLS 1.3, extração efêmera de landmarks em contêineres Docker (AWS EKS) e gravação de embeddings vetoriais no AWS RDS.
+
+2. ANÁLISE E MAPEAMENTO DE RISCOS À PRIVACIDADE
+* Cenário de Risco: Acesso não autorizado, vazamento ou desvio da base de templates biométricos no RDS PostgreSQL.
+* Impacto aos Titulares: Alto (5) — Dados biométricos são insubstituíveis; o vazamento pode causar danos morais e riscos de usurpação de identidade lógica.
+* Probabilidade: Baixa (2) — Baixa exposição física (banco em sub-rede privada na AWS sem IPs públicos) e controles de criptografia forte.
+* Score de Risco Inicial: 10 (Médio)
+
+3. SALVAGUARDAS E AÇÕES DE MITIGAÇÃO
+* Criptografia nativa das partições RDS habilitada por chave criptográfica KMS gerenciada.
+* Omissão completa de dados cadastrais diretos vinculados ao template (o banco RDS armazena apenas um identificador lógico anônimo `user_token_hash`, cuja associação a nomes/CPFs ocorre em outro sistema isolado do cliente).
+* Rotinas automáticas de expurgo por inatividade.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Kacio Lopes (CEO / Sponsor)

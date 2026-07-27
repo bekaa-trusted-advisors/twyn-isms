@@ -1,0 +1,20 @@
+MANUAL DE ARQUITETURA DE REDE E ARQUITETURA SEGURA (ISO 27001 A.8.20 & A.8.22)
+Organização: TWYN Face ID Platform
+Aprovador: Nizar Elouaer (CTO / Focal)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. TOPOLOGIA DE REDE NA AWS (us-east-1)
+A infraestrutura da Face ID Platform adota um modelo multicamadas com isolamento estrito de tráfego:
+* **Camada de Borda (Pública):** Cloudflare WAF + Application Load Balancer (ALB) da AWS configurado para aceitar apenas requisições via TLS 1.3 de IPs autorizados.
+* **Camada de Aplicação (Privada):** Nós de contêineres Kubernetes (AWS EKS) executando os microsserviços em sub-redes privadas sem IP público associado.
+* **Camada de Banco de Dados (Totalmente Isolada):** Instâncias de banco de dados AWS RDS PostgreSQL hospedadas em sub-redes privadas dedicadas sem rota direta à internet, aceitando conexões exclusivas originadas nos pods da aplicação.
+
+2. SEGURANÇA E PROTEÇÃO LÓGICA
+* Comunicação interna encriptada por TLS.
+* Monitoramento de ameaças de intrusão lógica ativo via AWS GuardDuty.
+* Grupos de Segurança (Security Groups) com portas fechadas por padrão (Ingress restrito).
+
+Aprovado por:
+- Nizar Elouaer (CTO / Focal)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

@@ -1,0 +1,18 @@
+RELATÓRIO CONSOLIDADO DE AUDITORIA INTERNA DO SGSI/SGPI (ISO 27001 Cl. 9.2 & ISO 27701 Cl. 6.13)
+Organização: TWYN Face ID Platform
+Auditor Líder: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-06
+Status: Homologado
+
+1. PARECER CONSOLIDADO DE AUDITORIA
+O programa de auditoria interna avaliou com sucesso todas as dimensões regulatórias e documentais do SGSI e SGPI da TWYN Face ID Platform. 
+* **Aderência Documental:** Excelente. As políticas, procedimentos de descarte de dados e manuais de arquitetura segura estão publicados na raiz do repositório `https://github.com/bekaa-trusted-advisors/twyn-isms`.
+* **Aderência Técnica:** Excelente. A infraestrutura em nuvem na AWS atende aos requisitos de criptografia de banco RDS, isolamento lógico de sub-redes e controle forte de MFA na console.
+
+2. ACHADOS E RECOMENDAÇÕES
+* **Não Conformidade Menor (NC-001):** Matriz RACI desatualizada devido à transição de DevOps lead (Augusto Ferronato -> Marcelo Mascarenhas) nas políticas oficiais do repositório.
+* **Ação Corretiva:** Disparado o plano corretivo (CAPA) para atualização global das políticas lógicas sob `isms/02-politicas/` e do answers_json no D1.
+
+Aprovado por:
+- Ricardo Esper (Auditor Líder)
+- Rosa Correia (COO)

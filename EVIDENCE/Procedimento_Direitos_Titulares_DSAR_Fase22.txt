@@ -1,0 +1,19 @@
+PROCEDIMENTO DE TRATAMENTO DE REQUISIÇÕES DE TITULARES (DSAR) (ISO 27701 Cl. 7.3 & Cl. 8.3)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-10
+Status: Homologado / Vigente
+
+1. CANAL DE ATENDIMENTO E ENTRADA
+* O canal oficial centralizado para o recebimento de requisições de titulares de dados pessoais sensíveis (Direitos do Titular sob a LGPD - Art. 18) é o e-mail: **`privacy@t4isb.com`**.
+* As solicitações de exclusão de templates biométricos ou retificação podem ser submetidas diretamente pelos titulares ou retransmitidas pelos clientes controladores corporativos (B2B).
+
+2. PROCEDIMENTO E FLUXO OPERACIONAL
+1. **Triagem:** O time de privacidade realiza a validação de identidade do solicitante no prazo máximo de 48 horas úteis após a chegada do e-mail.
+2. **Escalonamento Técnico:** Confirmada a identidade e a relação de controladoria, o DPO emite um ticket de execução para a equipe de DevOps liderada por Marcelo Mascarenhas.
+3. **Execução Técnica:** O DevOps localiza o registro anônimo via `user_token_hash` na base RDS e executa o comando SQL de deleção física.
+4. **Comprovação:** Emissão do logs do banco comprovando a exclusão para fins de auditoria e resposta de encerramento enviada ao controlador em até **15 dias corridos** da solicitação inicial.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

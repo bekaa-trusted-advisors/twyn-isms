@@ -1,0 +1,31 @@
+DECLARAÇÃO DE APLICABILIDADE (STATEMENT OF APPLICABILITY - SoA) (ISO 27001 Cl. 6.1.3 & A.5 a A.8)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-05-25
+Status: Homologado
+
+1. RESUMO DE ENQUADRAMENTO DE CONTROLES
+* Controles Totais mapeados na ISO/IEC 27001:2022: 93 controles.
+* Controles Declarados Aplicáveis: 84 controles.
+* Controles Declarados Não Aplicáveis (Excluídos): 9 controles.
+
+2. CONTROLES EXCLUÍDOS E JUSTIFICATIVA DE MODELO OPERACIONAL
+Os seguintes 9 controles de segurança física estão formalmente excluídos do escopo de certificação da TWYN por incompatibilidade com o modelo de trabalho 100% home office (remoto):
+* A.7.1 - Perímetro de segurança física (Não Aplicável - sem escritórios físicos);
+* A.7.2 - Entrada física (Não Aplicável - sem escritórios físicos);
+* A.7.3 - Segurança de escritórios, salas e instalações (Não Aplicável - sem escritórios físicos);
+* A.7.4 - Monitoramento de segurança física (Não Aplicável - sem escritórios físicos);
+* A.7.5 - Proteção contra ameaças físicas e ambientais (Não Aplicável - sem escritórios físicos);
+* A.7.6 - Trabalhando em áreas seguras (Não Aplicável - sem escritórios físicos);
+* A.7.7 - Regras de mesa limpa e tela limpa (Não Aplicável - sem escritórios físicos no perímetro corporativo);
+* A.7.8 - Posicionamento e proteção de equipamentos (Não Aplicável - sem salas físicas);
+* A.7.9 - Segurança de ativos fora das instalações (Não Aplicável - sem salas físicas).
+
+A segurança física e lógica dos ativos computacionais portáteis (endpoints) utilizados em regime residencial é tratada de forma substitutiva por controles lógicos:
+* A.8.1 - Dispositivos de endpoints do usuário (Criptografia de disco obrigatória, antivírus centralizado e MDM);
+* A.8.20 - Segurança de redes (VPN corporativa forçada para acesso a banco de dados e console AWS).
+
+Homologado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Nizar Elouaer (CTO / Focal)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

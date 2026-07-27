@@ -1,0 +1,19 @@
+RELATÓRIO DO SIMULADO DE AUDITORIA EXTERNA - ESTÁGIO 2 (ISO 27001 Cl. 9)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-10
+Status: Aprovado (Simulação)
+
+1. AVALIAÇÃO DA EFICÁCIA OPERACIONAL (STAGE 2)
+O consultor sênior simulou a auditoria de Estágio 2 de certificação, auditando a eficácia e execução dos controles de segurança e privacidade do SGSI/SGPI em produção:
+* **Segurança na AWS:** Verificados os logs lógicos do EKS e RDS, chaves criptográficas KMS, controle MFA e isolamento de sub-redes privadas.
+* **Segurança do SDLC:** Confirmados peer reviews e scans SAST automáticos.
+* **Gestão de Fornecedores:** Analisados contratos B2B e aditivos DPA de privacidade.
+* **Gestão de Incidentes e Titulares (DSAR):** Testado o canal de triagem do e-mail `privacy@t4isb.com` e a rota de exclusão no RDS.
+
+2. RECOMENDAÇÃO FINAL
+Com base nas auditorias documentais (Estágio 1) e técnicas (Estágio 2), a TWYN Face ID Platform demonstra maturidade avançada de conformidade processo-tecnológica. O consultor sênior emite parecer de **PRONTIDÃO RECOMENDADA** para a auditoria de certificação oficial das normas ISO/IEC 27001:2022 e ISO/IEC 27701:2019.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Kacio Lopes (CEO / Sponsor)

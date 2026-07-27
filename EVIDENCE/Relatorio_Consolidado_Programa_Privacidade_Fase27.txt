@@ -1,0 +1,19 @@
+RELATÓRIO CONSOLIDADO DO PROGRAMA DE PRIVACIDADE DO SGPI (ISO 27701 Cl. 7.2 & 8.2)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-20
+Status: Homologado
+
+1. PARECER GERAL DO SGPI
+Após a consolidação das fases da Jornada 5, o DPO certifica que o Sistema de Gestão de Privacidade da Informação (SGPI) da TWYN está operando em conformidade com as diretrizes da norma ISO/IEC 27701:2019 e a legislação brasileira (LGPD):
+* **RoPA e Mapeamento:** Fluxo de dados biométricos sensíveis e expurgo físico mapeado com base legal de prevenção à fraude de titular (LGPD Art. 11, II, 'g').
+* **DSAR:** Canal de e-mail centralizado `privacy@t4isb.com` ativo e testado para triagem técnica e exclusão em até 15 dias.
+* **Salvaguardas:** Confirmado o hashing irreversível de landmarks como medida estrutural de Privacy by Design.
+* **Transferência Internacional:** Matriz de fluxos transfronteiriços fundamentada em SCCs da AWS em us-east-1.
+* **Designação de DPO:** Ricardo Esper nomeado formalmente com portais de transparência públicos atualizados.
+
+A TWYN demonstra maturidade avançada no tratamento de dados pessoais sensíveis biométricos, garantindo a privacidade por padrão e estando apta para a fase final de auditorias de terceira parte.
+
+Homologado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Kacio Lopes (CEO / Sponsor)

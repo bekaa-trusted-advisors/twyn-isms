@@ -1,0 +1,29 @@
+PLANO GERAL DE TRATAMENTO DE RISCOS (RISK TREATMENT PLAN - RTP) (ISO 27001 Cl. 6.1.3)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-05-25
+Status: Ativo em Implementação
+
+1. PLANO DE AÇÃO E PRAZOS DE EXECUÇÃO
+O tratamento de riscos foi dividido em marcos de entrega operacional para mitigar as exposições prioritárias identificadas na Fase 3:
+
+* Ciclo de 30 dias (Até 2026-06-25):
+  - R-004 (Engenharia Social / Credenciais): Implantação de política de MFA estrita para console AWS e ferramentas SaaS comerciais (Jira, Slack, GitHub).
+  - R-002 (Vazamento de Chaves AWS): Instalação e teste de ferramentas de detecção de segredos em commits no Git.
+  - Responsáveis: Marcelo Mascarenhas (DevOps) e Rosa Correia (COO).
+
+* Ciclo de 60 dias (Até 2026-07-25):
+  - R-002 (Vazamento de Chaves AWS): Eliminação total de chaves de acesso estáticas do IAM em código. Implementação de IAM Roles para instâncias e pods EKS, e migração de credenciais de terceiros para o AWS Secrets Manager.
+  - R-001 (Acesso a embeddings): Criação do fluxo automatizado de rotação de chaves criptográficas KMS no RDS.
+  - Responsáveis: Marcelo Mascarenhas (DevOps) e Nizar Elouaer (CTO).
+
+* Ciclo de 90 dias (Até 2026-08-25):
+  - R-003 (Indisponibilidade de Banco): Realização do simulado anual de restore de banco a partir de backups snapshot em outra zona AWS.
+  - Responsáveis: Marcelo Mascarenhas (DevOps).
+
+2. MONITORAÇÃO E REVISÃO
+O andamento dos mitigadores do RTP é revisado a cada 15 dias nas reuniões do Comitê de Segurança, reportando o status direto ao Sponsor.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Kacio Lopes (CEO / Sponsor)

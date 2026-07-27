@@ -1,0 +1,24 @@
+ATA DE TREINAMENTO E CONSCIENTIZAÇÃO EM PRIVACIDADE E SEGURANÇA (ISO 27001 A.6.3 & ISO 27701 Cl. 6.5)
+Organização: TWYN Face ID Platform
+Instrutor: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Execução: 2026-06-15
+Status: Homologado
+
+1. OBJETIVO DA SESSÃO
+Conduzir treinamento de conscientização sobre as políticas do SGSI/SGPI e os controles técnicos de segurança da informação e privacidade aplicáveis à rotina diária da TWYN.
+
+2. CONTEÚDO MINISTRADO
+* Visão geral da norma ISO/IEC 27001:2022 e ISO/IEC 27701:2019.
+* Princípios fundamentais da LGPD (Bases legais, dados sensíveis, direitos dos titulares).
+* Segurança física e lógica em home office (Uso correto de VPN, criptografia de disco).
+* Desenvolvimento seguro de software (SDLC, peer reviews e perigos de chaves estáticas IAM em código).
+* Fluxo de incidentes e engenharia social.
+
+3. PARTICIPANTES CONFIRMADOS
+* Kacio Lopes (CEO)
+* Nizar Elouaer (CTO)
+* Marcelo Mascarenhas (DevOps Cloud Lead)
+* Rosa Correia (COO)
+
+Homologado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)

@@ -1,0 +1,24 @@
+CONJUNTO DE POLÍTICAS GERAIS E ESPECÍFICAS DO SGSI/SGPI (ISO 27001 Cl. 5.2)
+Organização: TWYN Face ID Platform
+Aprovador: Comitê de Segurança da Informação
+Data de Aprovação: 2026-05-25
+Status: Vigente / Publicado no Git
+
+1. ESTRUTURA DOCUMENTAL DE POLÍTICAS APROVADAS
+O Comitê de Segurança e Privacidade da TWYN aprova formalmente a vigência e aplicação do seguinte conjunto de políticas gerais e específicas, disponíveis a todos os colaboradores no repositório `twyn-isms`:
+* POL-GEN-001: Política Geral de Segurança da Informação e Privacidade (Diretrizes de apoio e governança de dados sensíveis).
+* POL-ACC-001: Política de Controle de Acessos (MFA obrigatório, privilégio mínimo IAM e senhas fortes).
+* POL-CRY-001: Política de Criptografia e Gerenciamento de Chaves (Garantia de criptografia RDS/S3 e chaves pelo AWS KMS).
+* POL-DEV-001: Política de Desenvolvimento Seguro - SDLC (Revisão obrigatória de código, checagem SAST no GitHub Actions).
+* POL-EMP-001: Política de Trabalho Seguro e Uso Aceitável de Ativos (Termo de aceitação BYOD, antivírus MDM e conscientização).
+* POL-SUP-001: Política de Segurança no Relacionamento com Fornecedores (Exigência de DPA/KYV ativo com parceiros terceiros).
+
+2. COMUNICAÇÃO E CONSCIENTIZAÇÃO
+Todas as políticas foram distribuídas eletronicamente e encontram-se assinadas na plataforma digital. Os novos colaboradores recebem o kit de integração (onboarding) com o conjunto de políticas anexado ao contrato de trabalho.
+
+Assinado pelo Comitê:
+- Kacio Lopes (CEO / Sponsor)
+- Nizar Elouaer (CTO / Focal)
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Marcelo Mascarenhas (DevOps Cloud Lead)
+- Rosa Correia (COO)

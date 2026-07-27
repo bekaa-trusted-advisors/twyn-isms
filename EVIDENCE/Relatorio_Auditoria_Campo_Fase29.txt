@@ -1,0 +1,19 @@
+NOTAS DE CAMPO E EVIDÊNCIAS COLETADAS NA AUDITORIA INTERNA (ISO 27001 Cl. 9.2)
+Organização: TWYN Face ID Platform
+Auditor: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-05
+Status: Homologado
+
+1. ATIVIDADES DE CAMPO E TESTES EFETUADOS
+Durante a execução da auditoria, foram inspecionadas as seguintes evidências operacionais:
+* **Entrevista de Infraestrutura (Marcelo Mascarenhas):** Verificado na console da AWS EKS o bloqueio lógico padrão para portas públicas e o provisionamento dinâmico de contas lógicas. Testado o restore de snapshot diário no banco PostgreSQL.
+* **Entrevista de Desenvolvimento (Nizar Elouaer):** Analisado o histórico de Pull Requests (PRs) no GitHub no repositório `https://github.com/bekaa-trusted-advisors/twyn-isms`. Confirmada a imposição de peer-reviews e scans de Semgrep no pipeline CI.
+* **Entrevista de RH (Rosa Correia):** Inspecionado o fluxo de onboarding de novos colaboradores e contratos de fornecedores contendo NDAs anexados.
+
+2. CONSTAÇÕES DE AUDITORIA
+* A infraestrutura AWS apresenta conformidade rigorosa com criptografia KMS e MFA.
+* Verificado desvio pontual nos papéis da RACI cadastrados nas políticas herdadas (devido à transição do DevOps Augusto Ferronato para Marcelo Mascarenhas).
+
+Aprovado por:
+- Ricardo Esper (Auditor)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

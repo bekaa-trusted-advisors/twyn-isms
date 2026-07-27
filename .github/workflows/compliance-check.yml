@@ -1,0 +1,61 @@
+name: SGSIP Compliance Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-compliance-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Root Compliance Files
+        run: |
+          for file in README.md SOA.md RISKS.md ROPA.md; do
+            if [ ! -f "$file" ]; then
+              echo "Error: Missing root compliance file $file"
+              exit 1
+            fi
+            echo "✔ Root file $file is present."
+          done
+
+      - name: Verify Policies and Evidence Directories
+        run: |
+          if [ ! -d "POLICIES" ] || [ ! -f "POLICIES/README.md" ]; then
+            echo "Error: POLICIES directory or POLICIES/README.md is missing."
+            exit 1
+          fi
+          if [ ! -d "EVIDENCE" ] || [ ! -f "EVIDENCE/README.md" ]; then
+            echo "Error: EVIDENCE directory or EVIDENCE/README.md is missing."
+            exit 1
+          fi
+          echo "✔ Directories and index files are present."
+
+      - name: Validate Index Sincerity
+        run: |
+          # Parse EVIDENCE/README.md and verify all files mentioned are physically present
+          grep -o 'EVIDENCE/[a-zA-Z0-9_-]\+\.txt' EVIDENCE/README.md | while read -r line; do
+            basename=$(basename "$line")
+            if [ ! -f "EVIDENCE/$basename" ]; then
+              echo "Error: Evidence file EVIDENCE/$basename is referenced in README.md but missing physically!"
+              exit 1
+            fi
+          done
+          echo "✔ EVIDENCE/README.md references match physical files."
+
+          # Parse POLICIES/README.md and verify all files mentioned are physically present
+          grep -o 'POLICIES/[a-zA-Z0-9_\.-]\+\.md' POLICIES/README.md | while read -r line; do
+            basename=$(basename "$line")
+            if [ ! -f "POLICIES/$basename" ]; then
+              echo "Error: Policy file POLICIES/$basename is referenced in README.md but missing physically!"
+              exit 1
+            fi
+          done
+          echo "✔ POLICIES/README.md references match physical files."
+
+      - name: Compliance Structure Success
+        run: echo "🎉 SGSIP Compliance check passed successfully. Repo is compliant!"

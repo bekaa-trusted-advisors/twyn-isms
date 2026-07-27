@@ -1,0 +1,16 @@
+RELATÓRIO DE INICIATIVAS DE MELHORIA CONTÍNUA (ISO 27001 Cl. 10.2 & ISO 27701 Cl. 6.16)
+Organização: TWYN Face ID Platform
+Aprovador: Kacio Lopes (CEO / Sponsor)
+Data de Emissão: 2026-07-08
+Status: Homologado
+
+1. PLANO DE MELHORIAS DE PRIVACIDADE E SEGURANÇA
+Com o objetivo de evoluir a maturidade do SGSI/SGPI da TWYN após o encerramento do primeiro ciclo corretivo (CAPA), são estabelecidas as seguintes iniciativas de melhoria contínua:
+
+* **Melhoria 1: Testes Automatizados de Recuperação (BIA):** Implementar script automatizado mensal via GitHub Actions para testar o restore dos snapshots de produção do RDS PostgreSQL em um cluster de homologação isolado, validando o tempo real de recuperação contra o RTO de 4h.
+* **Melhoria 2: Simulação de Incidentes (CSIRT):** Agendar para o próximo semestre uma simulação prática de vazamento biométrico simulado junto ao CSIRT (Ricardo, Nizar, Marcelo) para testar canais de resposta e SLA de 48h úteis da ANPD.
+* **Melhoria 3: Rotação Automática de Segredos:** Integrar o AWS Secrets Manager com rotação automatizada a cada 90 dias para as credenciais lógicas de consumo do banco de dados pelos pods do EKS.
+
+Aprovado por:
+- Kacio Lopes (CEO / Sponsor)
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)

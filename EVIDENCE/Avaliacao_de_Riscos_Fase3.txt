@@ -1,0 +1,30 @@
+RELATÓRIO DE AVALIAÇÃO DE RISCOS DE SEGURANÇA DA INFORMAÇÃO (ISO 27001 Cl. 6.1.2)
+Organização: TWYN Face ID Platform
+Data de Avaliação: 2026-05-25
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Escopo: Face ID Platform API e Nuvem AWS (us-east-1)
+
+1. METODOLOGIA
+Utilizada a matriz de impacto e probabilidade de 1 a 5 (Muito Baixo a Muito Alto). O apetite a risco definido pela Alta Direção estabelece que qualquer risco com score final igual ou superior a 12 requer tratamento imediato obrigatório no Plano de Tratamento de Riscos (RTP).
+
+2. INVENTÁRIO DE RISCOS CRÍTICOS IDENTIFICADOS
+* R-001: Acesso não autorizado de terceiros a hashes/templates biométricos armazenados no RDS PostgreSQL.
+  - Probabilidade: 2 | Impacto: 5 | Score: 10 (Médio)
+  - Proprietário do Risco: Nizar Elouaer (CTO)
+  - Medida: Criptografia ativa de colunas e hashing irreversível de landmarks.
+* R-002: Chaves estáticas de acesso AWS IAM vazadas acidentalmente por desenvolvedores no código do GitHub.
+  - Probabilidade: 3 | Impacto: 5 | Score: 15 (Alto - Requer Mitigação)
+  - Proprietário do Risco: Marcelo Mascarenhas (DevOps Cloud Lead)
+  - Medida: Auditoria contínua de repositório com GitHub Advanced Security e migração para IAM Roles/Secrets Manager.
+* R-003: Indisponibilidade catastrófica do banco de dados RDS de produção devido a falhas regionais da AWS us-east-1.
+  - Probabilidade: 2 | Impacto: 4 | Score: 8 (Médio)
+  - Proprietário do Risco: Marcelo Mascarenhas (DevOps Cloud Lead)
+  - Medida: Replicação Multi-AZ e rotinas diárias de backup snapshot com verificação periódica.
+* R-004: Engenharia social direcionada a funcionários técnicos resultando em roubo de credenciais corporativas.
+  - Probabilidade: 3 | Impacto: 4 | Score: 12 (Alto - Requer Mitigação)
+  - Proprietário do Risco: Rosa Correia (COO)
+  - Medida: Treinamentos obrigatórios de conscientização de GRC e imposição estrita de MFA.
+
+Aprovado por:
+- Kacio Lopes (CEO / Sponsor)
+- Ricardo Esper (DPO / Consultor GRC)

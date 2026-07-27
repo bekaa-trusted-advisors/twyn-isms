@@ -1,0 +1,18 @@
+MANUAL DE RETENÇÃO E DESCARTE DE DADOS PESSOAIS (ISO 27701 Cl. 7.2.7 & Cl. 7.2.8)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-10
+Status: Homologado
+
+1. DIRETRIZES GERAIS DE CICLO DE VIDA DE DADOS
+O ciclo de vida dos dados biométricos processados pela Face ID Platform obedece a regras restritas de minimização e necessidade operacional:
+* **Entrada (Selfies/Imagens Faciais Brutas):** Captura efêmera e processamento exclusivo na memória volátil (RAM) dos servidores de aplicação. A foto bruta nunca é gravada em discos rígidos ou banco de dados persistente, sendo descartada imediatamente após a extração vetorial (Tempo de retenção física = 0s).
+* **Armazenamento (Vetor de Landmarks Biométricos):** O vetor numérico resultante (embedding) é armazenado na base de dados AWS RDS PostgreSQL encriptada.
+* **Exclusão/Expurgo por Inatividade:** Em caso de inatividade cadastral por mais de 15 dias sem consumo de chamadas de API de matching por parte do controlador, o template do usuário é automaticamente expurgado por rotina periódica (`cron job` no banco RDS).
+
+2. PROCEDIMENTOS DE DESCARTE SEGURO
+A exclusão lógica no banco de dados envolve a sobrescrita dos registros de landmarks por valores nulos e a remoção das chaves estrangeiras associadas.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Nizar Elouaer (CTO / Focal)

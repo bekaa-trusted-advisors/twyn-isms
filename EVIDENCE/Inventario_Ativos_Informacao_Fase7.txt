@@ -1,0 +1,29 @@
+INVENTÁRIO DE ATIVOS DE INFORMAÇÃO DO SGSI/SGPI (ISO 27001 A.5.9)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-01
+Status: Homologado / Vigente
+
+1. DIRETRIZES DE CLASSIFICAÇÃO
+Os ativos de informação são classificados em 3 níveis de confidencialidade:
+* Público: Sem impacto em caso de divulgação.
+* Uso Interno: Divulgação restrita a colaboradores; impacto moderado.
+* Confidencial: Acesso estritamente restrito por privilégio mínimo; alto impacto financeiro ou de privacidade.
+
+2. TABELA DE ATIVOS DE INFORMAÇÃO DA PLATAFORMA
+| ID Ativo | Nome/Descrição do Ativo | Tipo de Ativo | Proprietário do Ativo | Confidencialidade | Localização física/lógica |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| AT-001 | Repositório de código-fonte (API e Engine) | Código / Propriedade Intelectual | Nizar Elouaer (CTO) | Confidencial | GitHub (repositório privado) |
+| AT-002 | Banco de dados RDS PostgreSQL (Produção) | Base de Dados / Dados Pessoais | Nizar Elouaer (CTO) | Confidencial | AWS RDS (us-east-1 VPC) |
+| AT-003 | Snapshots e backups de banco de dados RDS | Backup / Continuidade | Marcelo Mascarenhas (DevOps) | Confidencial | AWS S3 (us-east-1 criptografado) |
+| AT-004 | Chaves criptográficas do KMS (Chave Mestra) | Chave Criptográfica / Segurança | Marcelo Mascarenhas (DevOps) | Confidencial | AWS KMS (us-east-1) |
+| AT-005 | Segredos operacionais e APIs externas | Credenciais | Marcelo Mascarenhas (DevOps) | Confidencial | AWS Secrets Manager (cripto) |
+| AT-006 | Logs de auditoria, acesso e depuração | Registro / Auditoria | Marcelo Mascarenhas (DevOps) | Uso Interno | AWS CloudWatch e S3 Logs |
+| AT-007 | Computadores portáteis técnicos (Notebooks BYOD) | Hardware / Endpoints | Colaborador Alocado | Uso Interno | Perímetros Residenciais (remoto) |
+
+3. REVISÃO E CONTROLES
+Os proprietários dos ativos realizam inventários anuais, e as permissões de acesso lógicos (IAM e GitHub) são recertificadas trimestralmente pelo comitê.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Nizar Elouaer (CTO / Focal)

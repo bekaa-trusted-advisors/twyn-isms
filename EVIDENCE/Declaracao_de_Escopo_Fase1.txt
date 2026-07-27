@@ -1,0 +1,22 @@
+DECLARAÇÃO OFICIAL DE ESCOPO DO SGSI/SGPI (ISO 27001 Cl. 4.3 & ISO 27701 Cl. 5.3)
+Organização: TWYN Face ID Platform
+Data de Emissão: 2026-05-20
+Status: Aprovado pelo Comitê
+
+1. DELIMITAÇÃO DO ESCOPO
+O escopo do Sistema de Gestão de Segurança da Informação (SGSI) e do Sistema de Gestão de Privacidade da Informação (SGPI) compreende as operações lógicas, de desenvolvimento de software e infraestrutura de nuvem associadas à:
+* TWYN Face ID Platform API (microsserviços e bibliotecas de embeddings);
+* Bancos de dados relacionais e não-relacionais (RDS PostgreSQL e S3 buckets de produção);
+* Ambientes de deploy, provisionamento e CI/CD gerenciados pela equipe de engenharia e DevOps.
+
+2. FRONTEIRAS FÍSICAS E EXCLUSÕES
+* Provedor de Nuvem: Amazon Web Services (AWS), exclusivamente na região us-east-1 (N. Virginia).
+* Exclusões Físicas: Estão integralmente fora do escopo do SGSI/SGPI os escritórios físicos corporativos da TWYN, visto que a organização adota um modelo operacional 100% remoto (work-from-home). Os controles físicos de perímetro, proteção predial e utilidades de energia no perímetro residencial são classificados como Não Aplicáveis (N/A). A segurança dos endpoints é assegurada via políticas de BYOD, criptografia obrigatória e MDM.
+
+3. PARTES INTERESSADAS E CONFORMIDADE
+O escopo atende às obrigações de sigilo e transparência regulatória frente a clientes B2B que consomem o motor biométrico, e aos requisitos regulatórios da LGPD brasileira fiscalizada pela ANPD.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Nizar Elouaer (CTO / Focal)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

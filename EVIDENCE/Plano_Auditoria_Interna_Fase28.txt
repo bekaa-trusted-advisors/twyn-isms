@@ -1,0 +1,21 @@
+PLANO DE AUDITORIA INTERNA DO SGSI/SGPI (ISO 27001 Cl. 9.2 & ISO 27701 Cl. 6.13)
+Organização: TWYN Face ID Platform
+Auditor Líder: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-25
+Status: Homologado
+
+1. OBJETIVO E ESCOPO
+Avaliar a conformidade e eficácia prática de todos os requisitos do Sistema de Gestão de Segurança (SGSI) e de Privacidade (SGPI) implementados para a Face ID Platform.
+* **Escopo:** Cláusulas 4 a 10 da ISO 27001 e ISO 27701; 84 controles aplicáveis do SoA; políticas internas de segurança e governança de fornecedores terceiros.
+* **Período da Auditoria:** 2026-07-01 a 2026-07-05.
+
+2. CRONOGRAMA DE ENTREVISTAS E AUDITORIA
+* **Dia 1:** Contexto organizacional, Liderança e Política de Segurança (CEO Kacio Lopes / COO Rosa Correia).
+* **Dia 2:** Riscos, SoA e Tratamento (DPO Ricardo Esper).
+* **Dia 3:** Topologia AWS, Controles de Acessos IAM e DevOps (Marcelo Mascarenhas / Nizar Elouaer).
+* **Dia 4:** Ciclo de desenvolvimento seguro e Privacy by Design (Nizar Elouaer).
+* **Dia 5:** Recursos Humanos, Onboarding, Offboarding e Fornecedores (Rosa Correia).
+
+Aprovado por:
+- Ricardo Esper (Auditor Líder)
+- Kacio Lopes (CEO / Sponsor)

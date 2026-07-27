@@ -1,0 +1,18 @@
+ATA DE DESIGNAÇÃO DO ENCARREGADO DE PROTEÇÃO DE DADOS - DPO (ISO 27701 Cl. 7.2.1 & LGPD Art. 41)
+Organização: TWYN Face ID Platform
+Alta Direção Representada: Kacio Lopes (CEO)
+Data de Emissão: 2026-06-10
+Status: Publicado / Vigente
+
+1. NOMEAÇÃO E MANDATO DO DPO
+A Alta Direção da TWYN nomeia formalmente **Ricardo Esper** (`resper@bekaa.eu`) como Encarregado pelo Tratamento de Dados Pessoais (DPO) da organização. 
+
+O DPO terá autonomia operacional para supervisionar a aderência aos controles do SGSI/SGPI, receber reclamações e comunicações dos titulares de dados, coordenar auditorias e prestar esclarecimentos à Autoridade Nacional de Proteção de Dados (ANPD).
+
+2. COMUNICAÇÃO E CANAL PÚBLICO
+* Fica instituído o e-mail **`privacy@t4isb.com`** como o canal de atendimento e contato público oficial da TWYN para direitos de privacidade de titulares e controladores.
+* O canal está publicado em destaque na Política de Privacidade institucional.
+
+Aprovado por:
+- Kacio Lopes (CEO / Sponsor)
+- Ricardo Esper (DPO Nomeado)

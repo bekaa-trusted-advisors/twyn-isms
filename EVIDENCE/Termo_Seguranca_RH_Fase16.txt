@@ -1,0 +1,19 @@
+NORMAS DE SEGURANÇA DA INFORMAÇÃO EM RECURSOS HUMANOS (ISO 27001 A.6.1, A.6.2 & A.6.5)
+Organização: TWYN Face ID Platform
+Aprovador: Rosa Correia (COO)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. FASE DE CONTRATAÇÃO (ONBOARDING)
+* **Background Checks:** Realizados procedimentos de checagem de antecedentes profissionais e cadastrais de todos os candidatos aprovados para funções técnicas e administrativas.
+* **Termos de Confidencialidade (NDA):** Assinatura obrigatória de Acordo de Confidencialidade individual como condição preliminar para fornecimento de computadores portáteis BYOD e liberação de acessos a sistemas.
+
+2. FASE DE DESLIGAMENTO (OFFBOARDING)
+* **Exit Checklist:** Implementado o fluxo formal de desligamento de colaboradores no Jira, contendo:
+  - Revogação imediata de credenciais de acesso IAM AWS, contas do Slack, Jira e e-mail corporativo em até 2 horas úteis da comunicação formal de demissão.
+  - Revogação dos acessos e exclusão da chave SSH/PAT do desenvolvedor do repositório GitHub.
+  - Devolução de equipamentosBYOD ou termo de formatação segura sob auditoria caso o ativo seja BYOD.
+
+Aprovado por:
+- Rosa Correia (COO)
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)

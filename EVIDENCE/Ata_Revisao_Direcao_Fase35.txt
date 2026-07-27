@@ -1,0 +1,22 @@
+ATA DE REUNIÃO DE ANÁLISE CRÍTICA PELA DIREÇÃO - RDC (ISO 27001 Cl. 9.3 & ISO 27701 Cl. 6.14)
+Organização: TWYN Face ID Platform
+Presidência: Kacio Lopes (CEO / Sponsor)
+Data da Reunião: 2026-07-07
+Status: Homologado / Assinado
+
+1. PARTICIPANTES DO COMITÊ
+* Kacio Lopes (CEO / Sponsor)
+* Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+* Nizar Elouaer (CTO / Focal)
+* Marcelo Mascarenhas (DevOps Cloud Lead)
+* Rosa Correia (COO)
+
+2. PAUTA E DELIBERAÇÕES
+* **Apresentação de Indicadores:** O DPO Ricardo Esper apresentou a aderência do SoA (66.7% de conformidade técnica e processual), o tempo médio de resolução de patches e a ausência de incidentes graves.
+* **Avaliação de Riscos:** O comitê revisou o RTP constatando a mitigação de riscos críticos de chaves IAM e redundância Multi-AZ.
+* **Plano Corretivo de DevOps (NC-001):** Apresentada a não conformidade menor identificada na auditoria interna (RACI com Augusto Ferronato). A Direção homologou e aprovou por unanimidade a atualização imediata da Matriz RACI com o nome de Marcelo Mascarenhas em todas as políticas corporativas do repositório.
+* **Auditorias Externas:** Aprovado o cronograma de preparação para as auditorias Stage 1 e Stage 2.
+
+Aprovado por:
+- Kacio Lopes (CEO / Sponsor)
+- Ricardo Esper (DPO / Consultor GRC)

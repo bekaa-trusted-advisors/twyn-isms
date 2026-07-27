@@ -1,0 +1,26 @@
+TERMO DE COMPROMISSO E CARTA DE MANDATO DA ALTA DIREÇÃO (ISO 27001 Cl. 5.1)
+Organização: TWYN Face ID Platform (ID: mr9c1qugo16zic2eko)
+Certificação Alvo: ISO/IEC 27001:2022 + ISO/IEC 27701:2019
+Data de Formalização: 2026-05-20
+Canal Oficial: Google Meet
+Repositório de Conformidade: https://github.com/bekaa-trusted-advisors/twyn-isms
+
+1. DECLARAÇÃO DE APOIO E COMPROMETIMENTO
+A Alta Direção da TWYN, representada por Kacio Lopes (CEO), declara seu apoio formal, ativo e incondicional ao estabelecimento, implementação, operação, monitoramento, análise crítica, manutenção e melhoria contínua do Sistema de Gestão de Segurança da Informação (SGSI) e do Sistema de Gestão de Privacidade da Informação (SGPI).
+
+O objetivo estratégico do SGSI/SGPI é resguardar a integridade, confidencialidade e disponibilidade das chaves criptográficas, templates de embeddings e fluxos lógicos de biometria facial tratados pela Face ID Platform, garantindo conformidade com a LGPD e atração de clientes corporativos (B2B).
+
+2. DESIGNAÇÃO DO COMITÊ GESTOR E AUTORIDADE
+Fica nomeado o seguinte Comitê Gestor de Segurança e Privacidade, com autoridade outorgada para coletar evidências, realizar testes operacionais e gerir controles:
+* Líder Interno do Projeto (Focal): Nizar Elouaer (CTO)
+* Encarregado de Proteção de Dados (DPO): Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+* Infraestrutura & Segurança de Nuvem: Marcelo Mascarenhas (DevOps Cloud Lead)
+* Recursos Humanos & Operações: Rosa Correia (COO)
+
+3. RECURSOS E ORÇAMENTO
+A Alta Direção garante a alocação de recursos financeiros, tecnológicos e de infraestrutura AWS necessários para a remediação de gaps, simulados de intrusão, auditorias independentes e contratação do organismo de certificação de terceira parte (URS).
+
+Assinado eletronicamente por:
+- Kacio Lopes (CEO / Sponsor)
+- Nizar Elouaer (CTO / Focal)
+- Ricardo Esper (DPO / Consultor GRC)

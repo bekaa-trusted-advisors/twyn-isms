@@ -1,0 +1,18 @@
+NORMA DE CONTROLE DE ACESSOS E GESTÃO DE CREDENCIAIS (ISO 27001 A.5.15 & A.8.3)
+Organização: TWYN Face ID Platform
+Aprovador: Marcelo Mascarenhas (DevOps Cloud Lead)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. PRINCÍPIO DO PRIVILÉGIO MÍNIMO E ACESSO IAM
+* Perfis administrativos na console AWS IAM concedidos por função (Role-based access control - RBAC) apenas a colaboradores técnicos homologados.
+* Acesso às chaves de banco de dados RDS de produção restrito a microsserviços. Os desenvolvedores não possuem permissão de leitura lógica direta na base de produção.
+* Chaves estáticas de acesso de usuários IAM são proibidas em commits. O provisionamento é executado por IAM Roles dinâmicas associadas a pods e instâncias.
+
+2. CONTROLE DE AUTENTICAÇÃO E MFA
+* Imposição obrigatória de Autenticação Multifator (MFA) em todas as contas administrativas da console AWS e repositórios GitHub corporativos.
+* Senhas fortes exigidas: mínimo 14 caracteres contendo letras maiúsculas, minúsculas, números e caracteres especiais. Rotação periódica descontinuada seguindo as diretrizes NIST SP 800-63B, substituída por bloqueios automáticos e auditoria de anomalias pelo AWS GuardDuty.
+
+Aprovado por:
+- Marcelo Mascarenhas (DevOps Cloud Lead)
+- Nizar Elouaer (CTO / Focal)

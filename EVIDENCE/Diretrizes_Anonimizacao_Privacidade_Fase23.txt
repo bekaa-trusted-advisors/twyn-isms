@@ -1,0 +1,17 @@
+MANUAL DE MECANISMOS E SALVAGUARDAS DE PRIVACIDADE E DESIDENTIFICAÇÃO (ISO 27701 Cl. 7.4)
+Organização: TWYN Face ID Platform
+Aprovador: Nizar Elouaer (CTO / Focal)
+Data de Emissão: 2026-06-10
+Status: Homologado / Vigente
+
+1. VETORIZAÇÃO IRREVERSÍVEL (PRIVACY BY DESIGN)
+O processamento biométrico da Face ID Platform adota salvaguardas matemáticas que asseguram o caráter irreversível dos dados armazenados no banco persistente:
+* **Conversão de Imagem para Embedding:** A foto capturada é convertida por rede neural convolucional (CNN) em um vetor multidimensional de coordenadas faciais (hashing de landmarks).
+* **Impossibilidade de Reconstrução:** A matriz resultante é puramente matemática e unidirecional; não existe rota algorítmica ou computacional viável para reconstruir os traços faciais ou a foto original a partir do vetor numérico.
+
+2. DESIDENTIFICAÇÃO E ISOLAMENTO
+* O banco de dados do motor biométrico não armazena nomes, CPFs ou qualquer identificador direto do titular. A associação de um template a um perfil de usuário depende do consumo exclusivo de um token lógico anônimo do banco do cliente controlador.
+
+Aprovado por:
+- Nizar Elouaer (CTO / Focal)
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)

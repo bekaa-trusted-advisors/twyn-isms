@@ -1,0 +1,24 @@
+PLANO E FLUXO DE RESPOSTA A INCIDENTES DE SEGURANÇA E PRIVACIDADE (ISO 27001 A.5.24 a A.5.28 & ISO 27701 Cl. 6.11)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. ESTRUTURAÇÃO DO CSIRT (GRUPO DE RESPOSTA A INCIDENTES)
+Fica formalmente estruturado o Grupo de Resposta a Incidentes (CSIRT) da TWYN com a seguinte escala de incidentes e contatos operacionais:
+* Coordenador de Privacidade & ANPD: Ricardo Esper (DPO / Encarregado)
+* Líder Técnico e Engenharia: Nizar Elouaer (CTO)
+* Líder de Infraestrutura e Nuvem: Marcelo Mascarenhas (DevOps Cloud Lead)
+
+2. CLASSIFICAÇÃO E ESCALA DE INCIDENTES
+* Baixo: Indisponibilidade temporária de logs ou painel de relatórios (Sem dados afetados).
+* Médio: Alerta de acesso suspeito à console AWS ou chaves de desenvolvedor expiradas (Sem vazamento confirmado).
+* Alto/Crítico: Vazamento ou suspeita fundamentada de vazamento de templates de landmarks biométricos.
+
+3. WORKFLOW E PRAZOS REGULATÓRIOS
+Qualquer incidente de segurança detectado deve ser notificado internamente ao DPO imediatamente. Caso confirmado o impacto a dados pessoais sensíveis, o DPO conduzirá a análise técnica e notificará a ANPD e os clientes controladores em até **48 horas úteis** da descoberta técnica do evento.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Nizar Elouaer (CTO / Focal)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

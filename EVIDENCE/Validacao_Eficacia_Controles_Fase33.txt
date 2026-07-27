@@ -1,0 +1,22 @@
+MATRIZ DE VALIDAÇÃO DE EFICÁCIA DOS CONTROLES DO SGSI (ISO 27001 Cl. 9.1)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-06
+Status: Homologado
+
+1. TESTES PRÁTICOS E VALIDAÇÃO DE CONTROLES CRÍTICOS
+A eficácia dos principais controles técnicos e organizacionais foi verificada mediante amostragem prática de auditoria:
+
+* **Controle A.5.15 (Controle de Acessos & MFA):**
+  - *Método:* Auditoria visual da console AWS IAM com o DevOps Marcelo Mascarenhas.
+  - *Resultado:* 100% dos usuários ativos na console AWS possuem MFA ativo. Chaves estáticas de acesso de usuários foram removidas.
+* **Controle A.8.24 (Uso de Criptografia):**
+  - *Método:* Inspeção de metadados do banco RDS no painel AWS.
+  - *Resultado:* Criptografia de disco AES-256 habilitada com chave criptográfica KMS rotacionada anualmente.
+* **Controle A.8.20 (Controle de Rede):**
+  - *Método:* Tentativa de conexão lógica direta de rede externa ao banco de dados RDS (usando IP privado da subnet interna).
+  - *Resultado:* Conexão recusada (Bloqueio estrito por Security Groups AWS confirmando isolamento de rede).
+
+Aprovado por:
+- Ricardo Esper (Auditor / DPO)
+- Nizar Elouaer (CTO / Focal)

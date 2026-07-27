@@ -1,0 +1,18 @@
+DIRETRIZES E CÓDIGO DE DESENVOLVIMENTO SEGURO (SDLC) (ISO 27001 A.8.25, A.8.28 & A.8.29)
+Organização: TWYN Face ID Platform
+Aprovador: Nizar Elouaer (CTO / Focal)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. DIRETRIZES DE ENGENHARIA DE SOFTWARE SEGURA
+O desenvolvimento de novas funcionalidades e correções de bugs da Face ID Platform obedece a um ciclo de vida seguro (SDLC):
+* **Revisão Obrigatória de Código (Peer Review):** Todo Pull Request criado no repositório GitHub deve receber a análise e aprovação formal de pelo menos um engenheiro sênior (Nizar Elouaer) antes de ser elegível para merge na branch principal `main`.
+* **Varredura Estática de Vulnerabilidades (SAST):** Configurada checagem automatizada nos pipelines do GitHub Actions (usando ferramentas SAST como SonarQube/Semgrep e dependabot para pacotes vulneráveis). O pipeline bloqueia o merge caso vulnerabilidades de criticidade Alta ou Crítica sejam detectadas.
+
+2. CUSTÓDIA DE CÓDIGO E TESTES
+* Testes unitários integrados com cobertura mínima de 80% do core lógico da API.
+* Isolamento lógico estrito entre os ambientes de Desenvolvimento, Homologação (Staging) e Produção.
+
+Aprovado por:
+- Nizar Elouaer (CTO / Focal)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

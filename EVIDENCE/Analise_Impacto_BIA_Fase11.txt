@@ -1,0 +1,21 @@
+ANÁLISE DE IMPACTO NOS NEGÓCIOS - BIA E CONTINUIDADE (ISO 27001 A.5.29 & A.5.30)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-05
+Status: Homologado
+
+1. OBJETIVO
+Definir as tolerâncias e parâmetros operacionais de recuperação de desastres (DR) para a TWYN Face ID Platform a fim de mitigar indisponibilidades lógicas de infraestrutura AWS.
+
+2. METAS OPERACIONAIS DE DISPONIBILIDADE
+* **RTO (Recovery Time Objective):** 4 horas (Tempo máximo tolerável de indisponibilidade da API de matching biométrico em caso de desastre regional).
+* **RPO (Recovery Point Objective):** 24 horas (Perda máxima de dados tolerada; controlada por backups de snapshot de RDS executados diariamente e replicados geograficamente).
+
+3. ESTRATÉGIAS DE MITIGAÇÃO
+* AWS RDS PostgreSQL configurado em arquitetura Multi-AZ para failover automático de banco de dados em menos de 60 segundos.
+* Snapshots diários retidos por 30 dias na AWS us-east-1.
+* Backups em bucket S3 criptografado e isolado com versionamento ativo.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

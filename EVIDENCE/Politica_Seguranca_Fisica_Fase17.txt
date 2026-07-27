@@ -1,0 +1,18 @@
+POLÍTICA DE SEGURANÇA FÍSICA E EQUIPAMENTOS EM TRABALHO REMOTO (ISO 27001 A.7.1 a A.7.9 & A.8.1)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-05
+Status: Homologado / Vigente
+
+1. EXCLUSÃO DE ÁREAS PREDIAIS CORPORATIVAS
+A TWYN adota modelo operacional 100% distribuído e remoto (sem sede física corporativa). Todos os controles prediais tradicionais (como catracas, alarmes de portaria, câmeras de CFTV e salas de servidores locais) são formalmente declarados Não Aplicáveis (N/A) no SoA.
+
+2. CONTROLES DE ENDPOINTS (TRABALHO REMOTO)
+Para assegurar a integridade e proteção física dos dados em perímetros residenciais, são aplicados controles de proteção lógica rígidos nos notebooksBYOD:
+* Criptografia de disco obrigatória habilitada por padrão (BitLocker no Windows e FileVault no macOS).
+* Bloqueio automático de tela inativa em no máximo 5 minutos.
+* Instalação de antivírus centralizado e agente MDM para varreduras diárias e bloqueio/formatação remota em caso de perda ou roubo do equipamento.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Rosa Correia (COO)

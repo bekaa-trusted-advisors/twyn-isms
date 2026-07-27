@@ -1,0 +1,19 @@
+MATRIZ DE FLUXO DE DADOS E TRANSFERÊNCIA INTERNACIONAL (ISO 27701 Cl. 7.5 & LGPD Art. 33)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-10
+Status: Homologado / Vigente
+
+1. FLUXO TRANSFRONTEIRIÇO DE INFORMAÇÃO
+Devido ao uso de provedores hyperscale de computação em nuvem, a TWYN executa fluxo de dados internacionais conforme detalhado abaixo:
+* **Provedor de Destino:** Amazon Web Services (AWS).
+* **Localização Física dos Servidores:** Região `us-east-1` (N. Virginia, Estados Unidos).
+* **Categoria de Dados Transferidos:** Vetores e embeddings numéricos de biometria facial de usuários da plataforma.
+
+2. MECANISMOS DE SALVAGUARDAS JURÍDICAS
+* A transferência internacional está fundamentada na assinatura ativa das Cláusulas Contratuais Padrão (Standard Contractual Clauses - SCCs) anexadas ao DPA global da AWS, garantindo o mesmo nível de proteção física e lógica exigido pela LGPD brasileira e GDPR europeu.
+* Os dados pessoais são transmitidos encriptados em trânsito com TLS 1.3 de ponta a ponta e armazenados com chaves AES-256 no RDS.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)
+- Marcelo Mascarenhas (DevOps Cloud Lead)

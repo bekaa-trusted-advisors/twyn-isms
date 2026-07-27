@@ -1,0 +1,17 @@
+PARECER DO SIMULADO DE AUDITORIA EXTERNA - ESTÁGIO 1 (ISO 27001 Cl. 9)
+Organização: TWYN Face ID Platform
+Avaliador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-07-09
+Status: Aprovado (Simulação)
+
+1. AVALIAÇÃO DE ADEQUAÇÃO DOCUMENTAL (STAGE 1)
+O consultor sênior executou a simulação de auditoria de Estágio 1 na TWYN Face ID Platform a fim de avaliar a adequação do arcabouço documental obrigatório exigido pelas normas ISO/IEC 27001:2022 e ISO/IEC 27701:2019:
+* **Escopo e Direção:** Declaração de escopo, política de segurança e ata de RDC em conformidade.
+* **Riscos e SoA:** RTP e Declaração de Aplicabilidade adequadamente justificados (exclusão de controles físicos aceita devido ao home office).
+* **Auditoria Interna:** Plano e relatório concluídos registrando o tratamento de não conformidades (CAPA de transição de DevOps).
+
+2. VEREDITO DO SIMULADO ESTÁGIO 1
+Toda a documentação obrigatória do SGSI e SGPI está implementada, atualizada no repositório GitHub e semeada de forma consistente no nISO. O sistema está homologado e **APTO** para avançar para a simulação de Auditoria de Estágio 2 (validação de campo e eficácia dos controles).
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC)

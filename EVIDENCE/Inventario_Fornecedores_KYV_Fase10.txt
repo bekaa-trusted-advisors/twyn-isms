@@ -1,0 +1,25 @@
+INVENTÁRIO DE FORNECEDORES E AVALIAÇÃO DE SEGURANÇA DE TERCEIROS - KYV (ISO 27001 A.5.19 - A.5.22)
+Organização: TWYN Face ID Platform
+Aprovador: Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+Data de Emissão: 2026-06-01
+Status: Vigente / Homologado
+
+1. ABORDAGEM BASEADA EM RISK TIERING
+Conforme estabelecido na política POL-SUP-001, a TWYN classifica seus fornecedores em três níveis de criticidade (Tiers) e executa processos de diligência distintos para cada categoria.
+
+2. INVENTÁRIO DE FORNECEDORES HOMOLOGADOS
+| Nome do Fornecedor | Categoria / Serviço Prestado | Classificação de Criticidade | Método de Auditoria / Evidência | Status do DPA (Acordo LGPD) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Amazon Web Services (AWS)** | Provedor de Cloud / Infraestrutura lógicas e físicas | Tier 1: Risco Crítico | Relatório SOC 2 Tipo II anual + Certificado ISO 27001 (Artifact) | Assinado / Vigente |
+| **Cloudflare Inc.** | CDN, Firewall de Aplicação (WAF) e Proteção DDoS | Tier 1: Risco Crítico | Relatório SOC 2 Tipo II público + Certificação ISO 27001 | Assinado / Vigente |
+| **Slack Technologies** | Canal oficial de comunicação corporativa | Tier 2: Risco Médio | Validação anual de SOC 2 Tipo II público (/security) | Assinado / Vigente (Contrato Global) |
+| **T4ISB Tecnologia** | Consultoria de Engenharia e DevOps (Marcelo Mascarenhas) | Tier 3: Risco Crítico | Questionário KYV Completo de 25 perguntas + NDA de 5 anos | Assinado / Vigente |
+
+3. PROCEDIMENTOS OPERACIONAIS DE AUDITORIA
+* Fornecedores Tier 1 possuem auditoria 100% automatizada com downloads anuais de SOC 2 / ISO dos portais oficiais de transparência.
+* Fornecedores Tier 2 são auditados anualmente com base nas páginas de segurança pública.
+* Fornecedores Tier 3 (como a T4ISB do Marcelo Mascarenhas) passam por homologação completa com questionário KYV, revisão contratual e recertificação trimestral das permissões IAM.
+
+Aprovado por:
+- Ricardo Esper (DPO / Consultor GRC - Bekaa Trusted Advisors)
+- Rosa Correia (COO)
