@@ -1,9 +1,14 @@
 # Declaração de Aplicabilidade (SoA) — TWYN Face ID Platform
 
-> **Referência Normativa:** ABNT NBR ISO/IEC 27001:2022 (Anexo A) e ABNT NBR ISO/IEC 27701:2019  
-> **Status Geral do SGSI:** `Audit Ready` (IPC: 100%)
+> **Referência Normativa:** ABNT NBR ISO/IEC 27001:2022 (Anexo A). Extensão de privacidade (27701) tratada em `soa/SGPI-SoA-27701-2025.md`.  
+> **Status Geral do SGSI:** `Em Adequação` — IPC ≈ 66% (52 implementados / 79 aplicáveis); 27 controles em aberto.
 
-Esta Declaração de Aplicabilidade cataloga todos os 93 controles de segurança do Anexo A da ISO/IEC 27001:2022 e os respectivos controles de privacidade da ISO/IEC 27701:2019, definindo sua aplicabilidade, status de implementação, nível de maturidade e proprietários técnicos.
+> **Reconciliação ENG-2026-001 (2026-08-18):** vocabulário normalizado (status `Approved`
+> → `Implemented`). As inconsistências status × maturidade × evidência estão consolidadas na
+> seção **«Inconsistências sinalizadas para reconciliação»** ao final — os controles envolvidos
+> **não** tiveram o status alterado, pois isso exige a fonte da verdade (nISO).
+
+Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do Anexo A da ISO/IEC 27001:2022, definindo aplicabilidade, status de implementação, nível de maturidade e proprietários técnicos. Os controles específicos de privacidade da ISO/IEC 27701:2025 são tratados na extensão do SGPI (`soa/SGPI-SoA-27701-2025.md`).
 
 ---
 
@@ -93,17 +98,51 @@ Esta Declaração de Aplicabilidade cataloga todos os 93 controles de segurança
 | **A.821** | A.8.21 Segurança dos Serviços de Rede | `Implemented` | 3 | CISO | Serviços de rede protegidos. Acesso administrativo restrito via Bastion Host e VPN.... (Aprovado por CISO Ricardo Esper) (Aprovado por CEO Kacio Lopes) |
 | **A.822** | A.8.22 Segregação de Redes | `Implemented` | 3 | DevOps | Segregação de redes via VPC e Security Groups (SOP-004).... (Aprovado por CISO Ricardo Esper) (Aprovado por CEO Kacio Lopes) |
 | **A.823** | A.8.23 Filtragem Web | `Implemented` | 4 | CISO | Aplicado e monitorado nos endpoints corporativos dos colaboradores via soluções de MDM/Antivírus de proteção contra ameaças web.... (Aprovado por CISO Ricardo Esper) |
-| **A.824** | A.8.24 Uso de Criptografia | `Approved` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.24 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa garantir a imple... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
-| **A.825** | A.8.25 Ciclo de Vida de Desenvolvimento Seguro (SDLC) | `Approved` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.25 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa estabelecer dire... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
+| **A.824** | A.8.24 Uso de Criptografia | `Implemented` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.24 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa garantir a imple... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
+| **A.825** | A.8.25 Ciclo de Vida de Desenvolvimento Seguro (SDLC) | `Implemented` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.25 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa estabelecer dire... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
 | **A.826** | A.8.26 Requisitos de Segurança em Aplicações | `Implemented` | 4 | CISO | Requisitos de segurança formalizados em tickets Git e validados pelo CTO (POL-APP-001).... (Aprovado por CISO Ricardo Esper) (Aprovado por CEO Kacio Lopes) |
 | **A.827** | A.8.27 Arquitetura de Sistemas Segura e Princípios de Engenharia | `Implemented` | 3 | CISO | Princípios de Zero Trust e desacoplamento sensível descritos no SOP-ARC-001.... (Aprovado por CISO Ricardo Esper) (Aprovado por CEO Kacio Lopes) |
-| **A.828** | A.8.28 Codificação Segura | `Approved` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.28 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa garantir a prote... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
+| **A.828** | A.8.28 Codificação Segura | `Implemented` | 4 | CISO | ## Objetivo A política de segurança da informação para o controle A.8.28 da TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA visa garantir a prote... (Aprovado por CISO Humberto Oliveira) (Aprovado por CEO Kacio Lopes) |
 | **A.829** | A.8.29 Testes de Segurança em Desenvolvimento e Aceitação | `Implemented` | 4 | CISO | Security testing in SDLC.... (Aprovado por CISO Ricardo Esper) |
 | **A.830** | A.8.30 Desenvolvimento Terceirizado | `Missing` | 0 | CISO | Outsourced development relationships identified.... |
 | **A.831** | A.8.31 Separação dos Ambientes de Desenvolvimento, Teste e Produção | `Implemented` | 4 | CISO | Ambientes de desenvolvimento, homologação e produção segregados logicamente em contas AWS independentes.... (Aprovado por CISO Ricardo Esper) (Aprovado por CEO Kacio Lopes) |
 | **A.832** | A.8.32 Gestão de Mudanças | `Implemented` | 4 | CISO | Change management is universal.... (Aprovado por CISO Ricardo Esper) |
 | **A.833** | A.8.33 Informação de Teste | `Missing` | 0 | CISO | Test data protection for development activities.... |
 | **A.834** | A.8.34 Proteção dos Sistemas de Informação durante Testes de Auditoria | `Missing` | 0 | CISO | Audit testing safeguards are universal.... |
+
+---
+
+## Inconsistências sinalizadas para reconciliação (ENG-2026-001)
+
+> Sinalizadas por reconciliação de consultor; **status não alterado** — resolução exige a
+> fonte da verdade (nISO). Não constituem parecer de conformidade.
+
+**Tipo A — `Missing` porém com maturidade ≥ 3 e evidência/aprovação (status × evidência):**
+
+| Controle | Status atual | Maturidade | Sinal |
+|---|---|---:|---|
+| A.6.3 Conscientização/Treinamento | `Missing` | 4 | evidência/aprovação presente sob status `Missing` |
+| A.5.17 Informações de Autenticação | `Missing` | 3 | idem |
+| A.5.21 Cadeia de Suprimentos TIC | `Missing` | 3 | idem |
+| A.5.22 Monitoramento de Fornecedores | `Missing` | 3 | idem |
+| A.5.26 Resposta a Incidentes | `Missing` | 3 | idem |
+| A.5.30 Prontidão TIC p/ Continuidade | `Missing` | 4 | BCP descrito e aprovado sob status `Missing` |
+| A.8.9 Gestão de Configuração | `Missing` | 3 | SOP-HDN-001 citado e aprovado |
+| A.8.12 Prevenção de Vazamento (DLP) | `Missing` | 4 | evidência presente |
+| A.8.13 Backup da Informação | `Missing` | 4 | "AWS Backup configurado… validado… aprovado" |
+
+**Tipo B — `Implemented` porém com maturidade 0 (status × maturidade):**
+
+| Controle | Status atual | Maturidade | Sinal |
+|---|---|---:|---|
+| A.6.1 Seleção de Pessoas | `Implemented` | 0 | maturidade 0 sob `Implemented` |
+| A.6.2 Termos de Contratação | `Implemented` | 0 | idem |
+| A.6.4 Processo Disciplinar | `Implemented` | 0 | idem |
+| A.6.8 Notificação de Eventos | `Implemented` | 0 | idem |
+| A.5.31 Requisitos Legais | `Implemented` | 0 | idem |
+
+**Ação requerida:** para cada linha, reconciliar contra o nISO e (a) corrigir o status com base
+em evidência objetiva, ou (b) rebaixar/abrir o controle. Nenhuma correção de status foi presumida.
 
 ---
 

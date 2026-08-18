@@ -9,10 +9,15 @@ Este repositório consolida o arcabouço documental e o registro de evidências 
 
 ## 📊 Status de Prontidão Global (IPC)
 
-* **Índice de Prontidão de Conformidade (IPC):** **100%**
-* **Status do Projeto nISO:** `Audit Ready`
-* **Roadmap de Adequação:** 41 Fases Executadas e Consolidadas (Jornadas 1 a 6)
-* **Última Atualização:** 2026-07-27
+> **Reconciliação ENG-2026-001 (2026-08-18):** o índice abaixo foi recalculado a
+> partir do estado real do `SOA.md`. O valor de "100% / Audit Ready" anterior não
+> se sustentava perante os próprios artefatos. Ver `audit/ENG-2026-001-reconciliation.md`.
+
+* **Índice de Prontidão de Conformidade (IPC):** **≈ 66%** (52 implementados / 79 aplicáveis)
+* **Distribuição do SoA (93 controles):** 49 `Implemented` · 3 normalizados p/ `Implemented` · 27 `Missing` · 14 `Not Applicable`
+* **Status:** `Em Adequação` — **não pronto para certificação**; reconciliação de status pendente (nISO)
+* **Controles em aberto:** 27 · **Inconsistências sinalizadas:** ver `⚠` no `SOA.md`
+* **Última Atualização (reconciliação):** 2026-08-18
 
 ---
 
