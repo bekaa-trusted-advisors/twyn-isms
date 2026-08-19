@@ -51,8 +51,8 @@ As operações incluem:
 
 Este repositório segue estritamente a árvore canônica de GRC:
 
-* **[SOA.md](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/SOA.md):** Declaração de Aplicabilidade (93 controles ISO 27001 + 27701).
-* **[RISKS.md](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/RISKS.md):** Registro de Riscos baseados na ISO 27005.
-* **[ROPA.md](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/ROPA.md):** Registro de Atividades de Tratamento de Dados Pessoais (LGPD).
-* **[POLICIES/](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/POLICIES/):** Políticas e procedimentos de segurança por controle Annex A.
-* **[EVIDENCE/](file:///c:/Users/resper/OneDrive/Área de Trabalho/DESENVOLVIMENTO/twyn-isms/EVIDENCE/):** Pasta física com as 41 evidências auditáveis assinadas e catalogadas.
+* **[SOA.md](SOA.md):** Declaração de Aplicabilidade (93 controles ISO 27001 + 27701).
+* **[RISKS.md](RISKS.md):** Registro de Riscos baseados na ISO 27005.
+* **[ROPA.md](ROPA.md):** Registro de Atividades de Tratamento de Dados Pessoais (LGPD).
+* **[POLICIES/](POLICIES/):** Políticas e procedimentos de segurança por controle Annex A.
+* **[EVIDENCE/](EVIDENCE/):** Pasta física com as 41 evidências auditáveis assinadas e catalogadas.
