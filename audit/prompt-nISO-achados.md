@@ -1,56 +1,52 @@
-# Prompt — Achados de plataforma/dados do nISO (TWYN, ENG-2026-001)
+# Prompt — Defeitos técnicos da PLATAFORMA nISO (report ao time do produto)
 
-> Cole o bloco abaixo no assistente/admin do nISO. Lista os achados encontrados via API e a ação
-> requerida de cada um. Não contém segredos. Projeto: `mr9c1qugo16zic2eko`.
+> Para reportar ao time de desenvolvimento do nISO. Trata do **comportamento do software/API**, não
+> dos dados do projeto TWYN. Observado via API v1 (`https://niso.ness.workers.dev`) com chave de papel
+> `consultant`. Nenhum segredo é reproduzido aqui.
 
 ---
 
 ```
-Contexto: projeto TWYN Face ID Platform (mr9c1qugo16zic2eko), SGSI 27001:2022 + SGPI 27701:2025,
-papel Controlador. Foram identificados os achados abaixo no estado de dados/configuração do nISO.
-Trate cada um; onde for correção de dado, proponha a mudança para aprovação humana antes de aplicar.
+Reporte técnico — comportamentos da plataforma nISO (API v1) que aparentam ser defeitos:
 
-## CRÍTICO
-1) Segredo em texto claro: o registro do projeto expõe o campo `repository_token` com uma credencial
-   em texto claro, retornada pela API de leitura. Ação: (a) remover/cifrar o campo (não armazenar
-   segredo em texto claro), (b) sinalizar rotação da credencial na origem, (c) verificar se outros
-   projetos/campos expõem segredos de forma semelhante (correção de plataforma).
+## SEGURANÇA (prioritário)
+1) Exposição de credencial: GET /api/v1/projects/{id} retorna o campo `repository_token` com o valor
+   em TEXTO CLARO no corpo da resposta. A API não deveria retornar campos de credencial; o segredo
+   deveria ser cifrado em repouso e redigido/omitido na resposta. Verificar em todos os projetos.
 
-## GOVERNANÇA / PAPÉIS (decisão do cliente)
-2) DPO: designar Humberto Oliveira como Encarregado (DPO) até o fim do processo de certificação.
-   Atualizar a designação onde o DPO estiver nomeado.
-3) Ricardo Esper é APENAS consultor (Aegis). Remover toda atribuição dele como CISO e como DPO.
-   Em particular: o campo `ciso_approved_by` = "Ricardo Esper" consta em ~60 controles — essa
-   atribuição é inválida e deve ser removida/reatribuída ao CISO real (a definir).
-4) Identidades duplicadas do mesmo indivíduo (ex.: "resper@bekaa.eu", "Ricardo Esper",
-   "Ricardo Esper (DPO)") devem ser unificadas para rastreabilidade.
+## ESCRITA DE CONTROLE (PUT /api/v1/controls/{id})
+2) No-op silencioso: enviar `maturity` (isolado ou junto com `status`) retorna HTTP 200, mas o valor
+   NÃO é persistido (GET seguinte mostra o valor antigo). Esperado: persistir, ou retornar erro
+   explícito de "campo não editável". 200 em campo ignorado induz a erro.
+3) Campos de aprovação imutáveis sem aviso: enviar `ciso_approved_by`/`ceo_approved_by` = null é
+   ignorado (200, sem efeito). Não há caminho de API para RETIRAR uma aprovação. Se é intencional,
+   documentar; se não, expor endpoint/permite limpar aprovação.
 
-## INTEGRIDADE DE DADOS
-5) Aprovação sem lastro: ~17 controles constam assinados (ciso/ceo_approved_by) sem evidência
-   anexada. Retirar a aprovação até haver evidência, ou anexar evidência objetiva.
-6) Riscos desincronizados: os 12 riscos estão todos como "Mitigated". Ao menos 3 (risk-twyn-03/04/05)
-   apoiam-se em controles com status Missing (A.8.12/A.5.17/A.8.9) e devem ser reabertos ("Open")
-   até implementação/evidência. Revisar também a plausibilidade de "todos Mitigated".
-7) Metadados do projeto incompletos: client_name (vazio), sector, cnpj, employee_count (nulos).
-   Preencher (contexto da organização — cláusula 4).
-8) Evidências: 42 itens "pending" (avaliar), 7 órfãs (control_id inexistente — religar/remover),
-   e casing inconsistente do status ("Conforme" vs "conforme" — padronizar).
+## PROJETO (PUT /api/v1/projects/{id})
+4) Mensagem de erro enganosa: enviar `standards` retorna 400 {"error":"Nothing to update"} mesmo com
+   o campo presente. Se o campo é derivado/read-only, retornar mensagem explícita ("field not editable")
+   em vez de "Nothing to update".
 
-## LIMITES DE PLATAFORMA OBSERVADOS (para o time do nISO)
-9) Via API (papel consultant), o PUT de controle só grava `status` e `description`; `maturity` e os
-   campos de aprovação são imutáveis, e não há rota de re-vínculo de evidência (`PUT /evidence` → 404).
-   Confirmar se essas operações (zerar maturidade, retirar aprovação, religar evidência) existem no
-   UI/admin — hoje são bloqueadas por API.
+## EVIDÊNCIAS
+5) Sem endpoint de atualização/re-vínculo de evidência: PUT /api/v1/evidence/{id} → 404 e
+   /api/v1/projects/{id}/evidence/{id} → 404. Não há como (re)associar uma evidência a um controle via
+   API. Se o vínculo é só-UI, é uma lacuna de capacidade; se existe rota, ela não está acessível/documentada.
+6) Normalização de enum: `evaluation_status` aceita valores com caixa inconsistente ("Conforme" e
+   "conforme" coexistem). A plataforma deveria normalizar o enum.
 
-## PEDIDO
-Para cada achado, retorne: (a) se é corrigível no nISO e como; (b) a proposta de correção; (c) o que
-depende de decisão humana. Não declare nenhum controle conforme sem evidência objetiva verificável.
+## CONSISTÊNCIA / DESCOBERTA DE API
+7) Verbos inconsistentes: PATCH /api/v1/controls/{id} → 404, enquanto PUT funciona. OPTIONS retorna
+   204 com header `Allow` vazio (sem descoberta de métodos). Não há /openapi.json nem índice de rotas.
+8) Rota documentada ausente: POST/GET /api/v1/projects/{id}/control-adequacao → 404 (a rota de
+   "adequação de controle" citada não responde). Confirmar o path correto.
+9) Política de papel: GET /api/v1/assessments?project_id={id} → 403 para a chave `consultant`.
+   Confirmar se o papel consultor deveria ter leitura de assessments (senão, é policy esperada).
+
+Para cada item: confirmar se é bug, comportamento intencional, ou rota/documentação divergente.
 ```
 
 ---
 
-## Referência (uso interno — não colar)
-- Achado 1 registrado em **issue #23** (segurança).
-- Achados 5/6 relacionam-se às issues **#8** (assinatura sem lastro) e à reconciliação de riscos.
-- Decisão de papéis (2/3/4): DPO = Humberto; Ricardo = consultor. Ajuste dos documentos de nomeação do
-  DPO e remoção das referências de CISO/DPO do Ricardo tratados como workstream à parte (não-cross agora).
+> **Nota:** achados de **dado do projeto TWYN** (token específico a rotacionar, riscos a reabrir,
+> metadados a preencher, papéis DPO/CISO, evidências pending/órfãs) **não** entram aqui — são tratados
+> nas issues internas do repositório (ex.: #23 segurança), não como bug da plataforma.
