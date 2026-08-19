@@ -1,5 +1,5 @@
 # SGP-KYV-001: Diretrizes de Diligência de Fornecedores (KYV) — TWYN
-**ISO/IEC 27701:2019 Cláusula 7.5.3 (Processadores de PII terceiros) & LGPD Artigo 39**
+**ISO/IEC 27701:2025 Anexo A: A.1.2.7 (Contratos com operadores) e A.1.5.5 (Divulgação a terceiros) & LGPD Artigo 39**
 
 ---
 

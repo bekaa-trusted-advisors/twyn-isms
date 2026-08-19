@@ -1,6 +1,6 @@
 # POL-GOV-001: Política de Governança de Dados — TWYN
 
-**ISO/IEC 27001:2022 Controles A.5.12 (Classificação da informação), A.5.13 (Rotulagem da informação), A.5.33 (Proteção de registros) e A.8.10 (Exclusão da informação) | ISO/IEC 27701:2019 Cláusulas 7.2.2, 7.4.2 e 7.5.1**
+**ISO/IEC 27001:2022 Controles A.5.12 (Classificação da informação), A.5.13 (Rotulagem da informação), A.5.33 (Proteção de registros) e A.8.10 (Exclusão da informação) | ISO/IEC 27701:2025 Anexo A: A.3.5 (Classificação), A.3.6 (Rotulagem), A.3.14 (Proteção de registros) e A.1.4.6/A.1.4.9 (desidentificação/descarte)**
 
 ---
 

@@ -1,6 +1,6 @@
 # POL-SUP-001: Política de Segurança em Relacionamento com Fornecedores — TWYN
 
-**ISO/IEC 27001:2022 Controles A.5.19 (Segurança da informação no relacionamento com fornecedores), A.5.20 (Tratamento da segurança da informação em acordos com fornecedores), A.5.21 (Gestão da segurança da informação na cadeia de suprimentos de TIC) e A.5.22 (Monitoramento, análise crítica e gestão de mudanças de serviços de fornecedores) | ISO/IEC 27701:2019 Cláusula 7.2.4**
+**ISO/IEC 27001:2022 Controles A.5.19 (Segurança da informação no relacionamento com fornecedores), A.5.20 (Tratamento da segurança da informação em acordos com fornecedores), A.5.21 (Gestão da segurança da informação na cadeia de suprimentos de TIC) e A.5.22 (Monitoramento, análise crítica e gestão de mudanças de serviços de fornecedores) | ISO/IEC 27701:2025 Anexo A: A.3.10 (Cadeia de suprimento) e A.1.2.7 (Contratos com operadores de DP)**
 
 ---
 

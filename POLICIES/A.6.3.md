@@ -1,6 +1,6 @@
 # POL-HR-001: Política de Segurança em Recursos Humanos — TWYN
 
-**ISO/IEC 27001:2022 Controles A.5.11 (Devolução de ativos), A.6.1 (Seleção), A.6.2 (Termos e condições de emprego), A.6.4 (Processo disciplinar) e A.6.5 (Responsabilidades pós-desligamento ou mudança de emprego) | ISO/IEC 27701:2019 Cláusula 7.2.1**
+**ISO/IEC 27001:2022 Controles A.5.11 (Devolução de ativos), A.6.1 (Seleção), A.6.2 (Termos e condições de emprego), A.6.4 (Processo disciplinar) e A.6.5 (Responsabilidades pós-desligamento ou mudança de emprego)**
 
 ---
 

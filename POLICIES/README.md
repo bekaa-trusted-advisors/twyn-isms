@@ -2,9 +2,12 @@
 
 > Este índice cataloga todas as políticas de conformidade do SGSI/SGPI da Twyn, mapeadas diretamente para os controles da ISO/IEC 27001:2022 e ISO/IEC 27701:2025.
 >
-> ⚠ **Remapeamento pendente (issue #13):** as referências de *cláusula* do 27701 nas políticas ainda
-> apontam para a numeração **:2019** (ex.: 7.2.4, 7.3, 7.5.1). O 27701:**2025** renumerou essas cláusulas;
-> o remapeamento exige o crosswalk oficial da norma e **não** foi feito por substituição automática.
+> ✅ **Remapeamento 27701:2019 → 2025 concluído (issue #13).** As referências das políticas foram
+> atualizadas para a numeração oficial da **ABNT NBR ISO/IEC 27701:2026 (=27701:2025)**: **Tabela A.3
+> (A.3.x)** para controles de SI e **Tabela A.1 (A.1.x)** para obrigações de privacidade; 2 mis-tags
+> corrigidos (fornecedores) e a tag espúria de RH removida. Mapa completo em
+> `audit/ENG-2026-001-27701-crosswalk-2019-2025.md` e `context/normas/ISO-27701-2025-indice-referencia.md`.
+> **Nota:** políticas com citação normativa alterada podem exigir **re-aprovação** formal.
 
 | Controle ISO | Arquivo | Origem Técnica | Estágio | Aprovador |
 |---|---|---|---|---|
