@@ -1,6 +1,6 @@
 # Registro de Operações de Tratamento de Dados Pessoais (ROPA) — TWYN
 
-> **Referência Regulatória:** Artigo 37 da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) / ABNT NBR ISO/IEC 27701:2019 (SGPI).
+> **Referência Regulatória:** Artigo 37 da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) / ABNT NBR ISO/IEC 27701:2025 (SGPI).
 
 Este documento registra as operações de tratamento de dados pessoais e dados pessoais sensíveis (biometria) executadas no escopo da plataforma **Face ID Platform API** da Twyn.
 

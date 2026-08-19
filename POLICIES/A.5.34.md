@@ -1,5 +1,5 @@
 # POL-DPP-001: Política de Proteção de Dados e Privacidade — TWYN Face ID Platform
-**ISO/IEC 27001:2022 Controle A.5.34 (Privacidade e proteção de dados pessoais) | ISO/IEC 27701:2019**
+**ISO/IEC 27001:2022 Controle A.5.34 (Privacidade e proteção de dados pessoais) | ISO/IEC 27701:2025**
 
 ---
 

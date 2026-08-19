@@ -1,6 +1,10 @@
 # Índice de Políticas de Segurança & Privacidade — TWYN
 
-> Este índice cataloga todas as políticas de conformidade do SGSI/SGPI da Twyn, mapeadas diretamente para os controles da ISO/IEC 27001:2022 e ISO/IEC 27701:2019.
+> Este índice cataloga todas as políticas de conformidade do SGSI/SGPI da Twyn, mapeadas diretamente para os controles da ISO/IEC 27001:2022 e ISO/IEC 27701:2025.
+>
+> ⚠ **Remapeamento pendente (issue #13):** as referências de *cláusula* do 27701 nas políticas ainda
+> apontam para a numeração **:2019** (ex.: 7.2.4, 7.3, 7.5.1). O 27701:**2025** renumerou essas cláusulas;
+> o remapeamento exige o crosswalk oficial da norma e **não** foi feito por substituição automática.
 
 | Controle ISO | Arquivo | Origem Técnica | Estágio | Aprovador |
 |---|---|---|---|---|
@@ -37,7 +41,7 @@
 | A.8.15 | [A.8.15.md](A.8.15.md) | SOP-ARC-001 - Manual de Arquitetura Segura.md | `APROVADA` | CISO/CEO |
 | A.8.19 | [A.8.19.md](A.8.19.md) | POL-CMP-001 - Politica de Gestao de Mudancas.md | `APROVADA` | CISO/CEO |
 | A.8.20 | [A.8.20.md](A.8.20.md) | SOP-ARC-001 - Manual de Arquitetura Segura.md | `APROVADA` | CISO/CEO |
-| A.8.24 | [A.8.24.md](A.8.24.md) | SOP-HDN-001 - Manual de Hardening.md | `APROVADA` | CISO/CEO |
+| A.8.24 | [A.8.24.md](A.8.24.md) | POL-CRY-001 - Politica de Criptografia e Gestao de Chaves.md | `RASCUNHO` | _pendente CTO/CEO_ |
 | A.8.25 | [A.8.25.md](A.8.25.md) | POL-SDP-001 - Politica de Desenvolvimento Seguro.md | `APROVADA` | CISO/CEO |
 | A.8.28 | [A.8.28.md](A.8.28.md) | POL-APP-001 - Requisitos de Aplicacao.md | `APROVADA` | CISO/CEO |
 | A.8.9 | [A.8.9.md](A.8.9.md) | SOP-HDN-001 - Manual de Hardening.md | `APROVADA` | CISO/CEO |
