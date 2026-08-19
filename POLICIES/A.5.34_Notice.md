@@ -1,5 +1,5 @@
 # SGP-NOTICE-001: Cláusula Padrão de Transparência para Clientes B2B — TWYN
-**ISO/IEC 27701:2019 Cláusula 7.2.2 (Fornecer informação para titulares de PII) & LGPD Artigo 9º**
+**ISO/IEC 27701:2025 Anexo A: A.1.3.3 e A.1.3.4 (Informações aos titulares) & LGPD Artigo 9º**
 
 ---
 

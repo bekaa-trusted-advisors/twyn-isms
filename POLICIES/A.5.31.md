@@ -10,7 +10,7 @@
 
 ## 1. Objetivo e Âmbito de Aplicação
 
-Esta política e minuta padrão regulam os termos contratuais de Proteção de Dados e Co-Controladoria Independente aplicáveis a todas as integrações comerciais da **TWYN Face ID Platform** com clientes corporativos (B2B), em estrita observância à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018), às normas ISO/IEC 27001:2022 e ISO/IEC 27701:2019, e ao **Parecer Jurídico Especializado Machado Meyer (Ref. 116764899)**.
+Esta política e minuta padrão regulam os termos contratuais de Proteção de Dados e Co-Controladoria Independente aplicáveis a todas as integrações comerciais da **TWYN Face ID Platform** com clientes corporativos (B2B), em estrita observância à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018), às normas ISO/IEC 27001:2022 e ISO/IEC 27701:2025 (Anexo A: A.1.2.8 controlador conjunto; A.3.13 requisitos legais), e ao **Parecer Jurídico Especializado Machado Meyer (Ref. 116764899)**.
 
 ---
 

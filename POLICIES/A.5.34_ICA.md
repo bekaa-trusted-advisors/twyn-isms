@@ -1,5 +1,5 @@
 # SGP-ICA-001: Minuta de Acordo de Controladores Independentes (ICA) — TWYN
-**ISO/IEC 27701:2019 Cláusula 7.5.1 (Compartilhamento de PII entre controladores) & LGPD Artigo 37**
+**ISO/IEC 27701:2025 Anexo A: A.1.2.8 (Controlador conjunto) e A.1.5.5 (Divulgação a terceiros) & LGPD Artigo 37**
 
 ---
 

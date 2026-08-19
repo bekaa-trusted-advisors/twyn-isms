@@ -1,5 +1,5 @@
 # SGP-PRO-001: Procedimento de Atendimento aos Direitos dos Titulares — TWYN
-**ISO/IEC 27701:2019 Cláusula 7.3 (Obrigações para com titulares de PII) & LGPD Artigo 18**
+**ISO/IEC 27701:2025 Anexo A: A.1.3.2/A.1.3.6/A.1.3.7/A.1.3.9/A.1.3.10 (Obrigações aos titulares) & LGPD Artigo 18**
 
 ---
 

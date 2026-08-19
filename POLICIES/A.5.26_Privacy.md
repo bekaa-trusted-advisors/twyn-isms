@@ -1,5 +1,5 @@
 # SGP-IRP-001: Plano de Resposta a Incidentes de Privacidade (Brechas PII) — TWYN
-**ISO/IEC 27701:2019 Cláusula 5.8 (Gestão de incidentes de SI aplicada à privacidade) & LGPD Artigo 48**
+**ISO/IEC 27701:2025 Anexo A: A.3.12 (Resposta a incidentes) & LGPD Artigo 48**
 
 ---
 
