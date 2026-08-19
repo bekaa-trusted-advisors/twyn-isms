@@ -37,21 +37,19 @@ jobs:
 
       - name: Validate Index Sincerity
         run: |
-          # Parse EVIDENCE/README.md and verify all files mentioned are physically present
-          grep -o 'EVIDENCE/[a-zA-Z0-9_-]\+\.txt' EVIDENCE/README.md | while read -r line; do
-            basename=$(basename "$line")
-            if [ ! -f "EVIDENCE/$basename" ]; then
-              echo "Error: Evidence file EVIDENCE/$basename is referenced in README.md but missing physically!"
+          # Relative markdown links ](file.txt) inside EVIDENCE/README.md must resolve
+          for fn in $(grep -oE '\]\([A-Za-z0-9_.-]+\.txt\)' EVIDENCE/README.md | sed -E 's/^\]\(|\)$//g'); do
+            if [ ! -f "EVIDENCE/$fn" ]; then
+              echo "Error: Evidence file EVIDENCE/$fn is referenced in README.md but missing physically!"
               exit 1
             fi
           done
           echo "✔ EVIDENCE/README.md references match physical files."
 
-          # Parse POLICIES/README.md and verify all files mentioned are physically present
-          grep -o 'POLICIES/[a-zA-Z0-9_\.-]\+\.md' POLICIES/README.md | while read -r line; do
-            basename=$(basename "$line")
-            if [ ! -f "POLICIES/$basename" ]; then
-              echo "Error: Policy file POLICIES/$basename is referenced in README.md but missing physically!"
+          # Relative markdown links ](file.md) inside POLICIES/README.md must resolve
+          for fn in $(grep -oE '\]\([A-Za-z0-9_.-]+\.md\)' POLICIES/README.md | sed -E 's/^\]\(|\)$//g'); do
+            if [ ! -f "POLICIES/$fn" ]; then
+              echo "Error: Policy file POLICIES/$fn is referenced in README.md but missing physically!"
               exit 1
             fi
           done
