@@ -65,3 +65,4 @@ Fase 2 da migração** (status `Audit Ready → In Progress`). Snapshots brutos 
 | 2026-08-18 | Reconciliação de prontidão (PR #2): IPC recalculado (~66%), inconsistências do SoA sinalizadas, 3 riscos reabertos, esqueleto SGPI 27701:2025. |
 | 2026-08-18 | Contrato **C-2026-08-18-01** registrado (Entregável #1 = migração 27701:2019→2025). Acesso nISO definido via HTTP API. Key UNSET — parado para injeção humana. |
 | 2026-08-19 | Key injetada; conexão nISO verificada (5/5 HTTP 200). Baseline `:2019` capturado. Divergência material repo × nISO registrada (nISO: 0 Implemented/69 Missing/17 críticos vs. repo "IPC 100%"). Próximo: propor Fase 2 (status → In Progress) para aprovação. |
+| 2026-08-19 | **Escrita nISO #1 APLICADA** (aprovada): `project.status` `Audit Ready` → `In Progress`. Verbo de escrita = `PUT /projects/:id` (PATCH → 404). Verificado por GET. Reversível (db:backup). |
