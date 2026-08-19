@@ -1,7 +1,7 @@
 # TWYN Face ID Platform — Postura de Segurança & Prontidão Global
 
 > **Repositório de Adequação Documental e Auditoria de Conformidade**  
-> Alinhado às normas **ABNT NBR ISO/IEC 27001:2022** (SGSI) e **ABNT NBR ISO/IEC 27701:2019** (SGPI).
+> Alinhado às normas **ABNT NBR ISO/IEC 27001:2022** (SGSI) e **ABNT NBR ISO/IEC 27701:2025** (SGPI).
 
 Este repositório consolida o arcabouço documental e o registro de evidências coletadas para suportar a certificação do Sistema de Gestão da Segurança da Informação e Privacidade (SGSIP) da Twyn.
 

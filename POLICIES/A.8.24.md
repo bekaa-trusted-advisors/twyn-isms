@@ -1,5 +1,5 @@
-# SOP-HDN-001: Manual de Configuração Segura (Hardening) — TWYN Face ID Platform
-**ISO/IEC 27001:2022 Controle A.8.9 (Gerenciamento de configuração)**
+# POL-CRY-001: Política de Criptografia e Gestão de Chaves — TWYN Face ID Platform
+**ISO/IEC 27001:2022 Controle A.8.24 (Uso de criptografia)**
 
 ---
 
@@ -7,42 +7,57 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Document ID** | SOP-HDN-001 |
-| **Version** | 1.0 (Oficial) |
-| **Autor** | Marcelo Mascarenhas (DevOps) |
-| **Aprovador** | Nizar Elouaer (CTO) |
-| **Data de Emissão** | 16/07/2026 |
-| **Status** | Aprovado |
+| **Document ID** | POL-CRY-001 |
+| **Version** | 1.0 (Rascunho) |
+| **Autor** | Consultoria Aegis (ENG-2026-001) |
+| **Aprovador** | _Pendente — CTO / CEO_ |
+| **Data de Emissão** | _Pendente de aprovação_ |
+| **Status** | `Rascunho — aguarda aprovação` |
+
+> Substitui o conteúdo anterior deste arquivo, que era o `SOP-HDN-001 (Hardening / A.8.9)` mismapeado ao
+> controle A.8.24. O Hardening permanece em `POLICIES/A.8.9.md`. Corrige o achado F8 / issue #12.
 
 ---
 
 ## 1. Objetivo
 
-Estabelecer os padrões mínimos de configuração segura (hardening) para os ativos de processamento hospedados na nuvem AWS correspondentes à Face ID Platform.
+Estabelecer as regras de uso de criptografia e gestão do ciclo de vida de chaves na TWYN Face ID
+Platform, garantindo a proteção de dados pessoais sensíveis (vetores biométricos) e de credenciais em
+repouso e em trânsito, em conformidade com a LGPD e a ISO/IEC 27001:2022 (A.8.24).
 
----
+## 2. Criptografia em Repouso (at rest)
 
-## 2. Hardening de Servidores e Nós (EC2/EKS)
+1.  **Padrão mínimo:** `AES-256`. Todos os volumes do banco RDS Aurora, snapshots, volumes EBS e buckets
+    de logs de produção devem estar criptografados em repouso.
+2.  **Vetores biométricos:** o vetor matemático (template facial) armazenado no RDS deve ser cifrado sob
+    chave dedicada do **AWS KMS**, distinta das chaves de uso geral.
+3.  **Chaves gerenciadas pelo cliente (CMK):** usar chaves do KMS de titularidade da TWYN (não chaves
+    padrão do serviço) para os dados sensíveis, permitindo rotação e revogação controladas.
 
-1.  **Imagens Mínimas:** Instâncias EC2 e nós do cluster Kubernetes (EKS) devem utilizar imagens oficiais mínimas e otimizadas para contêineres (ex: Bottlerocket ou Amazon Linux Minimal), desprovidas de compilers ou shells administrativos desnecessários.
-2.  **Portas de Acesso Bloqueadas:** Fica proibida a exposição pública de portas de gerenciamento (SSH/22 ou RDP/3389). Toda gerência remota administrativa deve trafegar exclusivamente pela VPN corporativa privada.
-3.  **Configurações de Baseline:** O time de DevOps deve auditar mensalmente a conformidade das instâncias AWS contra os baselines de segurança do CIS (Center for Internet Security) Benchmarks.
+## 3. Criptografia em Trânsito (in transit)
 
----
+1.  **TLS 1.2+ (preferencialmente 1.3):** toda a comunicação da API pública e entre serviços internos
+    deve usar TLS; conexões em texto claro são proibidas.
+2.  **Sem downgrade:** desabilitar suites e protocolos obsoletos (SSLv3, TLS 1.0/1.1).
 
-## 3. Hardening do Banco de Dados (RDS Aurora PostgreSQL)
+## 4. Gestão do Ciclo de Vida de Chaves
 
-1.  **Acesso Não-Público:** A propriedade `Publicly Accessible` nas configurações do RDS Aurora deve estar ativada no valor `False` (banco de dados isolado em sub-rede sem acesso externo).
-2.  **Criptografia Integrada:** A base de dados de produção do RDS e seus snapshots devem possuir criptografia AES-256 habilitada baseada em chave mestra exclusiva criada no AWS KMS.
-3.  **Logs de Auditoria:** Habilitar e exportar os logs PostgreSQL detalhados (logs de conexões e queries DDL) para o Amazon CloudWatch Logs, com monitoramento ativo.
+1.  **Custódia:** as chaves mestras residem no AWS KMS; material de chave não é exportado em texto claro.
+2.  **Rotação:** habilitar rotação automática anual das CMK do KMS; rotação imediata sob suspeita de
+    comprometimento.
+3.  **Segregação de funções:** quem administra chaves não deve ser o mesmo que administra os dados por
+    elas protegidos (alinhado a A.5.3).
+4.  **Segredos de aplicação:** proibida a gravação de segredos/senhas em texto claro no código ou em
+    variáveis de ambiente versionadas; usar **AWS Secrets Manager / 1Password**.
 
----
+## 5. Governança
 
-## 4. Revisão e Aprovação
+1.  Exceções a esta política exigem aprovação formal do CTO e registro de risco.
+2.  A conformidade é evidenciada por: config do KMS (rotação/políticas de chave), config de criptografia
+    do RDS/EBS/S3, e políticas de TLS dos endpoints. (Ver export em issue #9.)
 
-Esta política é aprovada pela Liderança Técnica da TWYN e revisada anualmente.
+## 6. Revisão e Aprovação
 
-**Nizar Elouaer**  
-CTO / Liderança de SI  
-TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
-*Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 191.189.44.112, Hash: f60dc8949feec94f2381bde99796404e)*
+Política a ser aprovada pela Liderança Técnica (CTO) e Diretoria Executiva (CEO) e revisada anualmente.
+
+> **Assinatura eletrônica:** _pendente de aprovação formal no nISO / TWYN GRC Portal._
