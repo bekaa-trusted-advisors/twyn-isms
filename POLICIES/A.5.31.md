@@ -4,7 +4,7 @@
 **Versão:** 1.0  
 **Data de Aprovação:** 22/07/2026  
 **Classificação:** Uso Interno e Clientes B2B  
-**Aprovadores:** Humberto Oliveira (CPO) / Kacio Lopes (CEO) / Ricardo Esper (DPO)  
+**Aprovadores:** Humberto Oliveira (CPO) / Kacio Lopes (CEO) / Ricardo Esper (Consultor)  
 
 ---
 
@@ -46,7 +46,7 @@ Cada Parte compromete-se a manter em seus respectivos canais de atendimento aos 
 
 | Versão | Data | Descrição da Alteração | Autor / Aprovador |
 |---|---|---|---|
-| 1.0 | 22/07/2026 | Edição inicial baseada no Parecer Machado Meyer Ref 116764899 | Ricardo Esper (DPO) / Kacio Lopes (CEO) |
+| 1.0 | 22/07/2026 | Edição inicial baseada no Parecer Machado Meyer Ref 116764899 | Ricardo Esper (Consultor) / Kacio Lopes (CEO) |
 
 ---
 **Assinatura Digital de Aprovação (nISO D1):**  

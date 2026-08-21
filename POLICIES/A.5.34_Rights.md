@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | SGP-PRO-001 |
 | **Version** | 1.0 (Oficial) |
-| **Elaborado por** | Ricardo Esper (DPO) |
+| **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Rosa Correia (COO / Operações) |
 | **Data de Emissão** | 20/07/2026 |
 | **Status** | Aprovado |
@@ -19,7 +19,7 @@
 ## 1. Canais de Atendimento
 
 Qualquer titular de dados pessoais processados no escopo da TWYN Face ID Platform pode exercer seus direitos através do canal oficial de privacidade gerenciado pelo DPO:
-*   **E-mail de Contato:** `dpo@twyn.com.br` (Encarregado Ricardo Esper)
+*   **E-mail de Contato:** `dpo@twyn.com` (Encarregado Humberto Oliveira)
 
 ---
 

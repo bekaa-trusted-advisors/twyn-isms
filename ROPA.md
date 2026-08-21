@@ -46,6 +46,6 @@ Este documento registra as operações de tratamento de dados pessoais e dados p
 
 ## 📅 Homologação e Revisão
 
-*   **Responsável pela Atualização:** Ricardo Esper (DPO/DPA)
+*   **Responsável pela Atualização:** Humberto Oliveira (DPO)
 *   **Última Revisão:** 2026-07-27
 *   **Status de Auditoria:** Conforme / Auditado

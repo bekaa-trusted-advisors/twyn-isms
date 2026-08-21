@@ -1,6 +1,6 @@
 # Tarefa — Vínculos e aplicabilidade no nISO (UI)
 
-**Para:** Ricardo Esper (DPO) — ou quem opera o nISO
+**Para:** Ricardo Esper (Consultor) — ou quem opera o nISO
 **De:** Consultoria Aegis — ENG-2026-001
 **Contexto:** os 17 achados críticos do readiness são "controle assinado sem evidência anexada". Boa
 parte da evidência **já existe** no store do nISO, apenas **não está vinculada** ao controle. Estas

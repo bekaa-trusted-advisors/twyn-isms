@@ -37,7 +37,7 @@ A homologação da AWS sob o relatório SOC 1 assegura que:
 
 ## 📅 Histórico de Homologação
 
-*   **Elaborado por:** Ricardo Esper (DPO / Consultor SGSIP)
+*   **Elaborado por:** Ricardo Esper (Consultor SGSIP)
 *   **Aprovado por:** Kacio Lopes (CEO)
 *   **Data de Homologação:** 2026-07-27
 *   **Revisão:** Anual (mediante novos relatórios SOC 1)
