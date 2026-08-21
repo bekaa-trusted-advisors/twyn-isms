@@ -72,7 +72,7 @@ Com base na opinião independente emitida pelos auditores da **Ernst & Young LLP
 
 ## 📅 Histórico de Revisão
 
-*   **Elaborado por:** Ricardo Esper (DPO / Consultor SGSIP)
+*   **Elaborado por:** Ricardo Esper (Consultor SGSIP)
 *   **Aprovado por:** Kacio Lopes (CEO)
 *   **Data de Homologação:** 2026-07-27
 *   **Próxima Revisão:** Julho de 2027 (ou mediante publicação de novo relatório SOC 3 anual)

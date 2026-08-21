@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | POL-DPP-001 |
 | **Version** | 1.1 (Oficial) |
-| **Autor** | Ricardo Esper (DPO) |
+| **Autor** | Ricardo Esper (Consultor) |
 | **Aprovador** | Kacio Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |
@@ -33,7 +33,7 @@ A TWYN adota salvaguardas lógicas rígidas para o processamento de imagens e te
 
 ## 3. Gestão de Direitos dos Titulares e Protocolo de Exceção (LGPD Art. 18 & Art. 11, II, "g")
 
-1.  O DPO Ricardo Esper é designado como encarregado exclusivo (`dpo@twyn.com`) para receber e processar demandas de direitos dos titulares (LGPD Art. 18).
+1.  O DPO Humberto Oliveira é designado como encarregado exclusivo (`dpo@twyn.com`) para receber e processar demandas de direitos dos titulares (LGPD Art. 18).
 2.  **Protocolo de Atendimento a Solicitações de Exclusão (DSAR):**
     *   Quando um titular solicitar a exclusão de seus vetores biométricos (Art. 18, VI), o DPO avaliará se os registros estão vinculados a investigações de fraude ativas ou retenção obrigatória de segurança.
     *   Caso a exclusão seja aplicável, a Engenharia efetuará a remoção definitiva do vetor em até **15 dias úteis**, gerando o hash de auditoria da instrução `DELETE`.

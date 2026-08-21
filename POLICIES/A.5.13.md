@@ -10,7 +10,7 @@
 |-------|-------|
 | **Document ID** | POL-GOV-001 |
 | **Version** | 1.0 (Oficial) |
-| **Elaborado por** | Ricardo Esper (DPO & Consultor) |
+| **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Kacio Lopes (CEO) |
 | **Data de Emissão** | 21/07/2026 |
 | **Status** | Aprovado |

@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | POL-ACP-001 (POL-IAM-002) |
 | **Version** | 1.0 (Oficial) |
-| **Autor** | Ricardo Esper (DPO) |
+| **Autor** | Ricardo Esper (Consultor) |
 | **Aprovador** | Kacio Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |

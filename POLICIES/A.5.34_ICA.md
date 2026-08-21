@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | SGP-ICA-001 |
 | **Version** | 1.0 (Oficial) |
-| **Elaborado por** | Ricardo Esper (DPO) |
+| **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Enes Degasperi (CFO / Financeiro) |
 | **Data de Emissão** | 20/07/2026 |
 | **Status** | Aprovado |

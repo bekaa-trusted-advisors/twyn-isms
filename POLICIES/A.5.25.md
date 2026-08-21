@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | POL-IRP-001 |
 | **Version** | 1.1 (Oficial) |
-| **Autor** | Ricardo Esper (DPO) |
+| **Autor** | Ricardo Esper (Consultor) |
 | **Aprovador** | Kacio Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |
@@ -25,7 +25,7 @@ Garantir uma resposta coordenada, rápida e eficaz a incidentes de segurança da
 ## 2. Comitê de Resposta a Incidentes (CSIRT)
 
 Fica instituído o Comitê CSIRT permanente da TWYN com os seguintes papéis:
-*   **Coordenador do CSIRT & DPO:** Ricardo Esper (responsável por coordenação legal, forense de privacidade e notificações à ANPD).
+*   **Coordenação Jurídica e de Privacidade (DPO):** Humberto Oliveira (DPO — responsável por coordenação legal, forense de privacidade e notificações à ANPD).
 *   **Líder de Operações de Segurança & CIO:** Humberto Oliveira (responsável por triagem inicial de alertas, análise de rede e segurança de acessos).
 *   **Líder Técnico de Contenção & DevOps:** Marcelo Mascarenhas (responsável pelo isolamento técnico de instâncias AWS e mitigação lógica).
 *   **CTO & CISO:** Nizar Elouaer (responsável por aprovar modificações de código de segurança e conformidade técnica).
@@ -56,7 +56,7 @@ Para qualquer incidente classificado como P0/P1:
 
 ## 5. Relações com Autoridades e Grupos de Interesse (A.5.5, A.5.6)
 
-1.  **Notificação ANPD (A.5.5):** Em incidentes envolvendo PII biométrica que representem risco para os direitos dos titulares, o DPO Ricardo Esper deve notificar a ANPD em até **2 dias úteis** da ciência do fato.
+1.  **Notificação ANPD (A.5.5):** Em incidentes envolvendo PII biométrica que representem risco para os direitos dos titulares, o DPO Humberto Oliveira deve notificar a ANPD em até **2 dias úteis** da ciência do fato.
 2.  **Grupos de Interesse (A.5.6):** Enviar relatórios de inteligência de ameaças ao **CERT.br** e colaborar ativamente com fóruns de privacidade (ANPPD).
 
 ---

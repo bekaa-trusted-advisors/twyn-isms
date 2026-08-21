@@ -9,7 +9,7 @@
 |-------|-------|
 | **Document ID** | SGP-NOTICE-001 |
 | **Version** | 1.0 (Oficial) |
-| **Elaborado por** | Ricardo Esper (DPO) |
+| **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Rosa Correia (COO / Operações) |
 | **Data de Emissão** | 20/07/2026 |
 | **Status** | Aprovado |
