@@ -19,7 +19,7 @@
 ## 1. Canais de Atendimento
 
 Qualquer titular de dados pessoais processados no escopo da TWYN Face ID Platform pode exercer seus direitos através do canal oficial de privacidade gerenciado pelo DPO:
-*   **E-mail de Contato:** `dpo@twyn.com` (Encarregado Humberto Oliveira)
+*   **E-mail de Contato:** `dpo@twyn.com` (Encarregado Bekaa Trusted Advisors (PJ))
 
 ---
 

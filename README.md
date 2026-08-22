@@ -41,7 +41,8 @@ As operações incluem:
 |---|---|---|---|
 | **Kacio Lopes** | CEO | Sponsor Executivo / Aprovador Geral | `kacio@twyn.com` |
 | **Nizar Elouaer** | CTO | Liderança de Segurança Lógica e Infraestrutura | `nizar@twyn.com` |
-| **Humberto Oliveira** | DPO (Encarregado) | Encarregado pelo Tratamento de Dados Pessoais — LGPD Art. 41 (designado até a conclusão da certificação, ref. GOV-DPO-001) | `dpo@twyn.com` |
+| **Bekaa Trusted Advisors** (PJ) | DPO / Encarregado terceirizado | Encarregado pelo Tratamento de Dados Pessoais — LGPD Art. 41, modalidade DPO-as-a-Service, com independência (designado até a conclusão da certificação, ref. GOV-DPO-001; resp. e CNPJ a preencher) | `dpo@twyn.com` |
+| **Humberto Oliveira** | CIO / Líder de Operações de Segurança | Operações de segurança, identidade e acesso (papéis internos — **não** acumula o Encarregado/DPO) | _(e-mail a preencher)_ |
 | **Ricardo Esper** | Consultor externo (Aegis) | Consultoria de adequação ISO 27001/27701 (ENG-2026-001) — sem papel executivo no SGSIP (não é DPO nem CISO) | `privacy@t4isb.com` |
 | **Rosa Correia** | COO | Liderança de RH e Operações | `rosa@twyn.com` |
 | **Marcelo Mascarenhas** | DevOps Lead (T4ISB) | Engenharia de Nuvem, Backup e Segurança de Rede | `marcelo.mascarenhas@t4isb.com` |

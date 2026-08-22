@@ -32,7 +32,7 @@ Todos os fornecedores de tecnologia e serviços que possuem acesso lógico a dad
 A homologação de novos fornecedores de tecnologia de informação e comunicação (TIC) na TWYN segue os passos estruturados abaixo:
 
 1.  **Questionário KYV (Know Your Vendor):** O fornecedor sob avaliação deve preencher o formulário KYV de privacidade e segurança da informação.
-2.  **Análise de Risco:** O DPO Humberto Oliveira analisa as respostas do formulário, classificando o fornecedor como Risco Alto (acesso a biometria/código), Médio (acesso a logs de negócio) ou Baixo (acesso administrativo geral).
+2.  **Análise de Risco:** O Encarregado (DPO), Bekaa Trusted Advisors (PJ), analisa as respostas do formulário, classificando o fornecedor como Risco Alto (acesso a biometria/código), Médio (acesso a logs de negócio) ou Baixo (acesso administrativo geral).
 3.  **Parecer de Homologação:** A contratação é liberada formalmente pelo CFO Enes Degasperi apenas após parecer técnico de privacidade sem ressalvas impeditivas.
 
 ---
