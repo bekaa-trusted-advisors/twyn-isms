@@ -58,13 +58,18 @@ da CONTRATANTE.
 
 ## Cláusula 6 — Vigência
 
-Vigência a partir da assinatura **até a conclusão do processo de certificação** ISO/IEC 27001 + 27701
-da CONTRATANTE, renovável mediante termo aditivo, e rescindível por qualquer das partes mediante aviso
-prévio de `«prazo — a definir»` dias.
+Vigência de **12 (doze) meses** a partir da data de assinatura, renovável por termo aditivo,
+abrangendo o período do processo de certificação ISO/IEC 27001 + 27701 da CONTRATANTE. Rescindível por
+qualquer das partes mediante aviso prévio de **30 (trinta) dias** _(prazo padrão sugerido — ajustável
+pelas partes)_.
 
-## Cláusula 7 — Remuneração
+## Cláusula 7 — Remuneração e reajuste
 
-Valor, forma e periodicidade de pagamento: `«a definir pelas partes — não preenchido»`.
+1. A CONTRATANTE pagará à CONTRATADA a remuneração mensal de **R$ 4.500,00 (quatro mil e quinhentos
+   reais)**.
+2. O valor será **reajustado anualmente pela variação acumulada do IPCA/IBGE** (ou índice que o
+   substitua), a cada 12 (doze) meses de vigência.
+3. Data de vencimento e forma de pagamento: `«a definir pelas partes»`.
 
 ## Cláusula 8 — Foro
 
