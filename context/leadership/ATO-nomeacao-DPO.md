@@ -71,21 +71,19 @@ titulares de dados, nos termos da LGPD e do SGPI (ISO/IEC 27701:2025).
 - Documentos anteriores que nomeavam Humberto Oliveira ou Ricardo Esper como DPO ficam **superados
   por este ato**.
 
-## 5. Aprovação
+## 5. Condições para entrada em vigor
 
-**Kacio Lopes**
-CEO — TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA
+Este ato entra em vigor na data da assinatura do CEO, condicionado a:
+1. Celebração do **Contrato de Prestação de Serviços de Encarregado (DPO-as-a-Service)** entre a
+   TWYN e a Bekaa Tecnologia Ltda (ver `CONTRATO-DPO-Bekaa.md`).
+2. Anexação do **Cartão CNPJ oficial** da Bekaa Tecnologia Ltda como evidência do SGPI.
+3. Designação da **parte independente** responsável pela auditoria interna (ISO/IEC 27001 cl. 9.2),
+   sem vínculo com a Bekaa.
 
-> _Assinatura eletrônica pendente — este ato entra em vigor na data da assinatura do CEO e da
-> celebração do respectivo contrato de prestação de serviço de Encarregado (DPO-as-a-Service)._
+## 6. Assinatura
 
----
+**Kacio Lopes** — CEO, TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA
 
-### Pendências para finalização
+Assinatura: ______________________________  Data: ____ / ____ / ______
 
-- [x] **CNPJ da Bekaa** — 28.811.817/0001-69 (a confirmar no Cartão CNPJ oficial).
-- [x] **Profissional responsável** — Adriana Sforcini Lavrik Esper (≠ Ricardo Esper).
-- [ ] **Cartão CNPJ oficial da Receita** anexado como evidência.
-- [ ] **Contrato de DPO-as-a-Service** celebrado.
-- [ ] **Designação da parte independente** para a auditoria interna 9.2 (≠ Bekaa).
-- [ ] **Assinatura do CEO** (Kacio Lopes).
+> _Instrumento pendente de assinatura. Nenhuma assinatura foi aposta por terceiros._

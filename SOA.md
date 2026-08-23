@@ -150,6 +150,6 @@ em evidência objetiva, ou (b) rebaixar/abrir o controle. Nenhuma correção de 
 
 Este documento é gerado e validado eletronicamente contra o repositório de produção do nISO.
 
-*   **Responsável Técnico de Segurança (CISO):** _designação pendente — o cargo de CISO encontra-se vago (ENG-2026-001). A assinatura anterior atribuída a Ricardo Esper foi retirada: Ricardo Esper atua exclusivamente como consultor externo (Aegis) e não é CISO nem DPO da TWYN._
+*   **Responsável pela Segurança da Informação (função):** a ISO/IEC 27001 (cláusula 5.3 / A.5.2) **não exige um cargo intitulado "CISO"** — exige que as responsabilidades de segurança estejam **atribuídas**. Na TWYN, essa função é **atribuída ao cargo de Humberto Oliveira (CIO / Líder de Operações de Segurança)**, conforme roster de governança. _A assinatura anteriormente atribuída a Ricardo Esper foi retirada: Ricardo atua exclusivamente como consultor externo (Aegis), sem papel executivo. Homologação da SoA pelo responsável de segurança **pendente de assinatura**._
 *   **Encarregado (DPO):** Bekaa Tecnologia Ltda (PJ) — homologação da SoA **pendente de assinatura** (ref. GOV-DPO-001).
 *   **Aprovador Executivo (CEO):** Kacio Lopes (Assinado eletronicamente via nISO em 2026-07-27)
