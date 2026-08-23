@@ -53,7 +53,7 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.89** | A.8.9 Gestão de Configuração | `Missing` | 3 | CISO | Manual SOP-HDN-001 define os baselines de hardening para RDS e EKS.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.510** | A.5.10 Uso Aceitável de Informações e Outros Ativos Associados | `Implemented` | 4 | CISO | Defines acceptable behavior for all personnel.... (Aprovação CISO pendente) |
 | **A.511** | A.5.11 Devolução de Ativos | `Implemented` | 3 | CISO | POL-HR-001 impõe a devolução de notebooks e chaves de acesso em até 2 dias.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.512** | A.5.12 Classificação da Informação | `Implemented` | 3 | CISO | Política POL-DCP-001 de classificação de informações biométricas implementada.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
+| **A.512** | A.5.12 Classificação da Informação | `Implemented` | 3 | CISO | Política POL-GOV-001 de classificação de informações biométricas implementada.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.513** | A.5.13 Rotulagem da Informação | `Implemented` | 3 | CISO | Rotulagem de dados biométricos sensíveis aplicada via tagging AWS e tags em banco de dados.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.514** | A.5.14 Transferência de Informações | `Implemented` | 3 | CISO | POL-TX-001 define o uso exclusivo de HTTPS/SFTP e proíbe plaintext de dados sensíveis.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.515** | A.5.15 Controle de Acesso | `Implemented` | 4 | CISO | Logical access control is universally required.... (Aprovação CISO pendente) |
@@ -74,7 +74,7 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.530** | A.5.30 Prontidão da TIC para a Continuidade dos Negócios | `Missing` | 4 | IT Manager | BCP Elaborado. RTO: 4 horas, RPO: 1 hora. Restore RDS testado em sandbox.... (Aprovação CISO pendente) |
 | **A.531** | A.5.31 Requisitos Legais, Estatutários, Regulamentares e Contratuais | `Implemented` | 0 | CISO | Compliance obligations exist for all organizations.... |
 | **A.532** | A.5.32 Direitos de Propriedade Intelectual | `Missing` | 0 | CISO | IP protection applies to all organizations.... |
-| **A.533** | A.5.33 Proteção de Registros | `Implemented` | 4 | CISO | POL-DCP-001 define a retenção de templates de face ligada ao contrato e descarte seguro em 15 dias.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
+| **A.533** | A.5.33 Proteção de Registros | `Implemented` | 4 | CISO | POL-GOV-001 define a retenção de templates de face ligada ao contrato e descarte seguro em 15 dias.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.534** | A.5.34 Privacidade e Proteção de Dados Pessoais (PII) | `Implemented` | 5 | CISO | PII processing identified — privacy controls mandatory.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.535** | A.5.35 Análise Crítica Independente da Segurança da Informação | `Missing` | 0 | CISO | Independent assurance is an ISMS requirement.... |
 | **A.536** | A.5.36 Conformidade com Políticas, Regras e Normas de Segurança da Informação | `Missing` | 0 | CISO | Compliance verification is universal.... |
