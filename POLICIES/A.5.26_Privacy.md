@@ -24,7 +24,7 @@ Este plano define a rotina de atuação do CSIRT (Time de Resposta a Incidentes)
 
 ## 2. Fluxo de Atuação e Contenção
 
-1.  **Detecção & Triagem:** Recebimento e triagem do alerta do AWS GuardDuty ou do Datadog pela CPO Humberto Oliveira. Havendo indício de exposição de PII, o Encarregado (DPO), Bekaa Trusted Advisors (PJ), declara o início do incidente de privacidade.
+1.  **Detecção & Triagem:** Recebimento e triagem do alerta do AWS GuardDuty ou do Datadog pela CIO Humberto Oliveira. Havendo indício de exposição de PII, o Encarregado (DPO), Bekaa Trusted Advisors (PJ), declara o início do incidente de privacidade.
 2.  **Contenção Lógica Imediata:** sob a coordenação da CIO, o DevOps (Marcelo Mascarenhas) isola os bancos de dados RDS Aurora, revoga chaves IAM suspeitas e bloqueia portas VPC.
 3.  **Avaliação de Impacto (Risco):** O Encarregado (DPO), Bekaa Trusted Advisors (PJ), avalia a severidade. Como os hashes biométricos armazenados são irreversíveis e pseudoanônimos (desprovidos de CPFs ou nomes civis diretos), a probabilidade de reidentificação dos titulares por terceiros é classificada como **Baixa/Nula**.
 
