@@ -41,6 +41,21 @@ como evidência de exclusão.
 `SOC 1/2/3 Reports`, `dpaAWS.pdf`, `scc_AWS_Service_Terms…pdf` estão com `control_id` nulo →
 vincular a A.5.19/A.5.22 (fornecedor AWS), A.5.23 (nuvem) e A.5.34 (transferência), conforme o caso.
 
+## 5. Vínculos de privacidade 27701 (lote B do #14)
+
+Evidência já **`conforme`** no store, porém **órfã ou vinculada a controle 27001** — re-vincular ao
+controle **27701** correspondente; depois elevar o controle a `Implemented`.
+
+| Controle 27701 | id do controle | Evidência (store) | Situação atual |
+|---|---|---|---|
+| **A.1.2.6** Avaliação de impacto (DPIA) | `mszfwg85tdenmudpodd` | `Relatorio_DPIA_Privacidade_Fase9` (órfã) + `SGP-DPIA-001` (em ctrl-a534) | re-vincular ao A.1.2.6 |
+| **A.1.3.10** Processo de atendimento | `mszfwgkcdi4s08n4z06` | `Governanca_DPO_Canal_Atendimento_Fase25` (em ctrl-a81) | re-vincular ao A.1.3.10 |
+| **A.1.4.5** Objetivos de minimização | `mszfwgpe8fzwl2jsoes` | `Diretrizes_Anonimizacao_Privacidade_Fase23` (órfã) | re-vincular ao A.1.4.5 |
+| **A.1.5.4** Registros de transferências | `mszfwgxhgw4hgtbx51` | `Matriz_Transferencia_Internacional_Fase24` (órfã) | re-vincular após corrigir "SCC" na matriz (ver A.1.5.2 no SGPI-SoA) |
+
+> Os 21 controles do lote A já foram elevados a `Implemented` via API (com lastro citado na
+> descrição). Estes 4 dependem da UI porque a API do papel consultor **não re-vincula evidência**.
+
 ---
 **Resultado esperado:** os 17 críticos caem para ~3 (os que dependem de export do AWS — ver tarefa Ops),
-e o readiness melhora materialmente.
+e o readiness melhora materialmente. No 27701, os 4 re-vínculos acima levam o SGPI de 21 → 25 Implemented.
