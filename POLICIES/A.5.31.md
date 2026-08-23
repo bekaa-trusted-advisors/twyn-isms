@@ -4,7 +4,7 @@
 **Versão:** 1.0  
 **Data de Aprovação:** 22/07/2026  
 **Classificação:** Uso Interno e Clientes B2B  
-**Aprovadores:** Humberto Oliveira (CPO) / Kacio Lopes (CEO) / Ricardo Esper (Consultor)  
+**Aprovadores:** Humberto Oliveira (CIO) / Kacio Lopes (CEO) / Ricardo Esper (Consultor)  
 
 ---
 

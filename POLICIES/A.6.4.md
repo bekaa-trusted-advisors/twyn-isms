@@ -49,7 +49,7 @@ Violações comprovadas das políticas de segurança da informação, código de
 
 No encerramento de qualquer vínculo profissional ou contratual, o fluxo de offboarding deve ser concluído rigorosamente:
 
-1.  **Revogação de Acesso Lógico:** O time de DevOps (Marcelo Mascarenhas) sob comando da CPO Humberto Oliveira realiza a imediata revogação de acessos a chaves SSH, contas IAM da AWS, GitHub, e e-mails corporativos em até no máximo **2 horas** após a formalização do desligamento.
+1.  **Revogação de Acesso Lógico:** O time de DevOps (Marcelo Mascarenhas) sob comando da CIO Humberto Oliveira realiza a imediata revogação de acessos a chaves SSH, contas IAM da AWS, GitHub, e e-mails corporativos em até no máximo **2 horas** após a formalização do desligamento.
 2.  **Devolução de Equipamentos (Ativos):** O colaborador deve devolver todos os ativos de propriedade da TWYN (notebooks corporativos, tokens de MFA físico, crachás) em até **2 dias úteis**.
 3.  **Termo de Quitação de SI:** O colaborador assina o termo de encerramento, atestando a devolução integral de ativos físicos e a ciência da manutenção das obrigações do NDA (A.6.5).
 

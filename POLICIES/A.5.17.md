@@ -25,7 +25,7 @@ Definir as diretrizes para o controle de acesso lógico e gerenciamento de ident
 ## 2. Diretrizes de Gestão de Identidades e SSO (A.5.15, A.5.16)
 
 1.  **SSO Centralizado:** O acesso a ferramentas SaaS corporativas e ambientes em nuvem (Slack, GitHub, AWS, Datadog) deve ser centralizado e autenticado por meio do Provedor de Identidade (IdP) Okta/Auth0.
-2.  **Ciclo de Vida de Acessos:** A concessão ou alteração de acessos lógicos deve ser aprovada formalmente pela Diretoria de Identidade, Acesso e Segurança (CPO Humberto Oliveira) e executada pelo time de DevOps. Em caso de desligamento, o RH deve notificar o DevOps para revogar todos os acessos lógicos em até **2 horas úteis** (conforme `POL-HR-001`).
+2.  **Ciclo de Vida de Acessos:** A concessão ou alteração de acessos lógicos deve ser aprovada formalmente pela Diretoria de Identidade, Acesso e Segurança (CIO Humberto Oliveira) e executada pelo time de DevOps. Em caso de desligamento, o RH deve notificar o DevOps para revogar todos os acessos lógicos em até **2 horas úteis** (conforme `POL-HR-001`).
 
 ---
 
@@ -39,7 +39,7 @@ Definir as diretrizes para o controle de acesso lógico e gerenciamento de ident
 
 ## 4. Revisão Periódica de Direitos de Acesso (A.5.18)
 
-1.  A Diretoria de Identidade, Acesso e Segurança (CPO Humberto Oliveira) deve realizar a auditoria completa de acessos concedidos nas contas AWS e ferramentas SaaS corporativas a cada **6 meses**, revogando imediatamente privilégios excessivos ou de contas inativas.
+1.  A Diretoria de Identidade, Acesso e Segurança (CIO Humberto Oliveira) deve realizar a auditoria completa de acessos concedidos nas contas AWS e ferramentas SaaS corporativas a cada **6 meses**, revogando imediatamente privilégios excessivos ou de contas inativas.
 
 ---
 
