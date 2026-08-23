@@ -10,7 +10,7 @@
 | Campo | Valor |
 |---|---|
 | **Document ID** | GOV-DPO-001 |
-| **Versão** | 2.0 (Rascunho) — substitui a v1.0 (que nomeava Humberto Oliveira) |
+| **Versão** | 2.1 (Rascunho) — substitui v1.0 (Humberto Oliveira) e v2.0 (Bekaa sem identificação) |
 | **Elaborado por** | Consultoria Aegis (ENG-2026-001) |
 | **A ser assinado por** | Kacio Lopes — CEO |
 | **Status** | `Rascunho — aguarda assinatura do CEO e contrato de DPO-as-a-Service` |
@@ -20,16 +20,18 @@
 
 ## 1. Nomeação (Encarregado pessoa jurídica)
 
-A Diretoria Executiva da TWYN nomeia a **Bekaa Trusted Advisors** (pessoa jurídica,
-CNPJ `«CNPJ da Bekaa — a preencher»`) como **Encarregado pelo Tratamento de Dados Pessoais
-(DPO — Data Protection Officer)** da organização, na modalidade **terceirizada
-(DPO-as-a-Service)**, responsável perante a ANPD e os titulares de dados, nos termos da LGPD
-e do SGPI (ISO/IEC 27701:2025).
+A Diretoria Executiva da TWYN nomeia a **Bekaa Tecnologia Ltda** (CNPJ **28.811.817/0001-69**)
+como **Encarregado pelo Tratamento de Dados Pessoais (DPO — Data Protection Officer)** da
+organização, na modalidade **terceirizada (DPO-as-a-Service)**, responsável perante a ANPD e os
+titulares de dados, nos termos da LGPD e do SGPI (ISO/IEC 27701:2025).
 
-- **Profissional responsável designado pela Bekaa (pessoa natural de contato):**
-  `«nome do responsável — a preencher»`.
-- **Restrição de segregação:** o profissional responsável **não pode ser Ricardo Esper**, que
-  atua como consultor externo de adequação (ENG-2026-001) — ver seção 4.
+- **Profissional responsável designada pela Bekaa (pessoa natural de contato):**
+  **Adriana Sforcini Lavrik Esper** (sócia da Bekaa Tecnologia Ltda).
+- **Canal oficial:** `dpo@twyn.com`.
+
+> _Dados cadastrais da Bekaa identificados por consulta pública (situação cadastral ATIVA); devem
+> ser confirmados contra o **Cartão CNPJ oficial da Receita Federal**, anexado como evidência do
+> SGPI antes da assinatura._
 
 ## 2. Atribuições (LGPD Art. 41, §2º)
 
@@ -41,34 +43,33 @@ e do SGPI (ISO/IEC 27701:2025).
 
 ## 3. Canal de contato do Encarregado
 
-- **Canal oficial (funcional):** `dpo@twyn.com` — roteado ao serviço de DPO da Bekaa e ao
-  profissional responsável designado.
-- As solicitações de titulares (DSAR) e comunicações de privacidade são recebidas e tratadas
-  por este canal.
+- **Canal oficial (funcional):** `dpo@twyn.com` — roteado ao serviço de DPO da Bekaa e à
+  profissional responsável designada.
+- As solicitações de titulares (DSAR) e comunicações de privacidade são recebidas e tratadas por
+  este canal.
 
-## 4. Independência, segregação de funções e controles compensatórios
+## 4. Independência e segregação (consultor × auditor)
 
-- O Encarregado (DPO) atua com **independência funcional**, com **acesso direto à alta direção**,
-  e **não determina as finalidades e os meios** do tratamento (LGPD; ISO/IEC 27701 cl. 5.3;
-  ISO/IEC 27001 A.5.3). Por ser **externo à operação**, evita o conflito de interesse típico de
-  cargos internos (CEO, CTO, CIO, COO, operações de segurança).
-- **Dupla atuação da Bekaa (declaração de conflito e mitigação):** a Bekaa também presta a
-  **consultoria de adequação** deste engajamento (ENG-2026-001). Para preservar a independência:
-  1. A **auditoria interna (ISO/IEC 27001 cl. 9.2)** do SGSI/SGPI **não** pode ser executada pela
-     Bekaa — deve ficar a cargo de **parte independente distinta** (evita autoauditoria do que a
-     própria Bekaa implementou e supervisiona como DPO).
-  2. A dupla função (consultor de adequação + DPO terceirizado) fica **formalmente declarada**,
-     com a **auditoria interna independente** como controle compensatório da ameaça de
-     autorrevisão.
-  3. Recomenda-se, quando viável, migrar o papel de DPO para firma **distinta** da consultoria de
-     adequação — decisão comercial da TWYN/Bekaa.
-- **Ricardo Esper** atua exclusivamente como **consultor externo** (Aegis / ENG-2026-001) e **não**
-  exerce o papel de DPO, de responsável pelo DPO terceirizado, nem de CISO da TWYN.
-- **Humberto Oliveira** retorna aos seus papéis internos (CIO / Líder de Operações de Segurança e
-  as funções internas de privacidade/acesso descritas nas políticas), **sem** acumular o papel de
-  Encarregado — o que **remove o conflito de segregação** anteriormente apontado.
-- Documentos anteriores que nomeavam Humberto Oliveira (v1.0) ou Ricardo Esper como DPO ficam
-  **superados por este ato**.
+- A **Bekaa Tecnologia Ltda** exerce, neste engajamento, os papéis de **consultoria de adequação** e
+  de **Encarregado (DPO) terceirizado** — ambos de **assessoria/implementação e supervisão de
+  privacidade**, **não de auditoria**. A profissional responsável designada é **Adriana Sforcini
+  Lavrik Esper** (sócia).
+- **Ricardo Esper** atua **exclusivamente como consultor** — **não é auditor**, não é a responsável
+  pelo DPO, nem CISO.
+- **A independência que a norma exige — a da auditoria — está preservada:**
+  1. a **auditoria interna (ISO/IEC 27001 cl. 9.2)** é executada por **terceiro independente**, sem
+     vínculo com a Bekaa;
+  2. a **auditoria de certificação** (Stage 1/2) é conduzida pelo **organismo certificador**,
+     independente por definição.
+  Ou seja, **ninguém audita o próprio trabalho**: quem assessora/implementa e supervisiona (Bekaa)
+  **não** é quem audita.
+- **Independência funcional do Encarregado:** o DPO é **externo à operação**, atua com acesso direto
+  à alta direção e **não determina as finalidades e os meios** do tratamento (LGPD; ISO/IEC 27701
+  cl. 5.3; ISO/IEC 27001 A.5.3).
+- **Humberto Oliveira** permanece em seus papéis internos (CIO / Líder de Operações de Segurança;
+  Diretoria de Identidade, Acesso e Segurança), **sem** acumular o Encarregado.
+- Documentos anteriores que nomeavam Humberto Oliveira ou Ricardo Esper como DPO ficam **superados
+  por este ato**.
 
 ## 5. Aprovação
 
@@ -80,10 +81,11 @@ CEO — TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA
 
 ---
 
-### Pendências para finalização (não preenchidas por integridade — sem invenção de dados)
+### Pendências para finalização
 
-- [ ] **CNPJ da Bekaa Trusted Advisors** (seção 1).
-- [ ] **Nome do profissional responsável** designado pela Bekaa (seção 1) — ≠ Ricardo Esper.
+- [x] **CNPJ da Bekaa** — 28.811.817/0001-69 (a confirmar no Cartão CNPJ oficial).
+- [x] **Profissional responsável** — Adriana Sforcini Lavrik Esper (≠ Ricardo Esper).
+- [ ] **Cartão CNPJ oficial da Receita** anexado como evidência.
 - [ ] **Contrato de DPO-as-a-Service** celebrado.
-- [ ] **Designação da parte independente** para a auditoria interna 9.2 (seção 4).
+- [ ] **Designação da parte independente** para a auditoria interna 9.2 (≠ Bekaa).
 - [ ] **Assinatura do CEO** (Kacio Lopes).

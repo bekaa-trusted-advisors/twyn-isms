@@ -151,5 +151,5 @@ em evidência objetiva, ou (b) rebaixar/abrir o controle. Nenhuma correção de 
 Este documento é gerado e validado eletronicamente contra o repositório de produção do nISO.
 
 *   **Responsável Técnico de Segurança (CISO):** _designação pendente — o cargo de CISO encontra-se vago (ENG-2026-001). A assinatura anterior atribuída a Ricardo Esper foi retirada: Ricardo Esper atua exclusivamente como consultor externo (Aegis) e não é CISO nem DPO da TWYN._
-*   **Encarregado (DPO):** Bekaa Trusted Advisors (PJ) — homologação da SoA **pendente de assinatura** (ref. GOV-DPO-001).
+*   **Encarregado (DPO):** Bekaa Tecnologia Ltda (PJ) — homologação da SoA **pendente de assinatura** (ref. GOV-DPO-001).
 *   **Aprovador Executivo (CEO):** Kacio Lopes (Assinado eletronicamente via nISO em 2026-07-27)

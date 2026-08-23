@@ -46,6 +46,6 @@ Este documento registra as operações de tratamento de dados pessoais e dados p
 
 ## 📅 Homologação e Revisão
 
-*   **Responsável pela Atualização:** Bekaa Trusted Advisors (Encarregado/DPO — PJ)
+*   **Responsável pela Atualização:** Bekaa Tecnologia Ltda (Encarregado/DPO — PJ)
 *   **Última Revisão:** 2026-07-27
 *   **Status de Auditoria:** Conforme / Auditado
