@@ -33,7 +33,7 @@ Este documento registra as operações de tratamento de dados pessoais e dados p
 
 *   **Destinatários dos Dados:** Os parceiros B2B solicitantes recebem apenas a resposta booleana de validação (verdadeiro/falso + score de similaridade). Não há compartilhamento dos vetores matemáticos biométricos com nenhum terceiro.
 *   **Transferência Internacional de Dados:** Os servidores e bancos de dados de produção estão hospedados no datacenter da AWS na região dos EUA (`us-east-1`).
-*   **Mecanismo de Salvaguarda da LGPD:** Esta transferência está amparada contratualmente por cláusulas de privacidade padrão corporativas (Standard Contractual Clauses - SCCs) e no Termo de Diligência de Privacidade (SGP-KYV-001).
+*   **Mecanismo de Salvaguarda da LGPD:** A transferência internacional observa a **LGPD, Arts. 33 a 36** — em especial as **cláusulas-padrão contratuais** aprovadas pela ANPD (Resolução CD/ANPD nº 19/2024) como garantia adequada (Art. 33, II) — combinadas com as obrigações do Termo de Diligência de Privacidade (SGP-KYV-001). _(Correção ENG-2026-001: o enquadramento anterior citava "Standard Contractual Clauses (SCCs)", mecanismo do GDPR europeu; sob a LGPD a base é a dos Arts. 33–36 e as cláusulas-padrão da ANPD.)_
 
 ---
 
