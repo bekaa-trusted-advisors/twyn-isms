@@ -70,3 +70,20 @@
 3. **C2 (12 documentais):** redijo em ondas (começando por reaproveitar POL-IRP-001 para A.5.27/A.6.8
    e políticas curtas para A.8.7/A.8.17/A.8.1); A.5.23/A.6.7 saem com correção de aplicabilidade.
 4. **A.5.35:** encaminhar ao #17 (auditoria independente).
+
+---
+
+## Atualização 2026-08-24
+
+- **A2 (6) elevados no nISO** com lastro citado → 27001 Missing **28 → 22**.
+- **C2: 15 documentos criados** em `POLICIES/` (rascunhos, sem assinatura de terceiros):
+  - Novos: `A.5.23` (POL-CLD-001, nuvem — correção de aplicabilidade), `A.5.27` (SGP-IRL-001),
+    `A.5.32` (POL-IPR-001), `A.5.35` (POL-REV-001, revisão independente → #17), `A.5.36`
+    (SGP-CMP-001), `A.5.37` (POL-OPS-001), `A.6.7` (POL-RMT-001, trabalho remoto — correção),
+    `A.6.8` (SGP-EVT-001), `A.8.1` (POL-EPP-001), `A.8.6` (SGP-CAP-001), `A.8.7` (POL-MAL-001),
+    `A.8.17` (SGP-NTP-001), `A.8.18` (SGP-PUP-001), `A.8.33` (SGP-TST-001, aplicável), `A.8.34`
+    (SGP-AUD-001).
+  - **Correções de aplicabilidade** de seed errado documentadas: A.5.23 (é 100% nuvem), A.6.7 (equipe
+    100% remota), A.8.33 (há ambiente de teste).
+- **Próximo (sob aprovação):** elevar estes 15 no nISO (com os novos docs como lastro) e corrigir suas
+  descrições de seed → 27001 Missing 22 → 7. Os 7 remanescentes seriam o B2 (#8/#9, dependem de UI/AWS).
