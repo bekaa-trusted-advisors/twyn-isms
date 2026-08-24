@@ -44,15 +44,18 @@ e ajustar a justificativa.
 | A.8.29 — Testes de segurança | "Sem desenvolvimento exigindo testes" | **Aplicável** — TWYN desenvolve a API. |
 | A.8.22 — Segregação de redes | `Not Applicable` | **Aplicável** — VPC/Security Groups (arquitetura já existe). |
 
-## C. Limpar aprovações sem lastro (CISO)
+## C. Remover a designação de CISO — **decisão: TWYN não tem CISO**
 
-- **60 controles** com `ciso_approved_by = "Ricardo Esper"** — sem lastro (agente automático,
-  `127.0.0.1`/`System Agent Automator`; Ricardo é consultor, não CISO). **Limpar/rezerar** o campo
-  (a API não permite — só UI/admin). A função de segurança está atribuída ao cargo de **Humberto
-  Oliveira (CIO)** — se o nISO exigir um aprovador, usar essa designação.
-- Após limpar, **remover o caveat** de desaprovação que foi inserido nas `description` desses 60
-  controles (texto "APROVACAO DE CISO DESAPROVADA").
-- Requisito de capacidade nativa de "desaprovar" já registrado em `audit/prompt-nISO-desaprovacao.md`.
+**✅ FEITO por API (2026-08-24):** todas as aprovações de CISO foram **retiradas** — descoberto que
+editar a `description` de um controle invalida a aprovação de CISO no nISO. Estado verificado:
+`ciso_approved_by` = **0**, `ciso_approved_at` = **0**, caveats de "DESAPROVADA" = **0**. 65 controles
+passaram a exibir a nota: *"A TWYN não possui cargo de CISO; responsabilidade de segurança é do CIO
+(Humberto Oliveira)."*
+
+**⬜ Resta (só UI/admin — campo `owner` não é gravável por API):**
+- **`owner = "CISO"` em 88 controles** → alterar para **"CIO / Responsável de Segurança (Humberto
+  Oliveira)"** (ou o rótulo que o nISO permitir), coerente com a decisão de que não há cargo de CISO.
+- Se o nISO tiver um mapa de papéis por projeto, ajustar lá em vez de controle a controle.
 
 ## D. Higiene do store de evidências (#16)
 
