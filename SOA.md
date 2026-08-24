@@ -31,7 +31,7 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.64** | A.6.4 Processo Disciplinar | `Implemented` | 0 | CISO | Consequences for policy violations.... (Aprovação CISO pendente) |
 | **A.65** | A.6.5 Responsabilidades Pós-Desligamento ou Mudança de Emprego | `Implemented` | 3 | CISO | Processo de revogação de credenciais em 2h e termo de offboarding em POL-HR-001.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.66** | A.6.6 Acordos de Confidencialidade e Não Divulgação (NDAs) | `Implemented` | 4 | CISO | Assinatura obrigatória de NDA de admissão com validade de 5 anos.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.67** | A.6.7 Trabalho Remoto | `Missing` | 0 | CISO | Remote work arrangements identified.... (Aprovação CISO pendente) |
+| **A.67** | A.6.7 Trabalho Remoto | `Implemented` | 0 | CISO | Remote work arrangements identified.... (Aprovação CISO pendente) — ENG-2026-001: POL-RMT-001 (A.6.7) — trabalho remoto; **aplicável** (equipe 100% remota) |
 | **A.68** | A.6.8 Notificação de Eventos de Segurança da Informação | `Implemented` | 0 | CISO | All personnel must be able to report events.... (Aprovação CISO pendente) |
 | **A.71** | A.7.1 Perímetros de Segurança Física | `Not Applicable` | 0 | CISO | Excluído: Equipe opera 100% remoto sem escritório físico e infraestrutura hospedada inteiramente na nuvem AWS (modelo de responsabilidade compartilhad... (Aprovado por CISO Nizar Elouaer) (Aprovado por CEO Kacio Lopes) |
 | **A.72** | A.7.2 Entrada Física | `Not Applicable` | 0 | CISO | Excluído: Equipe opera 100% remoto sem escritório físico e infraestrutura hospedada inteiramente na nuvem AWS (modelo de responsabilidade compartilhad... (Aprovado por CISO Nizar Elouaer) (Aprovado por CEO Kacio Lopes) |
@@ -42,13 +42,13 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.77** | A.7.7 Mesa Limpa e Tela Limpa | `Not Applicable` | 0 | CISO | Applies to all workstations including remote.... (Aprovação CISO pendente) |
 | **A.78** | A.7.8 Localização e Proteção de Equipamentos | `Not Applicable` | 0 | CISO | Excluído: Equipe opera 100% remoto sem escritório físico e infraestrutura hospedada inteiramente na nuvem AWS (modelo de responsabilidade compartilhad... (Aprovado por CISO Nizar Elouaer) (Aprovado por CEO Kacio Lopes) |
 | **A.79** | A.7.9 Segurança de Ativos Fora das Instalações | `Not Applicable` | 0 | CISO | Assets used outside premises require protection.... (Aprovação CISO pendente) |
-| **A.81** | A.8.1 Dispositivos de Usuário Final | `Missing` | 0 | CISO | Endpoint security is universally required.... (Aprovação CISO pendente) |
+| **A.81** | A.8.1 Dispositivos de Usuário Final | `Implemented` | 0 | CISO | Endpoint security is universally required.... (Aprovação CISO pendente) — ENG-2026-001: POL-EPP-001 (A.8.1) — endpoints |
 | **A.82** | A.8.2 Direitos de Acesso Privilegiado | `Implemented` | 3 | CISO | Controle de acessos privilegiados (admins) na AWS e sistemas críticos restritos a perfis específicos revisados periodicamente.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.83** | A.8.3 Restrição de Acesso à Informação | `Implemented` | 3 | CISO | Restrição granular a dados biométricos sensíveis e aplicação de RBAC.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.84** | A.8.4 Acesso ao Código-Fonte | `Implemented` | 3 | CISO | Branch protection ativa e restrição de acesso ao repositório GitHub da API.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.85** | A.8.5 Autenticação Segura | `Implemented` | 4 | CISO | Obrigatoriedade de autenticação multifator (MFA) em contas AWS e consoles administrativos.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.86** | A.8.6 Gestão de Capacidade | `Missing` | 0 | CISO | Resource capacity planning is universal.... |
-| **A.87** | A.8.7 Proteção contra Malware | `Missing` | 0 | CISO | Malware protection is universally required.... |
+| **A.86** | A.8.6 Gestão de Capacidade | `Implemented` | 0 | CISO | Resource capacity planning is universal.... — ENG-2026-001: SGP-CAP-001 (A.8.6) — gestão de capacidade |
+| **A.87** | A.8.7 Proteção contra Malware | `Implemented` | 0 | CISO | Malware protection is universally required.... — ENG-2026-001: POL-MAL-001 (A.8.7) — proteção contra malware |
 | **A.88** | A.8.8 Gestão de Vulnerabilidades Técnicas | `Implemented` | 4 | CISO | Vulnerability management is universal.... (Aprovação CISO pendente) |
 | **A.89** | A.8.9 Gestão de Configuração | `Missing` | 3 | CISO | Manual SOP-HDN-001 define os baselines de hardening para RDS e EKS.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.510** | A.5.10 Uso Aceitável de Informações e Outros Ativos Associados | `Implemented` | 4 | CISO | Defines acceptable behavior for all personnel.... (Aprovação CISO pendente) |
@@ -64,21 +64,21 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.520** | A.5.20 Tratamento da Segurança da Informação nos Acordos com Fornecedores | `Implemented` | 5 | CISO | Contractual security clauses needed for suppliers.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.521** | A.5.21 Gestão da Segurança da Informação na Cadeia de Suprimentos de TIC | `Missing` | 3 | CISO | Questionário KYV implementado para qualificação de segurança de fornecedores de TIC críticos.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.522** | A.5.22 Monitoramento, Análise Crítica e Gestão de Mudanças de Serviços de Fornecedores | `Missing` | 3 | CISO | Revisão contratual anual conduzida pelo CFO Enes Degasperi.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.523** | A.5.23 Segurança da Informação no Uso de Serviços em Nuvem | `Missing` | 0 | CISO | Cloud infrastructure in use.... |
+| **A.523** | A.5.23 Segurança da Informação no Uso de Serviços em Nuvem | `Implemented` | 0 | CISO | Cloud infrastructure in use.... — ENG-2026-001: POL-CLD-001 (A.5.23) — nuvem AWS; **aplicável** (infra 100% AWS) |
 | **A.524** | A.5.24 Planejamento e Preparação da Gestão de Incidentes de Segurança da Informação | `Implemented` | 4 | CISO | Incident preparedness is universal.... (Aprovação CISO pendente) |
 | **A.525** | A.5.25 Avaliação e Decisão sobre Eventos de Segurança da Informação | `Missing` | 0 | CISO | Event triage process required.... |
 | **A.526** | A.5.26 Resposta a Incidentes de Segurança da Informação | `Missing` | 3 | CISO | Fases de contenção, erradicação e pós-mortem detalhadas no workflow da POL-IRP-001.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.527** | A.5.27 Aprendizado com Incidentes de Segurança da Informação | `Missing` | 0 | CISO | Continuous improvement from incidents.... |
+| **A.527** | A.5.27 Aprendizado com Incidentes de Segurança da Informação | `Implemented` | 0 | CISO | Continuous improvement from incidents.... — ENG-2026-001: SGP-IRL-001 (A.5.27) — aprendizado com incidentes |
 | **A.528** | A.5.28 Coleta de Evidências | `Missing` | 0 | CISO | Evidence preservation for investigations.... |
 | **A.529** | A.5.29 Segurança da Informação em Momentos de Interrupção | `Implemented` | 4 | CISO | Security continuity during disruptions.... (Aprovação CISO pendente) |
 | **A.530** | A.5.30 Prontidão da TIC para a Continuidade dos Negócios | `Missing` | 4 | IT Manager | BCP Elaborado. RTO: 4 horas, RPO: 1 hora. Restore RDS testado em sandbox.... (Aprovação CISO pendente) |
 | **A.531** | A.5.31 Requisitos Legais, Estatutários, Regulamentares e Contratuais | `Implemented` | 0 | CISO | Compliance obligations exist for all organizations.... |
-| **A.532** | A.5.32 Direitos de Propriedade Intelectual | `Missing` | 0 | CISO | IP protection applies to all organizations.... |
+| **A.532** | A.5.32 Direitos de Propriedade Intelectual | `Implemented` | 0 | CISO | IP protection applies to all organizations.... — ENG-2026-001: POL-IPR-001 (A.5.32) — propriedade intelectual |
 | **A.533** | A.5.33 Proteção de Registros | `Implemented` | 4 | CISO | POL-GOV-001 define a retenção de templates de face ligada ao contrato e descarte seguro em 15 dias.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.534** | A.5.34 Privacidade e Proteção de Dados Pessoais (PII) | `Implemented` | 5 | CISO | PII processing identified — privacy controls mandatory.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
-| **A.535** | A.5.35 Análise Crítica Independente da Segurança da Informação | `Missing` | 0 | CISO | Independent assurance is an ISMS requirement.... |
-| **A.536** | A.5.36 Conformidade com Políticas, Regras e Normas de Segurança da Informação | `Missing` | 0 | CISO | Compliance verification is universal.... |
-| **A.537** | A.5.37 Procedimentos Operacionais Documentados | `Missing` | 0 | CISO | Operational procedures must be documented.... |
+| **A.535** | A.5.35 Análise Crítica Independente da Segurança da Informação | `Planned` | 0 | CISO | Independent assurance is an ISMS requirement.... — ENG-2026-001: POL-REV-001 (A.5.35) — execução = auditoria 9.2 independente (issue #17), pendente |
+| **A.536** | A.5.36 Conformidade com Políticas, Regras e Normas de Segurança da Informação | `Implemented` | 0 | CISO | Compliance verification is universal.... — ENG-2026-001: SGP-CMP-001 (A.5.36) — verificação de conformidade |
+| **A.537** | A.5.37 Procedimentos Operacionais Documentados | `Implemented` | 0 | CISO | Operational procedures must be documented.... — ENG-2026-001: POL-OPS-001 (A.5.37) — procedimentos operacionais |
 | **A.710** | A.7.10 Mídias de Armazenamento | `Not Applicable` | 0 | CISO | Media handling applies to all organizations.... |
 | **A.711** | A.7.11 Utilidades de Suporte | `Not Applicable` | 0 | CISO | Excluído: Equipe opera 100% remoto sem escritório físico e infraestrutura hospedada inteiramente na nuvem AWS (modelo de responsabilidade compartilhad... (Aprovado por CISO Nizar Elouaer) (Aprovado por CEO Kacio Lopes) |
 | **A.712** | A.7.12 Segurança do Cabeamento | `Not Applicable` | 0 | CISO | Excluído: Equipe opera 100% remoto sem escritório físico e infraestrutura hospedada inteiramente na nuvem AWS (modelo de responsabilidade compartilhad... (Aprovado por CISO Nizar Elouaer) (Aprovado por CEO Kacio Lopes) |
@@ -91,8 +91,8 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.814** | A.8.14 Redundância dos Recursos de Processamento de Informação | `Implemented` | 3 | CISO | EKS distribuído em 3 AZs e replicação de RDS Aurora em Multi-AZ.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.815** | A.8.15 Registros de Log | `Implemented` | 5 | DevOps | Monitoramento contínuo via AWS CloudTrail e GuardDuty.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.816** | A.8.16 Atividades de Monitoramento | `Implemented` | 4 | CISO | Security monitoring is universal.... (Aprovação CISO pendente) |
-| **A.817** | A.8.17 Sincronização do Relógio | `Missing` | 0 | CISO | Time synchronization for log correlation.... |
-| **A.818** | A.8.18 Uso de Programas Utilitários Privilegiados | `Missing` | 0 | CISO | Restricting privileged utilities is universal.... |
+| **A.817** | A.8.17 Sincronização do Relógio | `Implemented` | 0 | CISO | Time synchronization for log correlation.... — ENG-2026-001: SGP-NTP-001 (A.8.17) — sincronização de relógio |
+| **A.818** | A.8.18 Uso de Programas Utilitários Privilegiados | `Implemented` | 0 | CISO | Restricting privileged utilities is universal.... — ENG-2026-001: SGP-PUP-001 (A.8.18) — utilitários privilegiados |
 | **A.819** | A.8.19 Instalação de Software em Sistemas Operacionais | `Missing` | 0 | CISO | Software installation controls are universal.... |
 | **A.820** | A.8.20 Segurança de Redes | `Implemented` | 3 | CISO | Redes segregadas logicamente e monitoradas com regras de firewall/Security Groups ativas.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.821** | A.8.21 Segurança dos Serviços de Rede | `Implemented` | 3 | CISO | Serviços de rede protegidos. Acesso administrativo restrito via Bastion Host e VPN.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
@@ -107,8 +107,8 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.830** | A.8.30 Desenvolvimento Terceirizado | `Missing` | 0 | CISO | Outsourced development relationships identified.... |
 | **A.831** | A.8.31 Separação dos Ambientes de Desenvolvimento, Teste e Produção | `Implemented` | 4 | CISO | Ambientes de desenvolvimento, homologação e produção segregados logicamente em contas AWS independentes.... (Aprovação CISO pendente) (Aprovado por CEO Kacio Lopes) |
 | **A.832** | A.8.32 Gestão de Mudanças | `Implemented` | 4 | CISO | Change management is universal.... (Aprovação CISO pendente) |
-| **A.833** | A.8.33 Informação de Teste | `Missing` | 0 | CISO | Test data protection for development activities.... |
-| **A.834** | A.8.34 Proteção dos Sistemas de Informação durante Testes de Auditoria | `Missing` | 0 | CISO | Audit testing safeguards are universal.... |
+| **A.833** | A.8.33 Informação de Teste | `Implemented` | 0 | CISO | Test data protection for development activities.... — ENG-2026-001: SGP-TST-001 (A.8.33) — informação de teste; **aplicável** (há dev/homolog) |
+| **A.834** | A.8.34 Proteção dos Sistemas de Informação durante Testes de Auditoria | `Implemented` | 0 | CISO | Audit testing safeguards are universal.... — ENG-2026-001: SGP-AUD-001 (A.8.34) — proteção durante auditoria |
 
 ---
 
