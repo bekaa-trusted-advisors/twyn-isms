@@ -32,6 +32,38 @@
 > uma aprovação por vez. Nenhuma escrita antes de reads de verificação (ver
 > `audit/C-2026-08-18-01-migration-27701-2025.md`).
 
+### Capacidades da API do papel `consultant` — o que É executável AQUI (fonte autoritativa)
+
+> ⚠️ **Correção de 2026-08-25:** entradas antigas do journal (2026-08-19) afirmaram que
+> "a API não re-vincula evidência (é ação de UI)". **Isso está ERRADO.** A re-vinculação
+> **é executável pelo consultor via API** — verificado e aplicado nesta data.
+
+| Ação | Executável pela API do consultor? | Verbo / contrato |
+|---|---|---|
+| **Re-vincular evidência a controle** | ✅ **SIM** | `PUT /api/v1/evidence/{id}` · body `{"control_id":"<id>"}` (ou `null` p/ desassociar) → `{"ok":true,"relinked":true}` |
+| Alterar **status** do controle | ✅ SIM | `PUT /api/v1/controls/{id}` · body `{"status":"..."}` (Missing/In Progress/Implemented/Planned/Not Applicable) |
+| Editar **descrição/justificativa** do controle | ✅ SIM (⚠ efeito colateral: **limpa `ciso_approved_by`**) | `PUT /api/v1/controls/{id}` · `{"description":"..."}` |
+| Alterar **`owner`** do controle | ❌ NÃO (só UI/admin) | `PUT /controls` ignora `owner` |
+| Alterar **aplicabilidade/flag N/A** (fora do status) | ❌ NÃO (só UI/admin) | — |
+| **Aprovar** evidência/controle (`ciso_/ceo_approved_*`) | ❌ NÃO por PUT genérico | `/approve` exige `password`; retirada de aprovação = editar description (limpa o campo) |
+| Alterar `maturity` | ❌ NÃO (imutável por API) | — |
+
+**Notas operacionais de acesso:**
+- **Auth = header `X-API-Key`** (NÃO `Authorization: Bearer` nem `X-Session-ID` → esses dão 401).
+- **Cloudflare bloqueia `python-urllib` (cf-1010 / HTTP 403).** Usar **`curl`** para mutações
+  (ou setar `User-Agent` no urllib). GET pelo mesmo motivo: preferir curl.
+- **Status NÃO recalcula sozinho** ao vincular evidência — anexar a evidência e **elevar o status**
+  são dois PUTs distintos.
+- **Quem declara o status é a organização/consultoria** (inclusive **`Implemented`**), com base em
+  **evidência objetiva citável**. O **auditor NÃO decide o status — ele REVISA o resultado** (9.2 +
+  certificação verificam se a asserção se sustenta). Ou seja, marcar `Implemented` quando há evidência
+  de que o controle está implementado **não** usurpa a auditoria; a independência é preservada porque
+  a revisão é feita por parte independente **depois**.
+- **NEVER que permanece:** nunca declarar `Implemented`/conforme **sem evidência citável**. Onde a
+  evidência é **parcial** (ex.: um pentest não cobre todo o A.8.8 de gestão de vulnerabilidades), o
+  honesto é `In Progress` até a evidência completar — não por deferência ao auditor, mas por falta de
+  lastro.
+
 ## Baseline de migração (snapshot-first) — capturado do nISO em 2026-08-19
 
 > Retrato `:2019` lido da fonte da verdade (nISO D1) para permitir **rollback parcial**.
@@ -71,4 +103,5 @@ Fase 2 da migração** (status `Audit Ready → In Progress`). Snapshots brutos 
 | 2026-08-19 | **Escritas nISO #4–6 APLICADAS** (lote aplicabilidade, aprovado): A.1.2.4/A.1.2.5/A.1.3.5 → `Not Applicable` + justificativa (base Art. 11 II g). Verbo `PUT /controls/{id}` (justificativa=`description`). 27701 = 28 Missing / 3 N/A. |
 | 2026-08-19 | **Execução P0 (aprovada)**: 41 controles `Missing→In Progress` aplicados no nISO. Readiness **66→25 achados** (médios 49→8). Constatado: `maturity` e aprovações **imutáveis por API** → 17 críticos e retirada de aprovação viram ação de governança. Ver `audit/ENG-2026-001-P0-execution-results.md`. |
 | 2026-08-19 | **#14 avançado**: descrição de adequação + evidência candidata gravada nos **28 controles 27701:2025** aplicáveis (nISO), status mantido `Missing` (sem fabricar conformidade). Norma oficial recebida (ABNT NBR 27701:2026) → índice de referência + crosswalk confirmados; cabeçalhos de política remapeados (#13). Prompt normativo p/ nISO em `audit/prompt-nISO-normas.md`. |
-| 2026-08-19 | **Coleta de evidência — 17 críticos**: dossiê `audit/ENG-2026-001-evidence-collection-17-criticos.md`. 9 são N/A (sem evidência necessária); 3–4 aplicáveis já satisfazíveis por **vínculo** de evidência existente (pentest/DAST/SAST/DevSecOps órfãos); 3 exigem export do AWS (Macie/CloudTrail/WebFilter). API não re-vincula evidência (UI). A.8.22 N/A incorreto → reclassificar. |
+| 2026-08-19 | **Coleta de evidência — 17 críticos**: dossiê `audit/ENG-2026-001-evidence-collection-17-criticos.md`. 9 são N/A (sem evidência necessária); 3–4 aplicáveis já satisfazíveis por **vínculo** de evidência existente (pentest/DAST/SAST/DevSecOps órfãos); 3 exigem export do AWS (Macie/CloudTrail/WebFilter). ~~API não re-vincula evidência (UI).~~ **[CORRIGIDO em 2026-08-25 — a API re-vincula; ver abaixo]** A.8.22 N/A incorreto → reclassificar. |
+| 2026-08-25 | **Aprendizado + escrita nISO APLICADA (aprovada):** descoberto que a **re-vinculação de evidência É executável pela API do consultor** (`PUT /api/v1/evidence/{id}` `{control_id}`), derrubando a premissa errada de que era "só UI". Aplicados **8 re-vínculos** (7 órfãos + 1 mis-link `ctrl-a81`→A.1.3.10) e **5 elevações `Missing→In Progress`** (A.1.2.6/A.1.3.10/A.1.4.5/A.8.8/A.8.29). Efeito: órfãos **35→28**; **Missing 10→5** (restam só A.8.11/12/15/16/23, que dependem de export AWS). Auth=`X-API-Key`; curl obrigatório (cf-1010 bloqueia urllib). Capacidades da API documentadas na seção "Acesso ao nISO". |

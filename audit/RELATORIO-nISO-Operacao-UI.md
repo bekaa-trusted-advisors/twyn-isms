@@ -12,37 +12,42 @@
 
 ## 1. Contexto
 
-A adequação documental já foi feita e a maior parte dos controles está implementada. As ações abaixo
-**não** podem ser feitas pela API (re-vínculo de evidência a controle, alteração do campo `owner`,
-higiene do store) — precisam da **UI/admin**. Ao final, os controles saem de `Missing` e o readiness é
-recalculado.
+A adequação documental já foi feita e a maior parte dos controles está implementada.
+
+> ✅ **Atualização 2026-08-25:** o **re-vínculo de evidência a controle** e a **elevação de status**
+> foram **executados pela consultoria via API** — **não** são mais tarefa deste operador. Ver o journal
+> em `audit/engagement.md`. As seções 2 e 3 abaixo ficam como **registro do que foi feito**.
+>
+> O que **permanece exclusivo da UI/admin** (a API do consultor **não** grava): alteração do campo
+> **`owner`** (seção 5), correção de **aplicabilidade/flag N/A** (seção 4) e **higiene do store**
+> (seção 6). Ao final destas, o readiness é recalculado.
 
 > Nenhuma ação aqui **declara conformidade** — apenas **anexa evidência objetiva já existente** e
 > corrige metadados. O julgamento final é da **auditoria interna 9.2** (parte independente).
 
 ---
 
-## 2. Re-vincular evidência de PRIVACIDADE (27701 — 3 Missing)
+## 2. Re-vínculo de evidência de PRIVACIDADE (27701) — ✅ FEITO PELA CONSULTORIA (API)
 
-A evidência já está no store, marcada `conforme`, porém **órfã** (`control_id` nulo) ou no controle
-errado. Re-vincular ao controle 27701 e depois elevar o status.
+Aplicado em 2026-08-25 (`PUT /api/v1/evidence/{id}`); status elevado `Missing→In Progress`.
 
-| Controle 27701 | Evidência (store) | id evidência | Situação |
+| Controle 27701 | Evidência (store) | id evidência | Resultado |
 |---|---|---|---|
-| **A.1.2.6** — DPIA | `Relatorio_DPIA_Privacidade_Fase9` + `SGP-DPIA-001` | `821518d1` | órfã / SGP em ctrl-a534 |
-| **A.1.3.10** — Canal de atendimento | `Governanca_DPO_Canal_Atendimento_Fase25` | `d4460e75` | está em `ctrl-a81` |
-| **A.1.4.5** — Minimização | `Diretrizes_Anonimizacao_Privacidade_Fase23` | `84c7f9c5` | órfã |
+| **A.1.2.6** — DPIA | `Relatorio_DPIA_Privacidade_Fase9` | `821518d1` | ✅ vinculada · Missing→In Progress |
+| **A.1.3.10** — Atendimento a titulares | `Procedimento_Direitos_Titulares_DSAR_Fase22` + `Canal_Atendimento_Fase25` (corrigido mis-link `ctrl-a81`) | `50c8761f` / `d4460e75` | ✅ 2 evid. vinculadas · Missing→In Progress |
+| **A.1.4.5** — Minimização | `Diretrizes_Anonimizacao_Privacidade_Fase23` | `84c7f9c5` | ✅ vinculada · Missing→In Progress |
 
-## 3. Re-vincular evidência de SEGURANÇA (27001 — parte dos 7 Missing / #8)
+## 3. Re-vínculo de evidência de SEGURANÇA (27001) — ✅ FEITO PELA CONSULTORIA (API)
 
-| Controle 27001 | Evidência (store) | id evidência |
-|---|---|---|
-| **A.8.29** — Testes de segurança | `Engenharia_Seguranca_DevSecOps_Fase18`, `dast_scan_results`, `sast_pipeline_report`, `Relatorio_Pentest_...Fase32` | `3e5885a6` / `b63d7205` |
-| **A.8.8** — Vulnerabilidades | `Relatorio_Pentest_Vulnerabilidades_Fase32` | `b63d7205` |
-| **A.8.11** — Mascaramento | `Diretrizes_Anonimizacao_Privacidade_Fase23` (reforçar com prova de masking — ver relatório de TI) | `84c7f9c5` |
+| Controle 27001 | Evidência (store) | id evidência | Resultado |
+|---|---|---|---|
+| **A.8.29** — Testes de segurança | `Engenharia_Seguranca_DevSecOps_Fase18` | `3e5885a6` | ✅ vinculada · Missing→In Progress |
+| **A.8.8** — Vulnerabilidades | `Relatorio_Pentest_Vulnerabilidades_Fase32` | `b63d7205` | ✅ vinculada · Missing→In Progress |
+| **A.5.24 / A.5.9** (reforço) | `Plano_Resposta_Incidentes_Fase19` · `Inventario_Ativos_Fase7` | `2c5c2c29` / `e91be7f2` | ✅ vinculadas (já eram In Progress) |
 
-> Os demais (A.8.12, A.8.15, A.8.16, A.8.23) dependem de **export do AWS** (ver
-> `RELATORIO-Tecnologia-Evidencias-AWS.md`) antes de vincular.
+> **A.8.11 (Mascaramento)** e os demais (**A.8.12, A.8.15, A.8.16, A.8.23**) **seguem `Missing`** —
+> dependem de **export do AWS** (ver `RELATORIO-Tecnologia-Evidencias-AWS.md`). Não há órfão que os
+> feche com honestidade. **Missing 10→5** após esta rodada.
 
 ## 4. Corrigir aplicabilidade
 
