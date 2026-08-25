@@ -32,8 +32,7 @@
 
 ## 2. O que a consultoria entregou
 
-- **Governança:** DPO terceirizado independente (Bekaa Tecnologia Ltda, resp. Adriana Sforcini Lavrik
-  Esper); Ricardo Esper como consultor apenas; função de segurança atribuída ao cargo do CIO
+- **Governança:** DPO terceirizado (Bekaa Tecnologia Ltda, resp. técnico Ricardo Esper; auditoria 9.2 por parte independente); Ricardo Esper como consultor apenas; função de segurança atribuída ao cargo do CIO
   (Humberto). Ato de nomeação e Contrato de DPO **prontos para assinatura**.
 - **Normas:** migração do SGPI para 27701:2025; SoA e SGPI-SoA reconciliados contra o nISO.
 - **Adequação:** 24 controles de privacidade e 34 de segurança documentados/elevados com lastro; 15
