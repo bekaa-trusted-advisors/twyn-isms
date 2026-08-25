@@ -18,9 +18,8 @@ gestão (nISO). São controles **técnicos**, cuja prova só existe no ambiente 
 vocês. Sem esses artefatos, os controles **não podem ser marcados como implementados** e travam a
 auditoria de certificação.
 
-> **Como entregar (todos os itens):** print do console AWS **+** export do dado (JSON/CSV/PDF), cada
-> arquivo nomeado com o controle (ex.: `A.8.15_cloudtrail_config.json`), **data** da coleta e
-> **responsável**. Enviar em uma pasta única.
+> **Resumo:** cada item = print do console AWS **+** export do dado (JSON/CSV/PDF), nomeado por
+> controle, com data e responsável. O **procedimento completo de entrega** está na **seção 3**.
 
 ---
 
@@ -62,12 +61,46 @@ auditoria de certificação.
 
 ---
 
-## 3. Reforço (desejável, não bloqueante)
+## 3. Como enviar as evidências (procedimento e integridade)
+
+Siga estes 5 passos — o que garante que a evidência seja **aceita pelo auditor** (íntegra e rastreável):
+
+**1) Colete cada item em 2 formas:** o **print** do console AWS (mostrando o recurso e a data/hora) e,
+quando aplicável, o **export bruto** via CLI. Exemplos:
+```
+aws cloudtrail describe-trails            > A.8.15_cloudtrail_trails.json
+aws cloudtrail get-trail-status --name X  > A.8.15_cloudtrail_status.json
+aws guardduty list-findings ...           > A.8.16_guardduty_findings.json
+aws macie2 get-findings ...               > A.8.12_macie_findings.json
+```
+
+**2) Nomeie cada arquivo pelo controle:** `A.8.XX_descricao_AAAA-MM-DD.ext`
+(ex.: `A.8.15_cloudtrail_status_2026-08-25.json`).
+
+**3) Gere o hash (cadeia de custódia):** calcule o **SHA-256** de cada arquivo — é o que prova que o
+arquivo **não foi alterado** depois da coleta.
+- Linux/Mac: `sha256sum *`  ·  Windows PowerShell: `Get-FileHash * -Algorithm SHA256`
+
+**4) Monte um índice** (planilha ou `README.csv`) com uma linha por evidência:
+`controle · arquivo · SHA-256 · data da coleta · responsável · comando/fonte`.
+
+**5) Entregue por canal controlado:**
+- Preferencial: **subir direto no nISO** (store de evidências, vinculado ao controle) se a TI tiver
+  acesso — o nISO registra o hash automaticamente.
+- Alternativa: **pasta segura restrita** (Drive/S3 com acesso controlado) e avisar o DPO/consultoria,
+  que anexa cada arquivo ao controle no nISO.
+- **Não** usar e-mail/WhatsApp abertos; **não** incluir imagens/vetores biométricos ou qualquer PII de
+  titular — apenas **configurações, políticas e relatórios técnicos**.
+
+> Ao receber, a consultoria/DPO **vincula** cada evidência ao controle no nISO e **confirma** de volta,
+> controle a controle. Só então o controle sai de `Missing`.
+
+## 4. Reforço (desejável, não bloqueante)
 - **A.8.11 / A.8.16 / A.8.8:** onde já houver evidência antiga no nISO, enviar a **versão atual** para
   substituir.
 
-## 4. Próximos passos
-1. Vocês reúnem os artefatos acima (prints + exports).
+## 5. Próximos passos
+1. Vocês reúnem os artefatos acima (prints + exports) conforme a seção 3.
 2. A consultoria/DPO **anexa** cada evidência ao controle correspondente no nISO.
 3. Os 7 controles passam de `Missing` para implementados → readiness recalculado.
 
