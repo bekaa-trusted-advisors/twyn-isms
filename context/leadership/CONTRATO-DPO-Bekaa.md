@@ -1,98 +1,41 @@
-# Contrato de Prestação de Serviços de Encarregado pelo Tratamento de Dados Pessoais (DPO-as-a-Service)
+# Contrato de DPO-as-a-Service (TWYN) — Registro de Referência
 
-**Referência:** LGPD (Lei 13.709/2018), Art. 41 · ISO/IEC 27701:2025 (SGPI), cláusula 5.3 · vinculado ao Ato de Nomeação `GOV-DPO-001`.
+**Referência:** LGPD Art. 41 · ISO/IEC 27701:2025 (SGPI) cl. 5.3 · vinculado ao Ato `GOV-DPO-001`.
 
 | Campo | Valor |
 |---|---|
 | **Document ID** | GOV-DPO-002 |
-| **Versão** | 1.0 (Minuta para assinatura) |
-| **Elaborado por** | Consultoria Aegis (ENG-2026-001) |
-| **Status** | `Minuta — pendente de assinatura das partes` |
+| **Versão** | 2.0 — **substitui a minuta anterior** (que citava Adriana e termos comerciais presumidos) |
+| **Natureza** | **Registro de referência** ao contrato real assinado — não é minuta |
+| **Status** | `Contrato real assinado (02/01/2023); minha minuta anterior fica descontinuada` |
 
 ---
 
-## Partes
+> ℹ️ **A minuta que eu havia elaborado tornou-se desnecessária:** existe um **contrato real assinado**.
+> Este documento apenas o **referencia** para o SGPI. O PDF assinado deve ser anexado como evidência.
 
-- **CONTRATANTE:** **TWYN — T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA**, CNPJ 31.122.819/0001-55,
-  neste ato representada por seu CEO **Kacio Lopes**.
-- **CONTRATADA:** **Bekaa Tecnologia Ltda**, CNPJ **28.811.817/0001-69**, com sede em São Paulo/SP,
-  neste ato representada na forma de seu contrato social, tendo como **profissional responsável
-  designada** para os serviços **Adriana Sforcini Lavrik Esper**.
+## Contrato de serviço vigente
 
-## Cláusula 1 — Objeto
+- **Título:** Contrato de Consultoria em Privacidade e DPO-as-a-Service — TWYN Face ID Platform.
+- **Contratante:** T4ISB Tecnologia e Participações Ltda (CNPJ 31.122.819/0001-55) — **Controlador
+  Independente** (LGPD Art. 11, II, 'g').
+- **Contratada (DPO PJ & Consultoria):** **Bekaa Tecnologia Ltda** (CNPJ 28.811.817/0001-69), sob
+  **responsabilidade técnica de Ricardo Esper**.
+- **Canal oficial do Encarregado:** `dpo@twyn.com`.
+- **Assinatura / vigência:** 02/01/2023 · 12 meses com renovação automática sucessiva.
+- **Assinantes:** T4ISB — Enes Fernando Degasperi (Diretor Financeiro / Procurador); Bekaa — Ricardo
+  Esper (sócio-administrador).
+- **Foro:** São Paulo/SP.
 
-A CONTRATADA prestará à CONTRATANTE os serviços de **Encarregado pelo Tratamento de Dados Pessoais
-(DPO — Data Protection Officer)**, na modalidade terceirizada, atuando como ponto de contato entre a
-CONTRATANTE, os titulares de dados e a Autoridade Nacional de Proteção de Dados (ANPD), nos termos do
-Art. 41 da LGPD e do SGPI (ISO/IEC 27701:2025).
+## Cláusula de independência (9.2) — ponto-chave
 
-## Cláusula 2 — Escopo e atribuições (LGPD Art. 41, §2º)
+O contrato registra, na sua **Cláusula 3**, que a Bekaa atua **estritamente como consultoria e DPO**,
+**não realizando auditorias técnicas de SI**, e que as **auditorias internas (ISO/IEC 27001 cl. 9.2)
+são executadas por terceira parte independente** — vedação à autorrevisão. Isso satisfaz a regra de
+independência do engajamento.
 
-1. Aceitar reclamações e comunicações dos titulares, prestar esclarecimentos e adotar providências.
-2. Receber comunicações da ANPD e adotar providências.
-3. Orientar funcionários e contratados sobre práticas de proteção de dados.
-4. Supervisionar, com independência, o Sistema de Gestão da Privacidade da Informação (SGPI).
-5. Operar o canal oficial do Encarregado: **`dpo@twyn.com`**.
+## Pendências de evidência
 
-## Cláusula 3 — Independência e limites de atuação
-
-1. A CONTRATADA atua com **independência funcional** e **acesso direto à alta direção** da
-   CONTRATANTE, não podendo ser penalizada por atuar no exercício de suas atribuições.
-2. A CONTRATADA e suas partes relacionadas **não** executarão a **auditoria interna (ISO/IEC 27001
-   cl. 9.2)** do SGSI/SGPI da CONTRATANTE, a qual permanecerá a cargo de **terceiro independente** —
-   preservando a separação entre quem assessora/supervisiona e quem audita.
-3. O papel de Encarregado **não** determina as finalidades e os meios do tratamento, que permanecem
-   com a CONTRATANTE (controladora).
-
-## Cláusula 4 — Obrigações da CONTRATANTE
-
-1. Facultar à CONTRATADA acesso tempestivo às informações, áreas e pessoas necessárias.
-2. Prover recursos e apoio da direção para o exercício das atribuições do Encarregado.
-3. Comunicar à CONTRATADA, sem demora, incidentes e solicitações de titulares.
-
-## Cláusula 5 — Confidencialidade e proteção de dados
-
-A CONTRATADA obriga-se a manter sigilo sobre as informações a que tiver acesso, tratando dados
-pessoais estritamente para a finalidade deste contrato, observando a LGPD e as políticas do SGSI/SGPI
-da CONTRATANTE.
-
-## Cláusula 6 — Vigência
-
-Vigência de **12 (doze) meses** a partir da data de assinatura, renovável por termo aditivo,
-abrangendo o período do processo de certificação ISO/IEC 27001 + 27701 da CONTRATANTE. Rescindível por
-qualquer das partes mediante aviso prévio de **30 (trinta) dias** _(prazo padrão sugerido — ajustável
-pelas partes)_.
-
-## Cláusula 7 — Remuneração e reajuste
-
-1. A CONTRATANTE pagará à CONTRATADA a remuneração mensal de **R$ 4.500,00 (quatro mil e quinhentos
-   reais)**.
-2. O valor será **reajustado anualmente pela variação acumulada do IPCA/IBGE** (ou índice que o
-   substitua), a cada 12 (doze) meses de vigência.
-3. Data de vencimento e forma de pagamento: `«a definir pelas partes»`.
-
-## Cláusula 8 — Foro
-
-Fica eleito o foro da Comarca de `«a definir»` para dirimir controvérsias oriundas deste contrato.
-
----
-
-## Assinaturas
-
-**CONTRATANTE — TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA**
-
-Nome: **Kacio Lopes** — CEO
-Assinatura: ______________________________  Data: ____ / ____ / ______
-
-**CONTRATADA — Bekaa Tecnologia Ltda**
-
-Nome/representante: ______________________________
-Assinatura: ______________________________  Data: ____ / ____ / ______
-
-**Profissional responsável designada (Encarregado)**
-
-Nome: **Adriana Sforcini Lavrik Esper**
-Assinatura: ______________________________  Data: ____ / ____ / ______
-
-> _Minuta pendente de assinatura. Nenhuma assinatura foi aposta por terceiros. Campos entre `« »` a
-> preencher pelas partes; nenhum valor comercial foi presumido._
+- [ ] Anexar o **PDF assinado** do contrato como evidência do SGPI.
+- [ ] Anexar o **Cartão CNPJ** oficial da Bekaa.
+- [ ] **Designar a terceira parte independente** que executa a auditoria interna 9.2 (≠ Bekaa).
