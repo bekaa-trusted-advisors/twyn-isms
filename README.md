@@ -26,10 +26,10 @@ Este repositório consolida o arcabouço documental e o registro de evidências 
 O escopo do SGSIP abrange toda a infraestrutura técnica e de governança operacional associada ao processamento e armazenamento biométrico:
 
 > **Escopo Oficial (nISO):**  
-> *"Face ID Platform API + AWS Infrastructure (us-east-1) - Processamento de Biometria Facial (Vetorização Matemática Irreversível sob LGPD Art. 11, II, 'g')"*
+> *"Face ID Platform API + AWS Infrastructure (sa-east-1) - Processamento de Biometria Facial (Vetorização Matemática Irreversível sob LGPD Art. 11, II, 'g')"*
 
 As operações incluem:
-- **Segurança Lógica:** APIs públicas expostas em nuvem AWS (us-east-1).
+- **Segurança Lógica:** APIs públicas expostas em nuvem AWS (sa-east-1).
 - **Tratamento de Dados Pessoais Sensíveis:** Vetorização matemática de dados biométricos faciais, com expurgo imediato (0s) das fotos brutas em memória RAM, em conformidade com as diretrizes de privacidade da LGPD.
 - **Governança Corporativa:** Políticas, conscientização de colaboradores, gestão de fornecedores por Tiers, e resposta estruturada a incidentes.
 

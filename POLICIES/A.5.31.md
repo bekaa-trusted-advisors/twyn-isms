@@ -32,7 +32,7 @@ Todos os contratos celebrados pela TWYN com parceiros e clientes corporativos qu
 A TWYN garante que o processamento biométrico converte imagens faciais em vetores matemáticos unidirecionais de 512 ou 1024 dimensões (hashes biométricos). A imagem fotográfica fotográfica original é **eliminada imediatamente em tempo real pós-extração**, sendo vedado o armazenamento de acervo fotográfico bruto em bancos de dados.
 
 ### Cláusula 3.2 — Proteção e Criptografia
-A TWYN compromete-se a manter os vetores biométricos criptografados em repouso com algoritmo AES-256 e em trânsito com protocolo TLS 1.3, em ambiente de nuvem isolado (AWS us-east-1), certificado nas normas ISO/IEC 27001 e ISO/IEC 27701.
+A TWYN compromete-se a manter os vetores biométricos criptografados em repouso com algoritmo AES-256 e em trânsito com protocolo TLS 1.3, em ambiente de nuvem isolado (AWS sa-east-1), certificado nas normas ISO/IEC 27001 e ISO/IEC 27701.
 
 ### Cláusula 3.3 — Notificação de Incidentes de Segurança
 Em caso de incidente confirmado que possa acarretar risco ou dano relevante aos titulares ou à infraestrutura de biometria, a TWYN notificará o CLIENTE e a ANPD no prazo máximo de **24 (vinte e quatro) horas** contadas da ciência do evento, prestando as informações necessárias à mitigação de impactos.

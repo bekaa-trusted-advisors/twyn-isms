@@ -4,7 +4,13 @@
 > **Conformidade Legal:** Artigo 33 (Transferência Internacional) & Artigo 39 (Responsabilidade do Operador) da LGPD  
 > **Status:** `EM CONFORMIDADE`
 
-Este documento registra a análise técnica de conformidade contratual de privacidade efetuada pela governança da Twyn no adendo de processamento de dados da **Amazon Web Services (AWS)**, fundamentada nas diretrizes do Whitepaper oficial da AWS (*"Entendendo a conformidade com o GDPR na AWS"*).
+> ⚠️ **Correção de escopo (ENG-2026-001, 2026-08-24):** este documento foi originalmente redigido sob a
+> premissa de que os dados residiam em `us-east-1` (EUA), com transferência internacional amparada por
+> cláusulas-padrão. **O dado real reside em `sa-east-1` (São Paulo, Brasil)** — portanto **não há
+> transferência internacional** e a seção 2 abaixo (transferência internacional/SCC) **não se aplica**.
+> O DPA com a AWS permanece válido como acordo de proteção de dados operador-controlador (LGPD Art. 39).
+
+Este documento registra a análise técnica de conformidade contratual de privacidade efetuada pela governança da Twyn no adendo de processamento de dados da **Amazon Web Services (AWS)**.
 
 ---
 
@@ -17,12 +23,13 @@ Conforme estabelecido nos termos do **Data Processing Addendum (DPA)** incorpora
 
 ---
 
-## 🌍 2. Validade Jurídica de Transferências Internacionais (LGPD Art. 33)
+## 🌍 2. Localização dos Dados (sem transferência internacional)
 
-Tendo em vista que os recursos computacionais da AWS que servem à Face ID API estão hospedados na região dos EUA (`us-east-1`):
+Os recursos computacionais da AWS que servem à Face ID API estão hospedados na região **`sa-east-1` (São Paulo, Brasil)**:
 
-1.  **Salvaguarda Contratual:** O DPA da AWS incorpora de forma nativa e global as **Cláusulas Contratuais Padrão (Standard Contractual Clauses - SCCs)** aprovadas pelos reguladores de privacidade.
-2.  **Equivalência com a LGPD:** Essas cláusulas asseguram obrigações rigorosas de confidencialidade, auditorias, notificações de incidentes e proteção dos direitos dos titulares, amparando legalmente a transferência internacional de dados da Twyn conforme o **Artigo 33, inciso II, alínea 'b' da LGPD**.
+1.  **Território nacional:** os dados pessoais (vetores biométricos) permanecem no Brasil — **não há transferência internacional** e, portanto, **não se aplica** o regime dos Arts. 33–36 da LGPD.
+2.  **DPA vigente:** o Data Processing Addendum da AWS permanece válido como acordo operador-controlador (obrigações de confidencialidade, auditoria, notificação de incidentes e proteção dos direitos dos titulares — LGPD Art. 39).
+3.  _(Correção ENG-2026-001: a redação anterior tratava de transferência internacional para os EUA (`us-east-1`), o que não corresponde à localização real dos dados.)_
 
 ---
 
