@@ -22,16 +22,16 @@ Todos os sub-processadores e parceiros tecnológicos da TWYN que tenham acesso o
 
 ### Requisitos Mínimos para Homologação:
 1.  **Certificação Vigente:** Exigência de certificação ISO/IEC 27001:2022, ISO/IEC 27701:2019 ou Relatório de Auditoria SOC 2 Type II.
-2.  **Acordos de Privacidade (DPA):** Assinatura obrigatória de aditivo contratual de privacidade e Cláusulas Contratuais Padrão (SCCs) em transferências internacionais de dados.
+2.  **Acordos de Privacidade (DPA):** Assinatura obrigatória de aditivo contratual de privacidade (DPA) com o provedor de nuvem. _(Correção ENG-2026-001: os dados residem em `sa-east-1`/Brasil — **não há transferência internacional**; o regime de cláusulas para transferência internacional não se aplica.)_
 3.  **Segurança Avançada:** Garantia de criptografia AES-256 em repouso e tráfego criptografado TLS 1.3.
 
 ---
 
-## 2. Homologação do Provedor AWS us-east-1
+## 2. Homologação do Provedor AWS sa-east-1
 
-A infraestrutura lógica da TWYN é hospedada na **Amazon Web Services (AWS) Norte da Virgínia/EUA**. A diligência e auditoria anual da AWS atesta:
+A infraestrutura lógica da TWYN é hospedada na **Amazon Web Services (AWS), região de São Paulo/Brasil (`sa-east-1`)**. A diligência e auditoria anual da AWS atesta:
 *   **Certificações AWS:** AWS é certificada sob as normas ISO 27001, ISO 27017, ISO 27018, ISO 27701 e possui atestados SOC 1, 2 e 3 ativos.
-*   **Salvaguarda Contratual:** A contratação da AWS é formalizada com a inclusão obrigatória do aditivo de privacidade padrão contendo as **Standard Contractual Clauses (SCCs)** regulando a transferência internacional de dados para os Estados Unidos da América.
+*   **Salvaguarda Contratual:** A contratação da AWS é formalizada com a inclusão obrigatória do aditivo de proteção de dados (DPA). _(Correção ENG-2026-001: os dados residem em `sa-east-1`/Brasil — **não há transferência internacional** para os EUA; o enquadramento anterior de SCCs/transferência internacional foi retirado.)_
 
 ---
 

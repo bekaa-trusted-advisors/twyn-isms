@@ -29,11 +29,11 @@ Este documento registra as operações de tratamento de dados pessoais e dados p
 
 ---
 
-## 🌍 Compartilhamento e Transferência Internacional
+## 🌍 Compartilhamento e Localização dos Dados
 
 *   **Destinatários dos Dados:** Os parceiros B2B solicitantes recebem apenas a resposta booleana de validação (verdadeiro/falso + score de similaridade). Não há compartilhamento dos vetores matemáticos biométricos com nenhum terceiro.
-*   **Transferência Internacional de Dados:** Os servidores e bancos de dados de produção estão hospedados no datacenter da AWS na região dos EUA (`us-east-1`).
-*   **Mecanismo de Salvaguarda da LGPD:** A transferência internacional observa a **LGPD, Arts. 33 a 36** — em especial as **cláusulas-padrão contratuais** aprovadas pela ANPD (Resolução CD/ANPD nº 19/2024) como garantia adequada (Art. 33, II) — combinadas com as obrigações do Termo de Diligência de Privacidade (SGP-KYV-001). _(Correção ENG-2026-001: o enquadramento anterior citava "Standard Contractual Clauses (SCCs)", mecanismo do GDPR europeu; sob a LGPD a base é a dos Arts. 33–36 e as cláusulas-padrão da ANPD.)_
+*   **Localização dos Dados:** Os servidores e bancos de dados de produção estão hospedados na AWS na região de **São Paulo, Brasil (`sa-east-1`)**. Os dados pessoais permanecem integralmente em **território nacional**.
+*   **Transferência Internacional:** **Não há transferência internacional de dados pessoais** — coleta, processamento e armazenamento ocorrem no Brasil (`sa-east-1`). _(Correção ENG-2026-001: o registro anterior indicava `us-east-1` (EUA) e tratava como transferência internacional com cláusulas-padrão; o dado real reside em `sa-east-1`/Brasil, portanto **não se aplica** o regime de transferência internacional dos Arts. 33–36 da LGPD.)_
 
 ---
 

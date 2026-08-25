@@ -12,7 +12,7 @@ Este documento registra a análise técnica de segurança e privacidade do forne
 
 *   **Fornecedor:** Amazon Web Services, Inc. (AWS)
 *   **Criticidade:** **Tier 1 (Crítico):** Hospeda 100% da infraestrutura de produção e da aplicação **Face ID API** da Twyn.
-*   **Regiões Utilizadas:** **US East (Northern Virginia) (us-east-1)** e **South America (São Paulo) (sa-east-1)**.
+*   **Região de Produção (dados pessoais):** **South America (São Paulo) (`sa-east-1`)** — os vetores biométricos e a base de produção residem no **Brasil**. _(Correção ENG-2026-001: registro anterior citava também `us-east-1` (EUA); os dados pessoais permanecem em território nacional — sem transferência internacional.)_
 *   **Serviços AWS no Escopo da Diligência:**
     *   **Amazon EKS (Elastic Kubernetes Service):** Processamento e execução da API.
     *   **Amazon RDS (Relational Database Service):** Armazenamento de metadados e vetores biométricos criptografados.

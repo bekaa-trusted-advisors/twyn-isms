@@ -16,7 +16,7 @@
 ---
 
 > **Correção de escopo (ENG-2026-001):** o registro anterior indicava "nenhum serviço em nuvem
-> identificado", o que é **incorreto** — 100% da infraestrutura do TWYN opera na **AWS** (`us-east-1`).
+> identificado", o que é **incorreto** — 100% da infraestrutura do TWYN opera na **AWS** (`sa-east-1`).
 > Controle **aplicável**.
 
 ## 1. Objetivo
@@ -31,8 +31,8 @@ responsabilidade compartilhada.
 3. **Criptografia:** dados em repouso via KMS (AES-256) e em trânsito TLS 1.3 (ver `A.8.24`, `ROPA.md`).
 4. **Identidade e acesso:** IAM com menor privilégio, MFA e revisão periódica (ver `A.5.15`–`A.5.18`).
 5. **Contratos/DPA:** termos AWS e adendo de proteção de dados aplicáveis (ver `A.5.34`).
-6. **Localização:** produção em `us-east-1` — transferência internacional tratada em `ROPA.md`
-   (LGPD Arts. 33–36).
+6. **Localização:** produção em `sa-east-1` (São Paulo, **Brasil**) — os dados pessoais permanecem em
+   **território nacional**; **não há transferência internacional** (ver `ROPA.md`).
 
 ## Aprovação
 
