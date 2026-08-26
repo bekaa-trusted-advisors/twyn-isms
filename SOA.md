@@ -1,7 +1,7 @@
 # Declaração de Aplicabilidade (SoA) — TWYN Face ID Platform
 
 > **Referência Normativa:** ABNT NBR ISO/IEC 27001:2022 (Anexo A). Extensão de privacidade (27701) tratada em `soa/SGPI-SoA-27701-2025.md`.  
-> **Status Geral do SGSI (espelho do nISO, 2026-08-26):** `Em Adequação` — **23 Implemented · 47 In Progress · 5 Missing · 3 Planned · 15 Not Applicable** (93 controles; 78 aplicáveis).
+> **Status Geral do SGSI (espelho do nISO, 2026-08-26):** `Em Adequação` — **23 Implemented · 49 In Progress · 5 Missing · 1 Planned · 15 Not Applicable** (93 controles; 78 aplicáveis).
 
 > **Reconciliação ENG-2026-001 (2026-08-26) — `SOA.md` alinhado à fonte da verdade (nISO):** o status,
 > o proprietário e os resíduos de "CISO" de **todos os 93 controles** foram **regenerados a partir do
@@ -59,7 +59,7 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.512** | A.5.12 Classificação da Informação | `In Progress` | 3 | CIO / Resp. Segurança | Política POL-GOV-001 de classificação de informações biométricas implementada.... (Aprovado por CEO Kacio Giuliano Lopes) |
 | **A.513** | A.5.13 Rotulagem da Informação | `In Progress` | 3 | CIO / Resp. Segurança | Rotulagem de dados biométricos sensíveis aplicada via tagging AWS e tags em banco de dados.... (Aprovado por CEO Kacio Giuliano Lopes) |
 | **A.514** | A.5.14 Transferência de Informações | `In Progress` | 3 | CIO / Resp. Segurança | POL-TX-001 define o uso exclusivo de HTTPS/SFTP e proíbe plaintext de dados sensíveis.... (Aprovado por CEO Kacio Giuliano Lopes) |
-| **A.515** | A.5.15 Controle de Acesso | `Planned` | 4 | CIO / Resp. Segurança | Logical access control is universally required.... |
+| **A.515** | A.5.15 Controle de Acesso | `In Progress` | 4 | CIO / Resp. Segurança | Logical access control is universally required.... |
 | **A.516** | A.5.16 Gestão de Identidades | `In Progress` | 3 | CIO / Resp. Segurança | SSO Okta/Auth0 centraliza o acesso de colaboradores da TWYN a ferramentas SaaS.... (Aprovado por CEO Kacio Giuliano Lopes) |
 | **A.517** | A.5.17 Informações de Autenticação | `In Progress` | 3 | DevOps | Padrão de complexidade de senhas do IdP e uso de cofre 1Password regulados.... (Aprovado por CEO Kacio Giuliano Lopes) |
 | **A.518** | A.5.18 Direitos de Acesso | `In Progress` | 3 | CIO / Resp. Segurança | Revisão semestral de acessos e concessão sob demanda aprovada pela liderança de segurança (CIO).... (Aprovado por CEO Kacio Giuliano Lopes) |
@@ -73,7 +73,7 @@ Esta Declaração de Aplicabilidade cataloga os 93 controles de segurança do An
 | **A.526** | A.5.26 Resposta a Incidentes de Segurança da Informação | `In Progress` | 3 | CIO / Resp. Segurança | Fases de contenção, erradicação e pós-mortem detalhadas no workflow da POL-IRP-001.... (Aprovado por CEO Kacio Giuliano Lopes) |
 | **A.527** | A.5.27 Aprendizado com Incidentes de Segurança da Informação | `Implemented` | 0 | CIO / Resp. Segurança | Continuous improvement from incidents.... — ENG-2026-001: SGP-IRL-001 (A.5.27) — aprendizado com incidentes |
 | **A.528** | A.5.28 Coleta de Evidências | `Implemented` | 0 | CIO / Resp. Segurança | Evidence preservation for investigations.... |
-| **A.529** | A.5.29 Segurança da Informação em Momentos de Interrupção | `Planned` | 4 | CIO / Resp. Segurança | Security continuity during disruptions.... |
+| **A.529** | A.5.29 Segurança da Informação em Momentos de Interrupção | `In Progress` | 4 | CIO / Resp. Segurança | Security continuity during disruptions.... |
 | **A.530** | A.5.30 Prontidão da TIC para a Continuidade dos Negócios | `In Progress` | 4 | IT Manager | BCP Elaborado. RTO: 4 horas, RPO: 1 hora. Restore RDS testado em sandbox.... |
 | **A.531** | A.5.31 Requisitos Legais, Estatutários, Regulamentares e Contratuais | `In Progress` | 0 | CIO / Resp. Segurança | Compliance obligations exist for all organizations.... |
 | **A.532** | A.5.32 Direitos de Propriedade Intelectual | `Implemented` | 0 | CIO / Resp. Segurança | IP protection applies to all organizations.... — ENG-2026-001: POL-IPR-001 (A.5.32) — propriedade intelectual |
