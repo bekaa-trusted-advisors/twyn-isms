@@ -10,7 +10,7 @@
 | **Document ID** | POL-TX-001 |
 | **Version** | 1.0 (Oficial) |
 | **Autor** | Nizar Elouaer (CTO) |
-| **Aprovador** | Kacio Lopes (CEO) |
+| **Aprovador** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |
 
@@ -40,7 +40,7 @@ Garantir que as transferências de informações corporativas, arquivos de engen
 
 Esta política é aprovada pela Diretoria Executiva da TWYN e revisada anualmente.
 
-**Kacio Lopes**  
+**Kacio Giuliano Lopes**  
 CEO / Patrocinador Executivo  
 TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
 *Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 189.122.34.55, Hash: e2cf8212d06b0b5226075214b6b6d35d)*

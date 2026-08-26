@@ -39,7 +39,7 @@ As operações incluem:
 
 | Nome | Cargo Corporativo | Papel no SGSIP | Contato |
 |---|---|---|---|
-| **Kacio Lopes** | CEO | Sponsor Executivo / Aprovador Geral | `kacio@twyn.com` |
+| **Kacio Giuliano Lopes** | CEO | Sponsor Executivo / Aprovador Geral | `kacio@twyn.com` |
 | **Nizar Elouaer** | CTO | Liderança de Segurança Lógica e Infraestrutura | `nizar@twyn.com` |
 | **Bekaa Tecnologia Ltda** (CNPJ 28.811.817/0001-69) | DPO / Encarregado terceirizado | Encarregado pelo Tratamento de Dados Pessoais — LGPD Art. 41, DPO-as-a-Service (ref. GOV-DPO-001; resp. técnico **Ricardo Esper**). Papel de assessoria/supervisão — auditoria (interna 9.2 e de certificação) permanece com partes independentes | `dpo@twyn.com` |
 | **Humberto Oliveira** | CIO / Líder de Operações de Segurança | Operações de segurança, identidade e acesso (papéis internos — **não** acumula o Encarregado/DPO) | _(e-mail a preencher)_ |

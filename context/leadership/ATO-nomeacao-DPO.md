@@ -12,7 +12,7 @@
 | **Document ID** | GOV-DPO-001 |
 | **Versão** | 3.0 — alinhada ao **contrato real assinado** (supersede v1.0/Humberto, v2.0/v2.1) |
 | **Elaborado por** | Consultoria Aegis (ENG-2026-001) |
-| **A ser assinado por** | Kacio Lopes — CEO (ato de designação de alta direção) |
+| **A ser assinado por** | Kacio Giuliano Lopes — CEO (ato de designação de alta direção) |
 | **Instrumento de serviço** | **Contrato de Consultoria em Privacidade e DPO-as-a-Service** — TWYN Face ID Platform, **assinado em 02/01/2023** (T4ISB × Bekaa) |
 | **Status** | `Ato de designação pendente de assinatura do CEO; contrato de serviço já celebrado` |
 
@@ -67,7 +67,7 @@ A Diretoria Executiva da TWYN designa a **Bekaa Tecnologia Ltda** (CNPJ **28.811
 
 ## 6. Assinatura (ato de designação — alta direção)
 
-**Kacio Lopes** — CEO, TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA
+**Kacio Giuliano Lopes** — CEO, TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA
 
 Assinatura: ______________________________  Data: ____ / ____ / ______
 

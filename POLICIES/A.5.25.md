@@ -10,7 +10,7 @@
 | **Document ID** | POL-IRP-001 |
 | **Version** | 1.1 (Oficial) |
 | **Autor** | Ricardo Esper (Consultor) |
-| **Aprovador** | Kacio Lopes (CEO) |
+| **Aprovador** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |
 
@@ -29,7 +29,7 @@ Fica instituído o Comitê CSIRT permanente da TWYN com os seguintes papéis:
 *   **Líder de Operações de Segurança & CIO:** Humberto Oliveira (responsável por triagem inicial de alertas, análise de rede e segurança de acessos).
 *   **Líder Técnico de Contenção & DevOps:** Marcelo Mascarenhas (responsável pelo isolamento técnico de instâncias AWS e mitigação lógica).
 *   **CTO & CISO:** Nizar Elouaer (responsável por aprovar modificações de código de segurança e conformidade técnica).
-*   **Patrocinador Executivo & CEO:** Kacio Lopes (responsável por autorizações críticas de negócios).
+*   **Patrocinador Executivo & CEO:** Kacio Giuliano Lopes (responsável por autorizações críticas de negócios).
 
 ---
 
@@ -65,7 +65,7 @@ Para qualquer incidente classificado como P0/P1:
 
 Esta política é aprovada pela Diretoria Executiva da TWYN e revisada anualmente.
 
-**Kacio Lopes**  
+**Kacio Giuliano Lopes**  
 CEO / Patrocinador Executivo  
 TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
 *Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 189.122.34.55, Hash: 7f7d54061cdc5bbc47deb64f087ea9f4)*
