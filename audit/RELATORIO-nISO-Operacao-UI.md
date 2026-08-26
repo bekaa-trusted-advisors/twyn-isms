@@ -18,9 +18,11 @@ A adequação documental já foi feita e a maior parte dos controles está imple
 > foram **executados pela consultoria via API** — **não** são mais tarefa deste operador. Ver o journal
 > em `audit/engagement.md`. As seções 2 e 3 abaixo ficam como **registro do que foi feito**.
 >
-> O que **permanece exclusivo da UI/admin** (a API do consultor **não** grava): alteração do campo
-> **`owner`** (seção 5), correção de **aplicabilidade/flag N/A** (seção 4) e **higiene do store**
-> (seção 6). Ao final destas, o readiness é recalculado.
+> **Atualização 2026-08-26:** o nISO **liberou a escrita de `owner` via API** — a seção 5 (troca
+> "CISO"→CIO em 88 controles) **já foi executada pela consultoria** e **não é mais tarefa de UI**.
+> A "aplicabilidade" (seção 4) também não é flag separada: é o próprio `status`, e o A.8.22 já está
+> `In Progress` (aplicável). **Só resta a higiene opcional do store (seção 6)**, que não bloqueia o
+> Stage 1.
 
 > Nenhuma ação aqui **declara conformidade** — apenas **anexa evidência objetiva já existente** e
 > corrige metadados. O julgamento final é da **auditoria interna 9.2** (parte independente).
@@ -49,17 +51,20 @@ Aplicado em 2026-08-25 (`PUT /api/v1/evidence/{id}`); status elevado `Missing→
 > dependem de **export do AWS** (ver `RELATORIO-Tecnologia-Evidencias-AWS.md`). Não há órfão que os
 > feche com honestidade. **Missing 10→5** após esta rodada.
 
-## 4. Corrigir aplicabilidade
+## 4. Aplicabilidade — ✅ RESOLVIDO (não há flag separada)
 
-- **A.8.22 — Segregação de Redes** está `Not Applicable` — **incorreto** para plataforma cloud. Marcar
-  **Aplicável** e vincular a arquitetura de VPC/Security Groups.
+- No nISO, "aplicável/não-aplicável" **é o próprio `status`** (`Not Applicable`), gravável por API.
+  **A.8.22 — Segregação de Redes** já está `In Progress` (aplicável), com justificativa (VPC/Security
+  Groups) gravada. **Nada de UI aqui.**
 
-## 5. Ajustar o campo `owner` (decisão: TWYN não tem CISO)
+## 5. Campo `owner` (decisão: TWYN não tem CISO) — ✅ FEITO PELA CONSULTORIA (API)
 
-- **`owner = "CISO"` em 88 controles** → alterar para **"CIO / Responsável de Segurança (Humberto
-  Oliveira)"** (ou o rótulo que o nISO permitir). *(A API não grava `owner`.)*
-- **✅ Já feito por API:** as aprovações de CISO sem lastro (`ciso_approved_by`) foram **retiradas** —
-  não há ação de UI aqui.
+- **`owner = "CISO"` em 88 controles → "CIO / Responsável de Segurança"** — aplicado por API em
+  2026-08-26 (o nISO liberou a escrita do campo). **0 controles com "CISO"** restantes. `DevOps` (3) e
+  `IT Manager` (2) preservados.
+- **✅ Já feito por API (rodadas anteriores):** aprovações de CISO sem lastro (`ciso_approved_by`)
+  **retiradas**.
+- **Nada de UI nesta seção.**
 
 ## 6. Higiene do store de evidências (#16)
 
