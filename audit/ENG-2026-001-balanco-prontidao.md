@@ -53,8 +53,8 @@
 |---|---|---|
 | 1 | **Exports do AWS `sa-east-1`** (Macie/DLP, CloudTrail, GuardDuty, Inspector, filtragem web) → fecha os **5 Missing** (A.8.11/12/15/16/23) + reforça A.8.8 — ver `RELATORIO-Tecnologia-Evidencias-AWS.md` | TI/DevOps (Marcelo/Nizar) |
 | 2 | **Assinaturas:** Ato do DPO (CEO), anexar contrato DPO assinado + Cartão CNPJ da Bekaa | CEO / partes |
-| 3 | **Designar a parte independente** para a auditoria interna 9.2 (≠ Bekaa) | Direção |
-| 4 | **Auditoria interna 9.2** controle a controle contra evidência; tratar não conformidades (10.2) | Parte independente (issue #17) |
+| 3 | **Auditoria interna 9.2 designada:** ness Processos e Tecnologia Ltda (auditora Monica Yoshida Barbosa) — instrumento `GOV-AUD-001`. **Pendente:** assinatura da declaração de imparcialidade + anexo das credenciais | ness / Direção TWYN |
+| 4 | **Executar a auditoria interna 9.2** (27001+27701) contra evidência; tratar não conformidades (10.2) | ness (Monica) / Direção |
 
 > **Nota:** a "sessão de UI do nISO" que antes constava aqui **deixou de ser necessária** — re-vínculo de
 > evidência, status e `owner` já são executáveis por **API** (o nISO liberou a escrita de `owner`). Só
