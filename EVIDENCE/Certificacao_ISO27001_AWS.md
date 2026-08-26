@@ -52,6 +52,6 @@ O certificado da AWS está **ativo, válido e plenamente homologado**. O fornece
 ## 📅 Histórico de Revisão
 
 *   **Elaborado por:** Ricardo Esper (Consultor SGSIP)
-*   **Aprovado por:** Kacio Lopes (CEO)
+*   **Aprovado por:** Kacio Giuliano Lopes (CEO)
 *   **Data de Homologação:** 2026-07-27
 *   **Revisão:** Periódica conforme ciclo de supervisão anual da EY.

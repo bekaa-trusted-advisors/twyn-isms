@@ -10,7 +10,7 @@
 | **Document ID** | POL-BCP-001 |
 | **Version** | 1.0 (Oficial) |
 | **Autor** | Ricardo Esper (Consultor) |
-| **Aprovador** | Kacio Lopes (CEO) |
+| **Aprovador** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
 | **Status** | Aprovado |
 
@@ -49,7 +49,7 @@ As seguintes metas de recuperação ficam estabelecidas para a infraestrutura de
 
 Esta política é aprovada pela Diretoria Executiva da TWYN e revisada anualmente.
 
-**Kacio Lopes**  
+**Kacio Giuliano Lopes**  
 CEO / Patrocinador Executivo  
 TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
 *Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 189.122.34.55, Hash: 51398117157b023b821073858bc310be)*

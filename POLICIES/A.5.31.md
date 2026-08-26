@@ -4,7 +4,7 @@
 **Versão:** 1.0  
 **Data de Aprovação:** 22/07/2026  
 **Classificação:** Uso Interno e Clientes B2B  
-**Aprovadores:** Humberto Oliveira (CIO) / Kacio Lopes (CEO) / Ricardo Esper (Consultor)  
+**Aprovadores:** Humberto Oliveira (CIO) / Kacio Giuliano Lopes (CEO) / Ricardo Esper (Consultor)  
 
 ---
 
@@ -46,9 +46,9 @@ Cada Parte compromete-se a manter em seus respectivos canais de atendimento aos 
 
 | Versão | Data | Descrição da Alteração | Autor / Aprovador |
 |---|---|---|---|
-| 1.0 | 22/07/2026 | Edição inicial baseada no Parecer Machado Meyer Ref 116764899 | Ricardo Esper (Consultor) / Kacio Lopes (CEO) |
+| 1.0 | 22/07/2026 | Edição inicial baseada no Parecer Machado Meyer Ref 116764899 | Ricardo Esper (Consultor) / Kacio Giuliano Lopes (CEO) |
 
 ---
 **Assinatura Digital de Aprovação (nISO D1):**  
-*Aprovado por Kacio Lopes (CEO) em 22/07/2026 via TWYN GRC Portal.*  
+*Aprovado por Kacio Giuliano Lopes (CEO) em 22/07/2026 via TWYN GRC Portal.*  
 *Hash de Integridade:* `d1-sha256-pol-leg-002-v1.0-machadomeyer-approved`

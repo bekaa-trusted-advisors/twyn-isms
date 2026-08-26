@@ -11,7 +11,7 @@
 | **Document ID** | POL-HR-001 |
 | **Version** | 1.0 (Oficial) |
 | **Elaborado por** | Rosa Correia (COO / Operações & RH) |
-| **Aprovado por** | Kacio Lopes (CEO) |
+| **Aprovado por** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 21/07/2026 |
 | **Status** | Aprovado |
 
@@ -57,7 +57,7 @@ No encerramento de qualquer vínculo profissional ou contratual, o fluxo de offb
 
 ## 5. Homologação
 
-**Kacio Lopes**  
+**Kacio Giuliano Lopes**  
 CEO / Patrocinador Executivo  
 TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
 *Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 189.122.34.55, Hash: 49091d58795a8ad064c93dfa6e4ad293)*

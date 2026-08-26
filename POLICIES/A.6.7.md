@@ -10,7 +10,7 @@
 | **Document ID** | POL-RMT-001 |
 | **Versão** | 1.0 (Rascunho) |
 | **Elaborado por** | Consultoria Aegis (ENG-2026-001) |
-| **A ser aprovado por** | Humberto Oliveira (CIO) · Rosa Correia (COO) · Kacio Lopes (CEO) |
+| **A ser aprovado por** | Humberto Oliveira (CIO) · Rosa Correia (COO) · Kacio Giuliano Lopes (CEO) |
 | **Status** | `Rascunho — pendente de aprovação` |
 
 ---

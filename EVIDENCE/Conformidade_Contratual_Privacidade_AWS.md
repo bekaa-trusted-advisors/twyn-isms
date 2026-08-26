@@ -52,6 +52,6 @@ O DPA da AWS é considerado **aprovado e em plena conformidade** com os requisit
 ## 📅 Histórico de Revisão
 
 *   **Elaborado por:** Ricardo Esper (Consultor SGSIP)
-*   **Aprovado por:** Kacio Lopes (CEO)
+*   **Aprovado por:** Kacio Giuliano Lopes (CEO)
 *   **Data de Homologação:** 2026-07-27
 *   **Revisão:** Anual

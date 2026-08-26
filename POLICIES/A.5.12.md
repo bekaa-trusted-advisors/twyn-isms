@@ -11,7 +11,7 @@
 | **Document ID** | POL-GOV-001 |
 | **Version** | 1.0 (Oficial) |
 | **Elaborado por** | Ricardo Esper (Consultor) |
-| **Aprovado por** | Kacio Lopes (CEO) |
+| **Aprovado por** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 21/07/2026 |
 | **Status** | Aprovado |
 
@@ -66,7 +66,7 @@ Quando o prazo de retenção expira ou é solicitada exclusão legal válida pel
 
 ## 5. Homologação
 
-**Kacio Lopes**  
+**Kacio Giuliano Lopes**  
 CEO / Patrocinador Executivo  
 TWYN T4ISB DO BRASIL TECNOLOGIA E PARTICIPACOES LTDA (CNPJ: 31.122.819/0001-55)
 *Assinado eletronicamente via TWYN GRC Portal em 21/07/2026 18:00 BRT (IP: 189.122.34.55, Hash: bfa14ae9a22e6fc246f6458f73710175)*
