@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | **Engajamento / Contrato** | ENG-2026-001 / C-2026-08-18-01 |
-| **Cliente** | TWYN — Face ID Platform (biometria facial, AWS us-east-1, LGPD) |
+| **Cliente** | TWYN — Face ID Platform (biometria facial, AWS `sa-east-1` — São Paulo/Brasil, LGPD) _(Correção NC-04: era us-east-1)_ |
 | **Escopo** | ISO/IEC 27001:2022 (SGSI) + ISO/IEC 27701:2025 (SGPI), papel **Controlador** |
 | **Fontes cruzadas** | nISO (fonte da verdade: 124 controles, readiness, evidências, ROPA, fases, certificação) × repo `twyn-isms` (SOA/RISKS/ROPA/POLICIES/EVIDENCE) |
 | **Data** | 2026-08-19 |
@@ -117,8 +117,9 @@ Acúmulo **DPO + CISO + Consultor** numa só pessoa (Ricardo Esper); "CISO" atri
   score numérico apesar da metodologia 1–5; 3 já reabertos (apoiavam-se em controles `Missing`).
 - **OBS-03 — Vocabulário/casing inconsistente:** status `Approved` (repo) fora do padrão; evidências
   `conforme`/`Conforme`. Padronizar.
-- **OBS-04 — Transferência internacional:** mecanismo citado como "SCC" (padrão UE/GDPR); rever base sob
-  LGPD/ANPD para o fluxo us-east-1.
+- **OBS-04 — Transferência internacional:** ~~mecanismo citado como "SCC" (padrão UE/GDPR); rever base sob
+  LGPD/ANPD para o fluxo us-east-1.~~ **RESOLVIDO (NC-04):** os dados residem em `sa-east-1`/Brasil —
+  **não há transferência internacional**; o enquadramento de SCC/us-east-1 foi retirado (ver ROPA).
 - **OBS-05 — Caminhos locais Windows** (`file:///c:/Users/...`) embutidos em README/SOA/POLICIES/EVIDENCE.
 - **OBS-06 — Aplicabilidade N/A questionável:** A.7.10/7.13/7.14 marcados N/A com texto "aplica-se a todas
   as organizações". Rever.
