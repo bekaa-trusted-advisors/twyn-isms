@@ -42,7 +42,7 @@ ou vinculada a um controle 27001, não ao controle 27701 correspondente).
 | A.1.4.8 — Retenção | `POL-GOV-001` (§3, tabela de temporalidade) |
 | A.1.4.9 — Descarte seguro | `POL-GOV-001` (§4) |
 | A.1.4.10 — Transmissão | `A.8.24` (cripto); TLS 1.3 (`ROPA.md`) |
-| A.1.5.3 — Países de destino | `ROPA.md` (AWS us-east-1) |
+| A.1.5.3 — Países de destino | `ROPA.md` (AWS `sa-east-1`/Brasil — sem transferência internacional; _Correção NC-04: era us-east-1_) |
 | A.1.5.5 — Divulgação a terceiros | `ROPA.md` (resposta booleana; sem partilha) |
 
 ## Categoria B — evidência existe no store (conforme) mas precisa de re-vínculo na UI (4)

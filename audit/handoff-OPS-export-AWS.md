@@ -1,6 +1,6 @@
 # Checklist de Export de Evidência — Ambiente AWS
 
-**Para:** Marcelo Mascarenhas (DevOps Lead / T4ISB) — infra AWS `us-east-1`
+**Para:** Marcelo Mascarenhas (DevOps Lead / T4ISB) — infra AWS `sa-east-1` <!-- Correção NC-04/ENG-2026-001: região real é sa-east-1 (São Paulo/Brasil); "us-east-1" anterior estava incorreto -->
 **De:** Consultoria Aegis — ENG-2026-001
 **Objetivo:** exportar evidência objetiva para os controles críticos que **não** têm artefato no nISO.
 Suba cada export no controle indicado (nISO, projeto `mr9c1qugo16zic2eko`) ou envie ao DPO para anexar.
