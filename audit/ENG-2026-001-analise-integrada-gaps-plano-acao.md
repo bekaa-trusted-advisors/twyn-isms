@@ -3,187 +3,210 @@
 | Campo | Valor |
 |---|---|
 | **Engajamento / Contrato** | ENG-2026-001 / C-2026-08-18-01 |
-| **Cliente** | TWYN — Face ID Platform (biometria facial, AWS `sa-east-1` — São Paulo/Brasil, LGPD) _(Correção NC-04: era us-east-1)_ |
-| **Escopo** | ISO/IEC 27001:2022 (SGSI) + ISO/IEC 27701:2025 (SGPI), papel **Controlador** |
-| **Fontes cruzadas** | nISO (fonte da verdade: 124 controles, readiness, evidências, ROPA, fases, certificação) × repo `twyn-isms` (SOA/RISKS/ROPA/POLICIES/EVIDENCE) |
-| **Data** | 2026-08-19 |
+| **Cliente** | TWYN — Face ID Platform (biometria facial, AWS `sa-east-1` — São Paulo/Brasil, LGPD) |
+| **Escopo** | ISO/IEC 27001:2022 (SGSI) + ISO/IEC 27701:2025 (SGPI), papel **Controlador** (LGPD Art. 11 II 'g') |
+| **Fontes cruzadas** | nISO (fonte da verdade: 124 controles, evidências, ROPA, fases, certificação) × repo `twyn-isms` (SOA/RISKS/ROPA/POLICIES/EVIDENCE) × **evidência de ambiente AWS** entregue pelo dev em 2026-08-27 (documento **RESTRITO**, fora deste repo) |
+| **Data (regeração)** | 2026-08-27 |
+| **Substitui** | versão 2026-08-19 (placar "0 Implemented / 69 Missing", já superada) |
 | **Modo** | CONSULTOR — análise de adequação |
 
 > **Natureza.** Análise de **consultor sênior** para dirigir a adequação. **Não é** a auditoria
 > interna (9.2, exige sessão independente) **nem** parecer de certificação. **Nenhuma evidência foi
-> criada**; nenhum status foi presumido conforme. Achados ancorados na fonte da verdade (nISO) e nos
-> artefatos do repo.
+> criada**; nenhum status foi presumido conforme. Achados ancorados na fonte da verdade (nISO), nos
+> artefatos do repo e na evidência de ambiente entregue pela TI.
+
+> 🔒 **Confidencialidade.** A evidência de ambiente AWS (coleta de 27/08/2026) é **RESTRITA** e **não é
+> versionada neste repositório público**. Este documento cita seus achados **em nível de controle**, sem
+> reproduzir identificadores de conta, IPs, portas, regras de firewall específicas ou políticas de acesso —
+> esses detalhes ficam no documento restrito e no nISO.
 
 ---
 
 ## 1. Sumário executivo — veredito de prontidão
 
-**O ambiente NÃO está apto a certificação**, ao contrário do que o repositório declarava
-(`IPC 100% / Audit Ready`). A fonte da verdade (nISO) contradiz essa declaração em **todas** as camadas:
+**O ambiente evoluiu de "declaração sem lastro" (agosto/18) para adequação real em andamento**, porém
+**ainda NÃO está apto a certificação**. A integridade dos dados foi restaurada (o placar do nISO agora
+reflete implementação real, não mais "100% / Audit Ready" fictício), e a evidência de ambiente entregue
+pela TI **confirmou operação de vários controles técnicos** — mas **expôs gaps técnicos reais** que
+precisam de tratamento antes do Stage 1.
 
-- **Controles:** dos 124 (93 do 27001:2022 + 31 do 27701:2025), **0 estão `Implemented`**.
-  27001 → 6 `In Progress`, 69 `Missing`, 2 `Planned`, 16 `N/A`. 27701 → 28 `Missing`, 3 `N/A`.
-- **Diagnóstico do próprio nISO (readiness):** **66 achados — 17 críticos + 49 médios**.
-- **Integridade:** **48 controles** figuram `Missing` mas carregam **maturidade 3–5**; **17 controles**
-  estão **assinados (CISO/CEO) sem qualquer evidência anexada**.
-- **Jornada de gestão:** respondida apenas até a **fase 1** (mandato + apetite de risco). As "41 fases
-  executadas" alegadas no repo **não existem** na fonte da verdade.
-- **Certificação (nISO):** estágio **`Gap Assessment`**, Stage 1 e Stage 2 **`Pending`** — os "pareceres
-  de Estágio 1/2" do repo **não têm lastro** no nISO.
+- **Controles (nISO, fonte da verdade):** dos 124 (93 do 27001:2022 + 31 do 27701:2025):
+  - **27001 → 22 `Implemented` · 52 `In Progress` · 1 `Planned` · 2 `Missing` · 16 `N/A`.**
+  - **27701 → 25 `Implemented` · 6 `N/A`.**
+- **Marco de integridade (P0) concluído:** o placar agora tem lastro; a declaração "IPC 100% / Audit
+  Ready" foi retirada; status e maturidade reconciliados; SoA do repo reconciliado ao nISO (0 divergências).
+- **Evidência de ambiente AWS (27/08/2026):** validou A.8.8 (varredura de vulnerabilidades ativa) e
+  A.8.15 (logging) como **operantes**; justificou A.8.23 como **N/A**; mas revelou que **A.8.12 (DLP/
+  exposição de rede)** e **A.8.29 (teste de segurança no SDLC)** **não operam como declarado** — e A.8.16
+  (monitoramento/alarmes) está **parcial**.
+- **Correção material de status:** **A.8.29 foi rebaixado `Implemented → In Progress`** (2026-08-27) —
+  o ambiente não possui SAST/DAST operante; a declaração anterior de "Implementado" não se sustentava.
 
-**Conclusão:** o SGSI/SGPI está em fase inicial de adequação real. A prioridade imediata (P0) é
-**restaurar a integridade dos dados** (status × maturidade × assinatura × evidência) antes de qualquer
-avaliação; só então a implementação efetiva dos controles.
+**Conclusão:** o SGSI/SGPI saiu da fase de "dados incoerentes" e está em **implementação avançada**, mas
+com um **núcleo técnico crítico em aberto** — exposição de rede/prevenção de vazamento (A.8.12),
+monitoramento reativo (A.8.16), teste de segurança no desenvolvimento (A.8.29) e mascaramento de dados
+(A.8.11). Há ainda **exposições ao vivo de severidade alta** no ambiente (seção 3.1) que demandam
+tratamento **imediato**, independentemente do cronograma de certificação.
 
 ---
 
 ## 2. Panorama quantitativo (fonte da verdade — nISO)
 
-### 2.1 Controles por norma × status
+### 2.1 Controles por norma × status — **atual (2026-08-27)**
 | Norma | Implemented | In Progress | Planned | Missing | Not Applicable | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| ISO 27001:2022 | 0 | 6 | 2 | 69 | 16 | 93 |
-| ISO 27701:2025 | 0 | 0 | 0 | 28 | 3 | 31 |
-| **Total** | **0** | **6** | **2** | **97** | **19** | **124** |
+| ISO 27001:2022 | 22 | 52 | 1 | 2 | 16 | 93 |
+| ISO 27701:2025 | 25 | 0 | 0 | 0 | 6 | 31 |
+| **Total** | **47** | **52** | **1** | **2** | **22** | **124** |
 
-### 2.2 Readiness (auto-diagnóstico nISO) — 66 achados
-| Severidade | Categoria | Qtde |
-|---|---|---:|
-| Crítico | `doc_inconsistente` — "assinatura sem lastro" (assinado sem evidência) | 17 |
-| Médio | `doc_inconsistente` — status × maturidade × evidência incoerentes | 48 |
-| Médio | `doc_faltante` | 1 |
+> Evolução desde 2026-08-19 (era 0 Implemented / 97 Missing / 6 In Progress): a integridade foi restaurada
+> e a implementação real avançou. Os **2 `Missing`** remanescentes do 27001 são **A.8.11** (Mascaramento de
+> Dados) e **A.8.12** (Prevenção de Vazamento de Dados / DLP). O único `Planned` é **A.5.35** (Análise
+> Crítica Independente da SI).
 
-### 2.3 Evidências — cobertura e qualidade
-| Métrica | Valor |
-|---|---|
-| Itens de evidência (nISO) | 124 |
-| Controles com ≥1 evidência | **60 / 124** (⇒ **64 sem evidência**) |
-| `evaluation_status` | pending **42** · conforme **44** (casing misto `conforme`/`Conforme`) · approved **38** |
-| Evidências órfãs (control_id inexistente) | 7 itens (3 ids) |
+### 2.2 Aplicáveis vs. implementados
+| Norma | Aplicáveis (excl. N/A) | Implementados | % implementado (aplicáveis) |
+|---|---:|---:|---:|
+| ISO 27001:2022 | 77 | 22 | ≈ 29% |
+| ISO 27701:2025 | 25 | 25 | 100% |
+| **Consolidado** | **102** | **47** | **≈ 46%** |
 
-### 2.4 Jornada e ROPA
-| Item | Estado |
-|---|---|
-| `phase-answers` | **8 respostas** (fases 0–1 apenas): mandato assinado (CEO), papéis definidos, apetite `Baixo`, objetivos aprovados |
-| ROPA | **1 registro** (fluxo biométrico único; base legal Art. 11 II g) |
-| Certificação | estágio `Gap Assessment`; Stage 1 `Pending`; Stage 2 `Pending` |
+> O SGPI (27701) está formalmente completo em status; o SGSI (27001) tem a maior parte dos controles
+> aplicáveis ainda `In Progress` — implementados mas pendentes de evidência objetiva e/ou aprovação, ou
+> em implementação efetiva. O número que importa para o Stage 2 não é o status declarado e sim a
+> **evidência de operação** por trás de cada `Implemented`/`In Progress`.
 
 ---
 
 ## 3. Não Conformidades e Gaps (classificados)
 
-### NC MAIORES (bloqueiam certificação)
+### 3.1 🔴 Exposições ao vivo — tratamento IMEDIATO (independem do cronograma de certificação)
 
-**NC-01 — Incoerência sistêmica status × maturidade (integridade de dados).**
-48 controles `Missing` com maturidade 3–5 (24@3, 20@4, 4@5). Um controle inexistente não tem maturidade
-alta. *Cláusula:* 7.5 (informação documentada), 9.1. *Evidência:* readiness `doc_inconsistente` (48).
+A evidência de ambiente (RESTRITA) revelou condições que representam **risco operacional atual** ao
+tratamento de dados biométricos. Estas **não são apenas gaps documentais** — são exposições reais em
+produção que devem ser corrigidas com prioridade máxima. **Detalhes técnicos (contas, IPs, portas,
+regras) estão no documento restrito e no nISO; não são reproduzidos aqui.**
 
-**NC-02 — Assinatura sem lastro (17 controles críticos).**
-Controles aprovados/assinados por CISO/CEO **sem evidência anexada**: A.7.1–7.6, A.7.8, A.7.11, A.7.12,
-A.8.8, A.8.11, A.8.12, A.8.15, A.8.16, A.8.22, A.8.23, A.8.29. Aprovação sem evidência mina a
-confiabilidade de todo o SoA. *Cláusula:* 7.5, 9.2/5.2 (aprovação responsável). *Evidência:* readiness 17 críticos.
+| # | Condição (nível de controle) | Controle | Risco |
+|---|---|---|---|
+| EXP-01 | Acesso administrativo remoto exposto à internet pública em regras de firewall abrangentes | A.8.20 / A.8.22 / A.8.12 | Superfície de ataque direta a hosts de gestão |
+| EXP-02 | Acesso raiz (conta-mestre da nuvem) sem segundo fator | A.5.15 / A.8.5 | Comprometimento total do ambiente se a credencial vazar |
+| EXP-03 | Política de acesso a recurso de armazenamento excessivamente permissiva | A.8.3 / A.5.15 | Acesso amplo indevido a dados |
+| EXP-04 | Ferramenta de descoberta/classificação de dados sensíveis desabilitada | A.8.12 / A.5.12 | Dados pessoais/biométricos sem inventário nem alerta de exposição |
+| EXP-05 | Ausência de bloqueio de acesso público no nível da conta de armazenamento | A.8.3 / A.8.12 | Risco de exposição pública inadvertida de buckets |
 
-**NC-03 — Declaração de conformidade sem base ("IPC 100% / Audit Ready").**
-Repo declara 49 `Implemented` / 100%; fonte da verdade mostra **0 `Implemented`** e 69 `Missing` (27001).
-*Cláusula:* 5.2, 9.3 (representações à direção), 10.2. *Ação:* já iniciada (PR #2/#3: status → `In Progress`).
+> **Ação:** a TI (CIO/DevOps) deve remediar EXP-01…EXP-05 **imediatamente**, registrando a correção como
+> evidência no nISO. Estes itens têm precedência sobre qualquer atividade de documentação.
 
-**NC-04 — SGPI (27701) sem implementação.**
-Até 2026-08-19 não havia **nenhum** controle 27701 no nISO; o control-set 2025 (31) foi semeado neste
-engajamento e está **0 implementado**. *Cláusula:* 27701 cláusulas 5–8. *Ação:* adequação dos 28 aplicáveis.
+### 3.2 NC MAIORES (bloqueiam certificação)
 
-**NC-05 — Evidências: 42 pendentes, 64 controles sem evidência, 7 órfãs, e (no repo) trilha não fidedigna.**
-42 evidências `pending` (não avaliadas); 64/124 controles sem evidência; 7 evidências órfãs. No repo, as
-~47 evidências têm **data única (2026-07-27)** e os artefatos de auditoria são **stubs** (Estágio 1 = 17
-linhas; Estágio 2 = 19). *Cláusula:* 7.5, 9.2, 8.1. *Risco:* não resistem a certificador.
+**NC-A — A.8.29 declarado sem lastro (corrigido).**
+O controle de **teste de segurança em desenvolvimento e aceitação** estava `Implemented` no nISO, mas o
+ambiente não possui SAST/DAST operante (sem pipeline CI/CD de aplicação; automação de build limitada a
+infraestrutura; repositório de imagem de teste de segurança vazio). *Ação:* **rebaixado `Implemented →
+In Progress` em 2026-08-27**, com justificativa registrada no nISO. *Cláusula:* 8.25–8.29, 7.5.
 
-**NC-06 — Jornada de gestão parada na fase 1 / cláusulas 4–10 não evidenciadas.**
-Só fases 0–1 respondidas. Contexto (4), liderança (5, além do mandato), planejamento (6), apoio (7),
-operação (8), avaliação (9) e melhoria (10) não têm artefatos de gestão rastreáveis na fonte da verdade.
-*Cláusula:* 4–10 integral.
+**NC-B — A.8.12 (DLP / prevenção de vazamento) não operante.**
+Sem inventário/classificação automatizada de dados sensíveis, com exposição de rede e políticas de acesso
+permissivas (ver EXP-01, EXP-03, EXP-04, EXP-05). Para uma plataforma de **biometria facial**, este é o
+controle de maior materialidade. *Status nISO:* `Missing`. *Cláusula:* 8.12, 5.12, 8.3.
 
-**NC-07 — Evidência de auditoria interna e Stage 1/2 sem lastro.**
-Repo alega pareceres de Estágio 1/2; nISO em `Gap Assessment`, Stage 1/2 `Pending`. Auditoria interna
-(9.2) declarada mas sem trilha independente verificável. *Cláusula:* 9.2, 9.3, 10.
+**NC-C — A.8.11 (mascaramento de dados) sem evidência de operação.**
+Status `Missing` no nISO; a evidência de ambiente foi **inconclusiva** quanto a mascaramento/tokenização
+de dados pessoais em repouso e em logs. *Cláusula:* 8.11.
 
-**NC-08 — Independência do DPO comprometida.**
-Acúmulo **DPO + CISO + Consultor** numa só pessoa (Ricardo Esper); "CISO" atribuído a 3 nomes distintos.
-*Cláusula:* 5.3 (segregação), 27701 (independência do DPO), 9.2 (independência da auditoria).
+**NC-D — A.8.16 (monitoramento) parcial.**
+Logging existe e opera (A.8.15 confirmado), porém **sem alarmes/filtros de métrica configurados** — o
+monitoramento é **passivo** (há registro, não há alerta). Um SGSI exige detecção, não só coleta.
+*Status nISO:* `In Progress`. *Cláusula:* 8.16, 8.15.
 
-### NC MENORES / OBSERVAÇÕES
+**NC-E — SGSI (27001): 52 controles `In Progress` carecem de evidência objetiva.**
+A maioria dos controles aplicáveis está implementada em status, mas o Stage 2 amostra **evidência de
+operação**, não o rótulo. Cada `In Progress` precisa fechar com artefato citável e aprovação responsável.
+*Cláusula:* 7.5, 9.1, 8.1.
 
-- **OBS-01 — ROPA de fluxo único:** só 1 atividade de tratamento registrada; prováveis fluxos ausentes
-  (colaboradores/RH, logs, suporte). *Cláusula:* 27701 / LGPD Art. 37.
-- **OBS-02 — Registro de riscos uniforme:** 12 riscos todos `Low`/`Mitigated`, sem inerente×residual, sem
-  score numérico apesar da metodologia 1–5; 3 já reabertos (apoiavam-se em controles `Missing`).
-- **OBS-03 — Vocabulário/casing inconsistente:** status `Approved` (repo) fora do padrão; evidências
-  `conforme`/`Conforme`. Padronizar.
-- **OBS-04 — Transferência internacional:** ~~mecanismo citado como "SCC" (padrão UE/GDPR); rever base sob
-  LGPD/ANPD para o fluxo us-east-1.~~ **RESOLVIDO (NC-04):** os dados residem em `sa-east-1`/Brasil —
-  **não há transferência internacional**; o enquadramento de SCC/us-east-1 foi retirado (ver ROPA).
-- **OBS-05 — Caminhos locais Windows** (`file:///c:/Users/...`) embutidos em README/SOA/POLICIES/EVIDENCE.
-- **OBS-06 — Aplicabilidade N/A questionável:** A.7.10/7.13/7.14 marcados N/A com texto "aplica-se a todas
-  as organizações". Rever.
+**NC-F — Verificação independente (9.2) pendente.**
+A auditoria interna 9.2 exige parte **independente** (não o consultor implementador). Pacote de
+designação da **ness Processos e Tecnologia Ltda / Monica Yoshida Barbosa** elaborado (GOV-AUD-001),
+**pendente de assinatura da declaração de imparcialidade + credenciais + aprovação da direção**.
+*Cláusula:* 9.2, 9.3, 10.
+
+### 3.3 NC MENORES / OBSERVAÇÕES
+
+- **OBS-01 — ROPA de fluxo único:** confirmar se todos os fluxos de tratamento estão inventariados (além
+  do biométrico: colaboradores/RH, logs, suporte). *Cláusula:* 27701 / LGPD Art. 37.
+- **OBS-02 — Registro de riscos:** revisar inerente × residual e scores numéricos; reavaliar riscos que se
+  apoiavam em controles agora rebaixados (A.8.29) ou `Missing` (A.8.11/8.12).
+- **OBS-03 — Casing/vocabulário:** ~~status `Approved`; evidências `conforme`/`Conforme`.~~ **Padronizado**
+  (POLICIES: campo Status normalizado; ver engagement.md).
+- **OBS-04 — Transferência internacional:** **RESOLVIDO (NC-04 histórica):** dados em `sa-east-1`/Brasil —
+  não há transferência internacional; enquadramento de SCC/us-east-1 retirado.
+- **OBS-05 — Caminhos locais Windows** (`file:///c:/Users/...`) remanescentes em alguns artefatos — higiene.
+- **OBS-06 — Aplicabilidade N/A:** revisar A.7.10/7.13/7.14 e demais N/A com justificativa genérica.
 
 ---
 
-## 4. Cruzamento repo × fonte da verdade (nISO)
+## 4. Cruzamento evidência de ambiente (AWS) × status nISO — controles A.8
 
-| Dimensão | Repo `twyn-isms` | nISO (verdade) | Veredito |
+| Controle | Status nISO (2026-08-27) | Evidência de ambiente | Veredito |
 |---|---|---|---|
-| Status geral | `Audit Ready` / IPC 100% | `In Progress` (corrigido); 0 Implemented | **Divergência crítica** |
-| Controles 27001 Implemented | 49 | 0 | **Divergência crítica** |
-| Controles 27701 | "catalogados" (só rótulo) | 31 semeados, 0 implementados | Repo desatualizado |
-| Evidências | ~47 (data única, stubs) | 124 (42 pending, 7 órfãs) | Ambos frágeis; desalinhados |
-| Fases | "41 executadas" | 8 respostas (fases 0–1) | **Alegação sem lastro** |
-| Estágio de certificação | Estágio 1/2 "emitidos" | `Gap Assessment`, Pending | **Alegação sem lastro** |
-| Versão SGPI | 27701:2019 | 27701:2025 (migrado) | Corrigido neste engajamento |
+| A.8.8 — Gestão de vulnerabilidades técnicas | In Progress | Varredura contínua **ativa** | ✅ Coerente (fechar com evidência recorrente) |
+| A.8.15 — Logging | In Progress → confirmado operante | Logs **coletados** | ✅ Coerente |
+| A.8.16 — Monitoramento | In Progress | **Sem alarmes/filtros** — só coleta | ⚠️ Parcial (NC-D) |
+| A.8.11 — Mascaramento | Missing | **Inconclusivo** | 🔶 Gap declarado (NC-C) |
+| A.8.12 — DLP / prevenção de vazamento | Missing | **Não operante** + exposições | 🔴 Gap crítico (NC-B, EXP) |
+| A.8.23 — Filtragem web | Not Applicable | Arquitetura nuvem/remota | ✅ N/A justificado |
+| A.8.29 — Teste de segurança no SDLC | ~~Implemented~~ → **In Progress** | **Sem SAST/DAST** | 🔴 Rebaixado (NC-A) |
 
 ---
 
 ## 5. Plano de Ação detalhado
 
-Prioridades: **P0** = integridade/veracidade (pré-condição de tudo); **P1** = implementação e evidência;
-**P2** = maturidade e otimização. Responsáveis são **sugestões** a confirmar com a governança.
+Prioridades: **P0** = exposições ao vivo (risco atual); **P1** = fechar núcleo técnico crítico + evidência;
+**P2** = maturidade, cláusulas de gestão e verificação independente. Responsáveis são **sugestões** a
+confirmar com a governança.
 
-### P0 — Restaurar integridade e veracidade (antes de qualquer avaliação)
+### P0 — Remediar exposições ao vivo (imediato)
 
-| # | Ação | NC | Responsável | Critério de aceite | Dependência |
-|---|---|---|---|---|---|
-| P0.1 | Reconciliar **status × maturidade** dos 48 controles incoerentes contra evidência real; rebaixar/abrir os sem lastro | NC-01 | Consultor + CISO | 0 controles `Missing` com maturidade >0 sem justificativa; readiness `doc_inconsistente` → 0 | nISO write |
-| P0.2 | Remover/renovar **assinaturas sem lastro** (17): retirar aprovação até haver evidência, ou anexar evidência | NC-02 | CISO/CEO | 0 achados críticos "assinatura sem lastro" | P0.1 |
-| P0.3 | Propagar a correção "**não Audit Ready**" a todos os artefatos (repo já em PR #2/#3; nISO já `In Progress`) | NC-03 | Consultor | Repo e nISO coerentes; sem "100%" | — |
-| P0.4 | Sanear evidências: avaliar as **42 pending**, remover **7 órfãs**, padronizar casing; substituir stubs por evidência real datada | NC-05 | DPO + CISO | 0 pending sem decisão; 0 órfãs | — |
-| P0.5 | Formalizar **independência do DPO** e organograma com segregação (5.3) | NC-08 | CEO | DPO independente do CISO/consultor documentado | — |
+| # | Ação | NC/EXP | Responsável | Critério de aceite |
+|---|---|---|---|---|
+| P0.1 | Restringir acesso administrativo remoto (remover exposição à internet pública) | EXP-01 | CIO/DevOps | Nenhuma regra de gestão aberta à internet pública |
+| P0.2 | Habilitar MFA na conta-raiz e reduzir seu uso | EXP-02 | CIO | Raiz com MFA; acesso raiz auditado |
+| P0.3 | Restringir política de acesso ao armazenamento (menor privilégio) | EXP-03 | CIO/DevOps | Política sem permissões amplas indevidas |
+| P0.4 | Habilitar descoberta/classificação de dados sensíveis + bloqueio de acesso público no nível da conta | EXP-04/05 | CIO/DevOps | Ferramenta ativa; bloqueio público habilitado |
 
-### P1 — Implementar controles e produzir evidência
-
-| # | Ação | NC | Responsável | Critério de aceite | Dependência |
-|---|---|---|---|---|---|
-| P1.1 | Fechar os **6 `In Progress` + 2 `Planned`** do 27001 (implementar + evidência + aprovação) | NC-01/05 | CISO | 8 controles `Implemented` com evidência | P0 |
-| P1.2 | Tratar os **69 `Missing`** do 27001 por onda de risco (priorizar os ligados a riscos reabertos: A.5.17, A.8.9, A.8.12) | NC-01 | CISO | Plano de implementação por controle; risco residual reavaliado | P0.1 |
-| P1.3 | **SGPI 27701:2025** — adequar os **28 aplicáveis** (mapear evidência candidata → implementar → status), começando por A.1.2.9 (ROPA), A.1.3.7/10 (direitos), A.1.4.6/8 (retenção/descarte), A.1.5.2 (transferência) | NC-04 | DPO | 28 controles com status/evidência; SoA de privacidade completa | P0.1 |
-| P1.4 | **ROPA** — inventariar todos os fluxos de tratamento (não só o biométrico) | OBS-01 | DPO | ROPA cobre RH, logs, suporte, etc. | — |
-| P1.5 | **Riscos** — reintroduzir inerente×residual e scores; reavaliar os 12 + os 3 reabertos | OBS-02 | CISO | Matriz com score e residual; sem "Mitigated" sem controle | P1.2 |
-
-### P2 — Sistema de gestão (cláusulas 4–10) e maturidade
+### P1 — Fechar o núcleo técnico crítico e produzir evidência
 
 | # | Ação | NC | Responsável | Critério de aceite | Dependência |
 |---|---|---|---|---|---|
-| P2.1 | Completar a **jornada de fases 2025** (além da fase 1) e documentar cláusulas 4–10 | NC-06 | Consultor + CISO | Fases respondidas; artefatos de gestão 4–10 presentes | esquema 2025 |
-| P2.2 | Rever **transferência internacional** (base LGPD/ANPD, não SCC) | OBS-04 | DPO/Jurídico | Mecanismo de transferência válido documentado | P1.3 |
-| P2.3 | **Auditoria interna real (9.2)** por sessão/agente **independente** — não pelo consultor | NC-07 | Auditor independente | Relatório 9.2 independente; achados tratados (10.2) | P0, P1 |
-| P2.4 | Higiene documental (caminhos relativos, contagens, vocabulário) | OBS-03/05 | Consultor | Docs sem caminhos locais; contagens conferem | — |
-| P2.5 | Após P0–P2: recomputar **readiness** e reavaliar prontidão para Stage 1 | todas | Consultor | Readiness sem críticos; IPC real calculado | tudo acima |
+| P1.1 | Implementar **DLP/A.8.12**: classificação, controle de exposição de rede, prevenção de vazamento | NC-B | CIO/DevOps | A.8.12 operante com evidência → `In Progress`→`Implemented` | P0 |
+| P1.2 | Configurar **alarmes/filtros de métrica** (A.8.16): detecção ativa sobre os logs existentes | NC-D | CIO/DevOps | Alertas de segurança operando; A.8.16 → `Implemented` | — |
+| P1.3 | Implementar **SAST/DAST no SDLC** (A.8.29): teste de segurança no pipeline de aplicação | NC-A | DevOps | Pipeline com testes de segurança; relatórios; A.8.29 → `Implemented` | — |
+| P1.4 | Implementar/comprovar **mascaramento** (A.8.11) de dados pessoais em repouso e logs | NC-C | CIO/DevOps | A.8.11 com evidência → `Implemented` | — |
+| P1.5 | Fechar os **52 `In Progress`** do 27001 com evidência objetiva + aprovação responsável | NC-E | CIO / donos | Cada `In Progress` com artefato citável no nISO | — |
+| P1.6 | Confirmar cobertura do **ROPA** (todos os fluxos) e revisar **riscos** (residual/score) | OBS-01/02 | DPO/CIO | ROPA completo; matriz de risco com score | — |
+
+### P2 — Gestão, maturidade e verificação independente
+
+| # | Ação | NC | Responsável | Critério de aceite | Dependência |
+|---|---|---|---|---|---|
+| P2.1 | Fechar **A.5.35** (análise crítica independente) — `Planned` → operante | — | CIO | Análise crítica independente registrada | P1 |
+| P2.2 | Evidenciar cláusulas de gestão **4–10** (contexto, liderança, planejamento, apoio, operação, avaliação, melhoria) | NC-E | Consultor + CIO | Artefatos de gestão 4–10 rastreáveis | — |
+| P2.3 | **Auditoria interna 9.2 independente** — executar via ness/Monica (GOV-AUD-001), após assinaturas/credenciais | NC-F | Auditor independente | Relatório 9.2 independente; achados tratados (10.2) | P0, P1 |
+| P2.4 | Higiene documental (caminhos locais, N/A genéricos, contagens) | OBS-05/06 | Consultor | Docs limpos; contagens conferem | — |
+| P2.5 | Recomputar prontidão e decidir ida ao **Stage 1** | todas | Consultor | Sem exposições ao vivo; núcleo técnico fechado; IPC real | tudo acima |
 
 ---
 
 ## 6. Sequência recomendada e marcos
 
-1. **Marco A (integridade):** concluir P0 → readiness sem achados críticos; dados coerentes.
-2. **Marco B (implementação núcleo):** P1.1–P1.3 → controles ativos com evidência; SGPI adequado.
-3. **Marco C (gestão):** P2.1–P2.2 → cláusulas 4–10 e privacidade completas.
-4. **Marco D (verificação independente):** P2.3 → auditoria interna 9.2 **independente**.
-5. **Marco E (prontidão):** P2.5 → decisão informada de ida a Stage 1.
+1. **Marco 0 (segurança operacional):** P0.1–P0.4 → exposições ao vivo remediadas. **Precede tudo.**
+2. **Marco A (integridade) — ✅ CONCLUÍDO:** placar com lastro; declaração fictícia retirada; SoA
+   reconciliado ao nISO; A.8.29 rebaixado.
+3. **Marco B (núcleo técnico):** P1.1–P1.4 → A.8.11/8.12/8.16/8.29 fechados com evidência.
+4. **Marco C (evidência + gestão):** P1.5–P1.6, P2.1–P2.2 → `In Progress` fechados; cláusulas 4–10.
+5. **Marco D (verificação independente):** P2.3 → auditoria interna 9.2 **independente** (ness/Monica).
+6. **Marco E (prontidão):** P2.5 → decisão informada de ida a Stage 1.
 
 > **Independência (lei Aegis):** os itens de **implementação/adequação** são do consultor. A **auditoria
 > interna 9.2** (Marco D) e o parecer de prontidão final **exigem sessão/agente independente** — não quem
