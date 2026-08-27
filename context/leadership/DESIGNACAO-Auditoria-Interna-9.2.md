@@ -51,6 +51,36 @@ audita o próprio trabalho**.
 > a documentação deste pacote (segregação de equipe comprovada + declaração assinada + credenciais).
 > Este instrumento **não** substitui o julgamento do organismo certificador.
 
+### 2.1 OM-0 — Divulgação: participação da ness na implementação (achado que ENFRAQUECE a segregação)
+
+> 🚩 **Divulgação obrigatória ao organismo certificador, em conjunto com este GOV-AUD-001.**
+
+Verificação do campo `uploaded_by` no nISO (2026-08-26) revelou que **9 evidências** foram carregadas
+sob o identificador **`consultant@ness.io`** — **domínio da própria ness**, papel "consultant". São
+artefatos **centrais de implementação** do SGSI:
+
+| Evidência | Controle |
+|---|---|
+| SGSI-SCOPE-001 — Declaração de Escopo | A.5.1 |
+| POL-ISP-001 — Política de Segurança da Informação | A.5.1 |
+| SGSI-RACI-001 — Matriz RACI (segregação de funções) | A.5.3 |
+| AWS-IAM-MFA-Policy | A.8.5 |
+| AWS-IAM-Privileged-Roles | A.8.2 |
+| AWS-Organizations-OU-Structure | A.8.31 |
+| AWS-VPC-Architecture | A.8.20 |
+| AWS-Client-VPN-Routing | A.8.21 |
+| AWS-Backup-Plan-RDS | A.8.13 |
+
+**Consequência (avaliação da consultoria, sem suavizar):** isto demonstra que a **ness, como
+organização**, atuou como **consultora/implementadora** de parte do SGSI — não apenas "mesmo grupo da
+Bekaa". Logo, a ness auditar o ISMS é **auditar trabalho de consultoria da própria organização** —
+ameaça de **autorrevisão em nível organizacional**, que a segregação **interna** de equipe **não cura
+sozinha**. **Divulgar não torna o arranjo conforme; apenas transparente.**
+
+**Recomendação:** designar auditor **100% independente** (fora de Bekaa **e** ness). Caso a direção opte
+por manter a ness/Monica, este OM-0 **deve** ir ao organismo certificador junto com o GOV-AUD-001, e o
+CB decide. *(Registrado como observação OM-0 pelo DPO/consultor — resper@bekaa.eu.)*
+
 ## 3. Declaração de Imparcialidade e Independência (a ser assinada pela ness)
 
 > _A ness Processos e Tecnologia Ltda e a auditora Monica Yoshida Barbosa declaram, para os fins da
