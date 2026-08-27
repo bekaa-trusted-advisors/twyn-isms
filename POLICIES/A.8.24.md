@@ -12,7 +12,7 @@
 | **Autor** | Consultoria Aegis (ENG-2026-001) |
 | **Aprovador** | _Pendente — CTO / CEO_ |
 | **Data de Emissão** | _Pendente de aprovação_ |
-| **Status** | `Rascunho — aguarda aprovação` |
+| **Status** | `Rascunho — pendente de aprovação` |
 
 > Substitui o conteúdo anterior deste arquivo, que era o `SOP-HDN-001 (Hardening / A.8.9)` mismapeado ao
 > controle A.8.24. O Hardening permanece em `POLICIES/A.8.9.md`. Corrige o achado F8 / issue #12.

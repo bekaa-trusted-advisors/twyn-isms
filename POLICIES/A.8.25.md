@@ -12,7 +12,7 @@
 | **Autor** | Nizar Elouaer (CTO) |
 | **Aprovador** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 16/07/2026 |
-| **Status** | Aprovado |
+| **Status** | `Aprovado` |
 
 ---
 

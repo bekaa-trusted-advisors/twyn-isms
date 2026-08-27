@@ -12,7 +12,7 @@
 | **Autor** | Nizar Elouaer (CTO) |
 | **Aprovador** | Nizar Elouaer (CTO) |
 | **Data de Emissão** | 16/07/2026 |
-| **Status** | Aprovado |
+| **Status** | `Aprovado` |
 
 ---
 

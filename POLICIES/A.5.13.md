@@ -13,7 +13,7 @@
 | **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Kacio Giuliano Lopes (CEO) |
 | **Data de Emissão** | 21/07/2026 |
-| **Status** | Aprovado |
+| **Status** | `Aprovado` |
 
 ---
 

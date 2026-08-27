@@ -13,7 +13,7 @@
 | **Elaborado por** | Enes Degasperi (CFO / Financeiro) |
 | **Aprovado por** | Nizar Elouaer (CTO / Liderança Executiva de SI) |
 | **Data de Emissão** | 21/07/2026 |
-| **Status** | Aprovado |
+| **Status** | `Aprovado` |
 
 ---
 
