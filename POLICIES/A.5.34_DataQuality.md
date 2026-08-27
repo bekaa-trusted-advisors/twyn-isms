@@ -42,7 +42,7 @@ finalidade de identificação, autenticação e prevenção à fraude (LGPD Art.
 ## 4. Correção e atualização a pedido do titular
 
 1. O titular pode solicitar correção/atualização de seus dados pelo canal do Encarregado
-   (`dpo@twyn.com`), conforme o procedimento de direitos `SGP-PRO-001` (`A.5.34_Rights`).
+   (`dpo@t4isb.com`), conforme o procedimento de direitos `SGP-PRO-001` (`A.5.34_Rights`).
 2. Como o dado tratado é um **vetor irreversível** (não uma ficha cadastral), a "correção" se opera
    pela **regeneração do vetor** a partir de nova captura válida ou pela **exclusão** do vetor
    desatualizado, conforme o caso.

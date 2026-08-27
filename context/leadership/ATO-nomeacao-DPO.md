@@ -26,7 +26,7 @@ A Diretoria Executiva da TWYN designa a **Bekaa Tecnologia Ltda** (CNPJ **28.811
 (ISO/IEC 27701:2025), conforme o **contrato de serviço assinado em 02/01/2023**.
 
 - **Responsável técnico designado pela Bekaa:** **Ricardo Esper** (sócio-administrador).
-- **Canal oficial do Encarregado:** `dpo@twyn.com`.
+- **Canal oficial do Encarregado:** `dpo@t4isb.com`.
 
 ## 2. Atribuições (LGPD Art. 41, §2º)
 
@@ -38,7 +38,7 @@ A Diretoria Executiva da TWYN designa a **Bekaa Tecnologia Ltda** (CNPJ **28.811
 
 ## 3. Canal de contato do Encarregado
 
-- **Canal oficial (funcional):** `dpo@twyn.com` — recebe e trata solicitações de titulares (DSAR) e
+- **Canal oficial (funcional):** `dpo@t4isb.com` — recebe e trata solicitações de titulares (DSAR) e
   comunicações de privacidade.
 
 ## 4. Independência e segregação de funções (consultor/DPO × auditor)

@@ -36,7 +36,7 @@ transparência exigida pela ISO/IEC 27701:2025 (A.1.3.11).
 ## 3. Direito de revisão e informação (LGPD Art. 20)
 
 1. O titular pode solicitar informações sobre o tratamento e a **revisão** de decisões automatizadas
-   pelo canal do Encarregado (`dpo@twyn.com`), conforme `SGP-PRO-001` (`A.5.34_Rights`).
+   pelo canal do Encarregado (`dpo@t4isb.com`), conforme `SGP-PRO-001` (`A.5.34_Rights`).
 2. Quando a solicitação disser respeito à **decisão de negócio** (aprovação/negação), o Encarregado
    encaminha e **orienta o titular** quanto ao controlador-parceiro responsável por aquela decisão,
    prestando as informações que couberem à TWYN sobre o resultado técnico fornecido.

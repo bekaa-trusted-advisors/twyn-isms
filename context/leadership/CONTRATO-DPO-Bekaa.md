@@ -21,7 +21,7 @@
   Independente** (LGPD Art. 11, II, 'g').
 - **Contratada (DPO PJ & Consultoria):** **Bekaa Tecnologia Ltda** (CNPJ 28.811.817/0001-69), sob
   **responsabilidade técnica de Ricardo Esper**.
-- **Canal oficial do Encarregado:** `dpo@twyn.com`.
+- **Canal oficial do Encarregado:** `dpo@t4isb.com`.
 - **Assinatura / vigência:** 02/01/2023 · 12 meses com renovação automática sucessiva.
 - **Assinantes:** T4ISB — Enes Fernando Degasperi (Diretor Financeiro / Procurador); Bekaa — Ricardo
   Esper (sócio-administrador).

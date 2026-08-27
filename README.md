@@ -39,12 +39,12 @@ As operações incluem:
 
 | Nome | Cargo Corporativo | Papel no SGSIP | Contato |
 |---|---|---|---|
-| **Kacio Giuliano Lopes** | CEO | Sponsor Executivo / Aprovador Geral | `kacio@twyn.com` |
-| **Nizar Elouaer** | CTO | Liderança de Segurança Lógica e Infraestrutura | `nizar@twyn.com` |
-| **Bekaa Tecnologia Ltda** (CNPJ 28.811.817/0001-69) | DPO / Encarregado terceirizado | Encarregado pelo Tratamento de Dados Pessoais — LGPD Art. 41, DPO-as-a-Service (ref. GOV-DPO-001; resp. técnico **Ricardo Esper**). Papel de assessoria/supervisão — auditoria (interna 9.2 e de certificação) permanece com partes independentes | `dpo@twyn.com` |
-| **Humberto Oliveira** | CIO / Líder de Operações de Segurança | Operações de segurança, identidade e acesso (papéis internos — **não** acumula o Encarregado/DPO) | _(e-mail a preencher)_ |
-| **Ricardo Esper** | Consultor externo (Aegis) + Responsável técnico do DPO (via Bekaa) | Consultoria de adequação ISO 27001/27701 (ENG-2026-001) e responsável técnico do Encarregado (Bekaa). **Não é auditor** (a auditoria interna 9.2 é de parte independente) **nem CISO** | `dpo@twyn.com` |
-| **Rosa Correia** | COO | Liderança de RH e Operações | `rosa@twyn.com` |
+| **Kacio Giuliano Lopes** | CEO | Sponsor Executivo / Aprovador Geral | `kacio@t4isb.com` |
+| **Nizar Elouaer** | CTO | Liderança de Segurança Lógica e Infraestrutura | `nizar@t4isb.com` |
+| **Bekaa Tecnologia Ltda** (CNPJ 28.811.817/0001-69) | DPO / Encarregado terceirizado | Encarregado pelo Tratamento de Dados Pessoais — LGPD Art. 41, DPO-as-a-Service (ref. GOV-DPO-001; resp. técnico **Ricardo Esper**). Papel de assessoria/supervisão — auditoria (interna 9.2 e de certificação) permanece com partes independentes | `dpo@t4isb.com` |
+| **Humberto Oliveira** | CIO / Líder de Operações de Segurança | Operações de segurança, identidade e acesso (papéis internos — **não** acumula o Encarregado/DPO) | `humberto.osf@t4isb.com` |
+| **Ricardo Esper** | Consultor externo (Aegis) + Responsável técnico do DPO (via Bekaa) | Consultoria de adequação ISO 27001/27701 (ENG-2026-001) e responsável técnico do Encarregado (Bekaa). **Não é auditor** (a auditoria interna 9.2 é de parte independente) **nem CISO** | `dpo@t4isb.com` |
+| **Rosa Correia** | COO | Liderança de RH e Operações | `rosa@t4isb.com` |
 | **Marcelo Mascarenhas** | DevOps Lead (T4ISB) | Engenharia de Nuvem, Backup e Segurança de Rede | `marcelo.mascarenhas@t4isb.com` |
 
 ---
