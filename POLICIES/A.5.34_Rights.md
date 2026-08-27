@@ -12,7 +12,7 @@
 | **Elaborado por** | Ricardo Esper (Consultor) |
 | **Aprovado por** | Rosa Correia (COO / Operações) |
 | **Data de Emissão** | 20/07/2026 |
-| **Status** | Aprovado |
+| **Status** | `Aprovado` |
 
 ---
 
