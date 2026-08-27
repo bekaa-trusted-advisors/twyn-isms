@@ -51,35 +51,27 @@ audita o próprio trabalho**.
 > a documentação deste pacote (segregação de equipe comprovada + declaração assinada + credenciais).
 > Este instrumento **não** substitui o julgamento do organismo certificador.
 
-### 2.1 OM-0 — Divulgação: participação da ness na implementação (achado que ENFRAQUECE a segregação)
+### 2.1 OM-0 — ~~Participação da ness na implementação~~ **RETRATADO** (premissa incorreta)
 
-> 🚩 **Divulgação obrigatória ao organismo certificador, em conjunto com este GOV-AUD-001.**
+> ⚠️ **OM-0 RETRATADO em 2026-08-26.** Foi **levantado e depois invalidado** — registro mantido por
+> transparência do processo (não é achado ativo e **não** vai ao organismo certificador como tal).
 
-Verificação do campo `uploaded_by` no nISO (2026-08-26) revelou que **9 evidências** foram carregadas
-sob o identificador **`consultant@ness.io`** — **domínio da própria ness**, papel "consultant". São
-artefatos **centrais de implementação** do SGSI:
+**O que foi levantado:** a verificação do campo `uploaded_by` no nISO mostrou **9 evidências** centrais
+do SGSI carregadas sob o identificador **`consultant@ness.io`**. A consultoria **inferiu** — pela
+semelhança do nome — que `ness.io` seria o domínio da auditora **ness Processos e Tecnologia Ltda**, e
+concluiu que a ness teria atuado como implementadora (autorrevisão).
 
-| Evidência | Controle |
-|---|---|
-| SGSI-SCOPE-001 — Declaração de Escopo | A.5.1 |
-| POL-ISP-001 — Política de Segurança da Informação | A.5.1 |
-| SGSI-RACI-001 — Matriz RACI (segregação de funções) | A.5.3 |
-| AWS-IAM-MFA-Policy | A.8.5 |
-| AWS-IAM-Privileged-Roles | A.8.2 |
-| AWS-Organizations-OU-Structure | A.8.31 |
-| AWS-VPC-Architecture | A.8.20 |
-| AWS-Client-VPN-Routing | A.8.21 |
-| AWS-Backup-Plan-RDS | A.8.13 |
+**Por que foi retratado:** o **DPO/consultor (resper@bekaa.eu) confirmou que `ness.io` NÃO é domínio da
+ness** — a inferência estava **errada**. Sem esse vínculo, **não há** evidência de que a auditora tenha
+participado da implementação. A conclusão de "autorrevisão organizacional" **cai**; a posição de
+independência volta a ser a da seção 2 (segregação de equipe + divulgação do vínculo de grupo).
 
-**Consequência (avaliação da consultoria, sem suavizar):** isto demonstra que a **ness, como
-organização**, atuou como **consultora/implementadora** de parte do SGSI — não apenas "mesmo grupo da
-Bekaa". Logo, a ness auditar o ISMS é **auditar trabalho de consultoria da própria organização** —
-ameaça de **autorrevisão em nível organizacional**, que a segregação **interna** de equipe **não cura
-sozinha**. **Divulgar não torna o arranjo conforme; apenas transparente.**
+**Lição registrada:** identidade de nome **não** é identidade de entidade — o identificador do uploader
+deveria ter sido **verificado** antes de virar achado. `consultant@ness.io` é um **identificador não
+atribuído/genérico** no store (a par de `u1`, `system`), provavelmente dado de seed do nISO.
 
-**Recomendação:** designar auditor **100% independente** (fora de Bekaa **e** ness). Caso a direção opte
-por manter a ness/Monica, este OM-0 **deve** ir ao organismo certificador junto com o GOV-AUD-001, e o
-CB decide. *(Registrado como observação OM-0 pelo DPO/consultor — resper@bekaa.eu.)*
+**Ponto de higiene remanescente (não é independência):** convém o operador do nISO **esclarecer/normalizar**
+quem é `consultant@ness.io` no `uploaded_by` (parte da higiene do store), para não gerar dúvida futura.
 
 ## 3. Declaração de Imparcialidade e Independência (a ser assinada pela ness)
 
