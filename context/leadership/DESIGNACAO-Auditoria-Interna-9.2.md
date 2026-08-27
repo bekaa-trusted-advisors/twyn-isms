@@ -112,7 +112,7 @@ quem é `consultant@ness.io` no `uploaded_by` (parte da higiene do store), para 
   3. **Controles técnicos** (logs, monitoramento, criptografia, acesso) — verificar evidência de
      operação efetiva (inclui exports do AWS da TI).
   4. **SGPI 27701:** ROPA, DPIA, direitos dos titulares (DSAR), minimização, base legal (Art. 11 II 'g').
-  5. **Governança de privacidade:** arranjo de DPO, canal `dpo@twyn.com`, contrato e ato de nomeação.
+  5. **Governança de privacidade:** arranjo de DPO, canal `dpo@t4isb.com`, contrato e ato de nomeação.
   6. **Registro de não conformidades** e encaminhamento para tratamento (cl. 10.2).
 
 ## 6. Entregáveis da auditoria (pela ness)

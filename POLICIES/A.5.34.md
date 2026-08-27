@@ -33,7 +33,7 @@ A TWYN adota salvaguardas lógicas rígidas para o processamento de imagens e te
 
 ## 3. Gestão de Direitos dos Titulares e Protocolo de Exceção (LGPD Art. 18 & Art. 11, II, "g")
 
-1.  O Encarregado (DPO), Bekaa Tecnologia Ltda (PJ), é designado como encarregado exclusivo (`dpo@twyn.com`) para receber e processar demandas de direitos dos titulares (LGPD Art. 18).
+1.  O Encarregado (DPO), Bekaa Tecnologia Ltda (PJ), é designado como encarregado exclusivo (`dpo@t4isb.com`) para receber e processar demandas de direitos dos titulares (LGPD Art. 18).
 2.  **Protocolo de Atendimento a Solicitações de Exclusão (DSAR):**
     *   Quando um titular solicitar a exclusão de seus vetores biométricos (Art. 18, VI), o DPO avaliará se os registros estão vinculados a investigações de fraude ativas ou retenção obrigatória de segurança.
     *   Caso a exclusão seja aplicável, a Engenharia efetuará a remoção definitiva do vetor em até **15 dias úteis**, gerando o hash de auditoria da instrução `DELETE`.

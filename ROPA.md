@@ -39,7 +39,7 @@ Este documento registra as operações de tratamento de dados pessoais e dados p
 
 ## 👥 Canal de Atendimento e Direitos dos Titulares
 
-*   **Canal Central de Recebimento de DSAR:** Mensagens de privacidade são recebidas via canal oficial do Encarregado (DPO): **`dpo@twyn.com`**
+*   **Canal Central de Recebimento de DSAR:** Mensagens de privacidade são recebidas via canal oficial do Encarregado (DPO): **`dpo@t4isb.com`**
 *   **Procedimento de Exclusão:** As solicitações legítimas de titulares para exclusão de dados biometrizados são tratadas via procedimento específico (SGP-PRO-001) para deletar o registro do ID do vetor matemático no RDS no prazo de até 15 dias.
 
 ---

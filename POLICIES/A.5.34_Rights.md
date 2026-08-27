@@ -19,7 +19,7 @@
 ## 1. Canais de Atendimento
 
 Qualquer titular de dados pessoais processados no escopo da TWYN Face ID Platform pode exercer seus direitos através do canal oficial de privacidade gerenciado pelo DPO:
-*   **E-mail de Contato:** `dpo@twyn.com` (Encarregado Bekaa Tecnologia Ltda (PJ))
+*   **E-mail de Contato:** `dpo@t4isb.com` (Encarregado Bekaa Tecnologia Ltda (PJ))
 
 ---
 
@@ -33,7 +33,7 @@ Pela natureza pseudoanônima do processamento da TWYN (onde hashes biométricos 
 3.  A TWYN realiza a exclusão com base na requisição do co-controlador.
 
 ### Via B: Solicitação Direta (Via DPO da TWYN)
-1.  O titular entra em contato via e-mail `dpo@twyn.com.br`.
+1.  O titular entra em contato via e-mail `dpo@t4isb.com`.
 2.  O DPO solicita que o usuário forneça o nome do aplicativo/empresa parceira onde efetuou o cadastro biométrico e o respectivo CPF para cruzamento local pelo co-controlador de origem.
 3.  Após a validação bem-sucedida da legitimidade da identidade, o DPO emite o ticket interno.
 

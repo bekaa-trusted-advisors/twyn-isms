@@ -35,7 +35,7 @@ Os clientes B2B da TWYN devem incorporar o seguinte trecho em suas Políticas de
 
 ## 3. Direitos de Titulares Associados
 
-A cláusula deve também explicitar o direito dos titulares de solicitarem acesso ou exclusão dos dados através do suporte técnico do cliente ou diretamente perante o e-mail de privacidade da TWYN (`dpo@twyn.com.br`).
+A cláusula deve também explicitar o direito dos titulares de solicitarem acesso ou exclusão dos dados através do suporte técnico do cliente ou diretamente perante o e-mail de privacidade da TWYN (`dpo@t4isb.com`).
 
 ---
 

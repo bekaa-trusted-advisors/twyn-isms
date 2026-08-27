@@ -23,7 +23,7 @@ rapidez.
 
 ## 2. Diretrizes
 1. **Canal:** eventos de segurança são reportados ao CSIRT por canal definido (`POL-IRP-001`);
-   eventos com PII também ao Encarregado (`dpo@twyn.com`).
+   eventos com PII também ao Encarregado (`dpo@t4isb.com`).
 2. **Dever de reportar:** todo colaborador/contratado deve relatar suspeitas sem receio de represália;
    ausência de retaliação por reporte de boa-fé.
 3. **Triagem:** eventos reportados entram na avaliação/decisão (`A.5.25`) e, se incidentes, no fluxo de
